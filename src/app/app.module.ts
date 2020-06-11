@@ -12,7 +12,7 @@ import { WeekViewComponent } from './component/calendar/week-view/week-view.comp
 import { AppointmentListComponent } from './component/calendar/appointment-list/appointment-list.component';
 import { AppointmentListItemComponent } from './component/calendar/appointment-list-item/appointment-list-item.component';
 import { CalendarScreenComponent } from './component/calendar/calendar-screen/calendar-screen.component';
-import { AppointmentComponent } from './component/calendar/appointment/appointment.component';
+import { AppointmentScreenComponent } from './component/calendar/appointment-screen/appointment-screen.component';
 import { GradesScreenComponent } from './component/grades/grades-screen/grades-screen.component';
 import { GradeCardComponent } from './component/grades/grade-card/grade-card.component';
 import { GradeCardListComponent } from './component/grades/grade-card-list/grade-card-list.component';
@@ -36,7 +36,7 @@ import { LearnScreenComponent } from './component/flashcards/learn-screen/learn-
     AppointmentListComponent,
     AppointmentListItemComponent,
     CalendarScreenComponent,
-    AppointmentComponent,
+    AppointmentScreenComponent,
     GradesScreenComponent,
     GradeCardComponent,
     GradeCardListComponent,
