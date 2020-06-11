@@ -1,0 +1,13 @@
+mat-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+
+    .text {
+      font-size: 16px;
+    }
+  }
+}

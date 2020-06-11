@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "swep"
+    }
+  },
+  "defaultProject": "swep",
+  "cli": {
+    "analytics": "03d1797b-7f60-47d7-897d-b0ec98722454"
+  }
 }
