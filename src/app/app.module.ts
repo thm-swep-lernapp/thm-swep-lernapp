@@ -27,7 +27,6 @@ import { FlashcardComponent } from './component/flashcards/flashcard/flashcard.c
 import { FlashcardChangeScreenComponent } from './component/flashcards/flashcard-change-screen/flashcard-change-screen.component';
 import { LearnScreenComponent } from './component/flashcards/learn-screen/learn-screen.component';
 import {HttpClientModule} from '@angular/common/http';
-import {ModuleListProvider} from './interface/module-list-provider';
 
 @NgModule({
   declarations: [
