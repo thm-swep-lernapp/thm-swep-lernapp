@@ -26,6 +26,8 @@ import { FlashcardListComponent } from './component/flashcards/flashcard-list/fl
 import { FlashcardComponent } from './component/flashcards/flashcard/flashcard.component';
 import { FlashcardChangeScreenComponent } from './component/flashcards/flashcard-change-screen/flashcard-change-screen.component';
 import { LearnScreenComponent } from './component/flashcards/learn-screen/learn-screen.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ModuleListProvider} from './interface/module-list-provider';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,8 @@ import { LearnScreenComponent } from './component/flashcards/learn-screen/learn-
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
