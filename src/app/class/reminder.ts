@@ -8,9 +8,13 @@ export class Reminder extends PersistableEntity {
   date: number;
 
   static fromAppointment(appointment: Appointment, dueOffset: number) {
-    let reminder = new Reminder();
+    const reminder = new Reminder();
     reminder.appointmentId = appointment.appointmentId;
     reminder.date = appointment.start - dueOffset;
     return reminder;
+  }
+
+  getPrimaryId(): string {
+    return this.reminderId;
   }
 }

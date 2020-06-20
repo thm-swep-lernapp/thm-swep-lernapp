@@ -7,4 +7,8 @@ export class FlashCardBundle extends PersistableEntity{
   moduleId: string;
   name: string;
   flashCards: FlashCard[] = [];
+
+  getPrimaryId(): string {
+    return this.flashCardBundleId;
+  }
 }

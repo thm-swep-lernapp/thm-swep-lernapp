@@ -4,53 +4,48 @@ import {DatabaseService} from './database.service';
 import {HttpClient} from '@angular/common/http';
 import {SettingsService} from './settings.service';
 import {TestType} from '../class/test-type.enum';
+import {BaseCrudService} from './base-crud-service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ModuleService {
+export class ModuleService extends BaseCrudService<Module> {
 
-  public modules: Module[];
-
-  private readonly MODULE_VERSION_KEY: string = "module_version";
-  private readonly DB_KEY: string = "modules";
-  private readonly MODULE_VERSION_URL: string = "assets/module_version.json";
-  private readonly MODULES_URL: string = "assets/modules.json";
+  private static readonly MODULE_VERSION_KEY: string = 'module_version';
+  private static readonly DB_KEY: string = 'modules';
+  private static readonly MODULE_VERSION_URL: string = 'assets/module_version.json';
+  private static readonly MODULES_URL: string = 'assets/modules.json';
 
   constructor(
-    private db: DatabaseService,
+    db: DatabaseService,
     private settings: SettingsService,
     private http: HttpClient
   ) {
-    this.modules = db.read(this.DB_KEY, Module);
+    super(db, Module);
 
-    this.http.get<ModuleVersion>(this.MODULE_VERSION_URL).subscribe(data => {
-      let settingsVersion = this.settings.read(this.MODULE_VERSION_KEY, 0);
+    this.http.get<ModuleVersion>(ModuleService.MODULE_VERSION_URL).subscribe(data => {
+      const settingsVersion = this.settings.read(ModuleService.MODULE_VERSION_KEY, 0);
       if (data.version !== settingsVersion) {
-        this.loadModules();
+        this.loadModules(data.version);
       }
-    })
+    });
   }
 
-  getModuleById(moduleId: string) {
-    return this.modules.find(module => module.moduleId === moduleId);
-  }
-
-  private syncModulesFromFile(fileModules: FileModule[]) {
-    let updatedModules: Module[] = [];
+  private syncModulesFromFile(fileModules: FileModule[], newVersion: number) {
+    const updatedModules: Module[] = [];
 
     fileModules.forEach(fileModule => {
-      let module = new Module();
+      const module = new Module();
       module.moduleId = fileModule.id;
       module.name = fileModule.name;
       module.plannedSemester = fileModule.semester;
       module.creditPoints = fileModule.creditPoints;
 
-      module.description = "";
+      module.description = '';
       for (let a = 0; a < fileModule.content.length; a++) {
         module.description += fileModule.content[a];
         if (a + 1 < fileModule.content.length) {
-          module.description += "\n\n";
+          module.description += '\n\n';
         }
       }
 
@@ -59,24 +54,24 @@ export class ModuleService {
       updatedModules.push(module);
     });
 
-    this.db.sync(this.DB_KEY, updatedModules);
-    this.modules = updatedModules;
+    this.setItems(updatedModules);
+    this.settings.save(ModuleService.MODULE_VERSION_KEY, newVersion);
   }
 
   private static getTestTypeFromFileModuleTestKinds(testKinds: Test[]): TestType {
     if (testKinds === null) { return null; }
     if (testKinds.length === 1) {
-      let kind = testKinds[0];
+      const kind = testKinds[0];
       switch (kind.kind) {
-        case "exam":
+        case 'exam':
           return TestType.TEST;
-        case "practice": case "project": case "special":
+        case 'practice': case 'project': case 'special':
           return TestType.PROJECT;
-        case "paper": case "paper and presentation": case "bachelor thesis":
+        case 'paper': case 'paper and presentation': case 'bachelor thesis':
           return TestType.PAPER;
-        case "seminar":
+        case 'seminar':
           return TestType.OTHER;
-        case "oral exam":
+        case 'oral exam':
           return TestType.ORAL_EXAM;
         default:
           return TestType.OTHER;
@@ -86,10 +81,14 @@ export class ModuleService {
     }
   }
 
-  private loadModules() {
-    this.http.get<FileModule[]>(this.MODULES_URL).subscribe(fileModules => {
-      this.syncModulesFromFile(fileModules);
-    })
+  private loadModules(newVersion: number) {
+    this.http.get<FileModule[]>(ModuleService.MODULES_URL).subscribe(fileModules => {
+      this.syncModulesFromFile(fileModules, newVersion);
+    });
+  }
+
+  protected getDbKey(): string {
+    return ModuleService.DB_KEY;
   }
 }
 

@@ -5,4 +5,8 @@ export class Grade extends PersistableEntity {
   moduleId: string;
   grade: number;
   date: number;
+
+  getPrimaryId(): string {
+    return this.moduleId;
+  }
 }

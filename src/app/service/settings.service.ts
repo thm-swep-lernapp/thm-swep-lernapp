@@ -8,12 +8,12 @@ export class SettingsService {
   constructor() { }
 
   save<T>(key: string, object: T) {
-    localStorage.setItem("swep_" + key, JSON.stringify(object));
+    localStorage.setItem('swep_' + key, JSON.stringify(object));
   }
 
   read<T>(key: string, defaultValue: T): T {
-    let storedValue = localStorage.getItem("swep_" + key);
-    if (storedValue === null) { return defaultValue }
+    const storedValue = localStorage.getItem('swep_' + key);
+    if (storedValue === null) { return defaultValue; }
     return JSON.parse(storedValue);
   }
 }

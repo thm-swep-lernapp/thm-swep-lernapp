@@ -24,15 +24,15 @@ export class BottomnavComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  private isCalendarActive() {
+  isCalendarActive() {
     return this.url.startsWith('/termine');
   }
 
-  private isGradesActive() {
+  isGradesActive() {
     return this.url.startsWith('/leistungen');
   }
 
-  private isDecksActive() {
+  isDecksActive() {
     return this.url.startsWith('/decks');
   }
 }

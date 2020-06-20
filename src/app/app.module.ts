@@ -27,6 +27,17 @@ import { FlashcardComponent } from './component/flashcards/flashcard/flashcard.c
 import { FlashcardChangeScreenComponent } from './component/flashcards/flashcard-change-screen/flashcard-change-screen.component';
 import { LearnScreenComponent } from './component/flashcards/learn-screen/learn-screen.component';
 import {HttpClientModule} from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
+import {ModuleService} from './service/module.service';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {ReactiveFormsModule} from '@angular/forms';
+import {OverlayModule} from '@angular/cdk/overlay';
+import { ModulePickerComponent } from './component/module-picker/module-picker.component';
+import {MatSliderModule} from '@angular/material/slider';
+import { EmptyStateComponent } from './component/empty-state/empty-state.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -50,7 +61,9 @@ import {HttpClientModule} from '@angular/common/http';
     FlashcardListComponent,
     FlashcardComponent,
     FlashcardChangeScreenComponent,
-    LearnScreenComponent
+    LearnScreenComponent,
+    ModulePickerComponent,
+    EmptyStateComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +71,15 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    OverlayModule,
+    ReactiveFormsModule,
+    MatSliderModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

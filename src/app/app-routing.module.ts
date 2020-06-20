@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'decks/:flashcardBundleId/karte/:flashcardId', component: FlashcardChangeScreenComponent },
   { path: 'decks/:flashcardBundleId/lernen', component: LearnScreenComponent },
   { path: 'leistungen', component: GradesScreenComponent },
-  { path: 'leistungen/neu', component: GradeChangeScreenComponent },
+  { path: 'leistungen/:gradeId', component: GradeChangeScreenComponent },
 ];
 
 @NgModule({

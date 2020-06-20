@@ -13,6 +13,10 @@ export class Appointment extends PersistableEntity {
   allDay: boolean;
   interval: number;
   moduleId: string;
+
+  getPrimaryId(): string {
+    return this.appointmentId;
+  }
 }
 
 export enum AppointmentType {

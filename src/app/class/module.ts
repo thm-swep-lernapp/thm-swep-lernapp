@@ -9,4 +9,25 @@ export class Module extends PersistableEntity {
   creditPoints: number;
   plannedSemester: number;
   testType: TestType;
+
+  getPrimaryId(): string {
+    return this.moduleId;
+  }
+
+  getReadableTestType(): string {
+    switch (this.testType) {
+      case TestType.ORAL_EXAM:
+        return 'Mündliche Prüfung';
+      case TestType.PROJECT:
+        return 'Projekt';
+      case TestType.PAPER:
+        return 'Hausarbeit';
+      case TestType.OTHER:
+        return 'Spezielle Prüfung';
+      case TestType.MIXED:
+        return 'Gemischt';
+      case TestType.TEST:
+        return 'Klausur';
+    }
+  }
 }

@@ -22,3 +22,43 @@ a.mat-menu-item > mat-icon {
   height: 100%;
   width: 100%;
 }
+
+.subheader {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .6);
+  margin: 8px 16px;
+}
+
+.divider {
+  height: 1px;
+  min-height: 1px;
+  background: rgba(0, 0, 0, .15);
+  min-width: 100%;
+}
+
+.lower-right-fab {
+  position: absolute !important;
+  right: 8px;
+  bottom: 8px;
+}
+
+mat-form-field {
+  mat-icon {
+    color: rgba(0, 0, 0, .6);
+    margin-right: 8px;
+  }
+}
+
+.mat-slider-thumb-label {
+  transform: rotate(45deg) !important;
+  border-radius: 50% 50% 0 !important;
+}
+
+.mat-slider-thumb {
+  transform: scale(0) !important;
+}
+
+.mat-slider-thumb-label-text {
+  opacity: 1 !important;
+}

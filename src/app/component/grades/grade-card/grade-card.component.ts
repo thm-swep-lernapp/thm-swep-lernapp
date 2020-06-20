@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Grade} from '../../../class/grade';
+import {ModuleService} from '../../../service/module.service';
+import {GradeWrapper} from '../../../class/grade-wrapper';
+import {TestType} from '../../../class/test-type.enum';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-grade-card',
@@ -7,9 +12,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GradeCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() gradeWithModule: GradeWrapper = new GradeWrapper();
 
-  ngOnInit(): void {
+  constructor(
+    private router: Router
+  ) {}
+
+  ngOnInit(): void {}
+
+  getModuleName(): string {
+    return this.gradeWithModule.module ? this.gradeWithModule.module.name : 'Kein Modul';
   }
 
+  getModuleCreditPoints(): string {
+    return this.gradeWithModule.module ? this.gradeWithModule.module.creditPoints + 'CP' : '?CP';
+  }
+
+  getReadableTestType(): string {
+    return this.gradeWithModule.module ? this.gradeWithModule.module.getReadableTestType() : 'Unbekannt';
+  }
+
+  editGrade(grade: Grade) {
+    this.router.navigate(['/leistungen', grade.moduleId]);
+  }
 }
