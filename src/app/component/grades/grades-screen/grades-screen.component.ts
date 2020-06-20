@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppbarService} from '../../../service/appbar.service';
 
 @Component({
   selector: 'app-grades',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GradesScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private appbar: AppbarService
+  ) { }
 
   ngOnInit(): void {
+    this.appbar.setTitle('Leistungen');
   }
 
 }
