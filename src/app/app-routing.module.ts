@@ -12,7 +12,8 @@ import {GradeChangeScreenComponent} from './component/grades/grade-change-screen
 
 
 const routes: Routes = [
-  { path: '', component: CalendarScreenComponent },
+  { path: '', redirectTo: 'termine', pathMatch: 'full' },
+  { path: 'termine', component: CalendarScreenComponent },
   { path: 'termine/neu', component: AppointmentScreenComponent },
   { path: 'termine/:appointmentId', component: AppointmentScreenComponent },
   { path: 'decks', component: FlashcardBundleListScreenComponent },
@@ -22,7 +23,7 @@ const routes: Routes = [
   { path: 'decks/:flashcardBundleId/karte/:flashcardId', component: FlashcardChangeScreenComponent },
   { path: 'decks/:flashcardBundleId/lernen', component: LearnScreenComponent },
   { path: 'leistungen', component: GradesScreenComponent },
-  { path: 'leistungen/neu', component: GradeChangeScreenComponent },
+  { path: 'leistungen/:gradeId', component: GradeChangeScreenComponent },
 ];
 
 @NgModule({

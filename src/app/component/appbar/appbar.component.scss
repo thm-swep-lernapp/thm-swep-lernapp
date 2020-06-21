@@ -1,0 +1,32 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .navigation-items {
+    display: flex;
+
+    &.left {
+      justify-content: left;
+    }
+
+    &.right {
+      justify-content: right;
+    }
+
+    .navigation-item {
+      display: flex;
+      align-items: center;
+      mat-icon {
+
+      }
+    }
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

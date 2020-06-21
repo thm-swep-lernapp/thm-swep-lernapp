@@ -1,3 +1,13 @@
 <mat-toolbar color="primary">
-  <span>{{ title }}</span>
+  <div class="navigation-items left">
+    <div class="navigation-item" (click)="item.clickHandler()" *ngFor="let item of leftNavigationItems">
+      <mat-icon svgIcon="{{ item.icon }}"></mat-icon>
+    </div>
+  </div>
+  <span class="title">{{ title }}</span>
+  <div class="navigation-items right">
+    <div class="navigation-item" (click)="item.clickHandler()" *ngFor="let item of rightNavigationItems">
+      <mat-icon svgIcon="{{ item.icon }}"></mat-icon>
+    </div>
+  </div>
 </mat-toolbar>

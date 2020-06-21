@@ -1,1 +1,14 @@
-<p>grade-card works!</p>
+<mat-card (click)="editGrade(gradeWithModule.grade)">
+  <span class="title">{{ getModuleName() }}</span>
+  <span class="test-type">Prüfungsleistung: {{ getReadableTestType() }}</span>
+  <div class="grade-values-container">
+    <div class="grade-value">
+      <span class="value">{{ getModuleCreditPoints() }}</span>
+      <mat-icon svgIcon="trophy-variant"></mat-icon>
+    </div>
+    <div class="grade-value reversed">
+      <span class="value">{{ gradeWithModule.grade.grade }}%</span>
+      <mat-icon svgIcon="star"></mat-icon>
+    </div>
+  </div>
+</mat-card>
