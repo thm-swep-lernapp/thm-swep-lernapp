@@ -38,6 +38,7 @@ import { ModulePickerComponent } from './component/module-picker/module-picker.c
 import {MatSliderModule} from '@angular/material/slider';
 import { EmptyStateComponent } from './component/empty-state/empty-state.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     OverlayModule,
     ReactiveFormsModule,
     MatSliderModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

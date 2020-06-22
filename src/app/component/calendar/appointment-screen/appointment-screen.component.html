@@ -1,1 +1,50 @@
-<p>appointment works!</p>
+<form [formGroup]="appointmentForm" (ngSubmit)="onSubmit(appointmentForm.value)">
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="text-short"></mat-icon>
+    <mat-label>Titel</mat-label>
+    <input type="text" matInput placeholder="Titel">
+
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
+    <mat-label>Datum</mat-label>
+    <input type="date" matInput placeholder="Datum">
+
+  </mat-form-field>
+
+  <div>Optional</div>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="sync"></mat-icon>
+    <mat-label>Intervall</mat-label>
+    <input type="number" matInput placeholder="Intervall">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="text-subject"></mat-icon>
+    <mat-label>Beschreibung</mat-label>
+    <input type="text" matInput placeholder="Beschreibung">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="map-marker"></mat-icon>
+    <mat-label>Ort</mat-label>
+    <input type="text" matInput placeholder="Ort">
+  </mat-form-field>
+
+  <app-module-picker [control]="moduleControl"></app-module-picker>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="format-list-bulleted-type"></mat-icon>
+    <mat-label>Terminart</mat-label>
+    <mat-select>
+      <mat-option value="TIMETABLE">Stundenplan</mat-option>
+      <mat-option value="LEARNING_PLAN">Lernen</mat-option>
+      <mat-option value="FREE_TIME">Freizeit</mat-option>
+      <mat-option value="EXAM">Exam</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</form>
