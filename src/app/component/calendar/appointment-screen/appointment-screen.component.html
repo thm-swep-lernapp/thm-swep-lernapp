@@ -3,14 +3,14 @@
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="text-short"></mat-icon>
     <mat-label>Titel</mat-label>
-    <input type="text" matInput placeholder="Titel">
+    <input type="text" matInput placeholder="Titel" formControlName="Titel">
 
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
     <mat-label>Datum</mat-label>
-    <input type="date" matInput placeholder="Datum">
+    <input type="date" matInput placeholder="Datum" formControlName="Datum">
 
   </mat-form-field>
 
@@ -48,3 +48,7 @@
   </mat-form-field>
 
 </form>
+
+<button class="lower-right-fab" mat-fab color="accent" (click)="save()">
+  <mat-icon svgIcon="check"></mat-icon>
+</button>

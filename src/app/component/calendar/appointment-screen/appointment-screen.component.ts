@@ -46,6 +46,14 @@ export class AppointmentScreenComponent implements OnInit {
         this.isCreation = false;
       }
     });
+    this.appointmentForm = this.formBuilder.group({
+      Titel: '',
+      Datum: '',
+      Intervall: '',
+      Beschreibung: '',
+      Ort: '',
+      Terminart: '',
+    });
   }
 
 
@@ -60,14 +68,25 @@ export class AppointmentScreenComponent implements OnInit {
     ));
   }
 
-  onSubmit(appointment) {
-
+  onSubmit(appointmentForm){
+    console.warn(appointmentForm);
   }
+
   save() {
+    this.onSubmit(this.appointmentForm);
     if (this.isCreation && !this.moduleControl.valid) {
       this.snackbar.open('Bitte ein Modul angeben.', null, {duration: 2000});
       return;
     }
+
+    if (this.isCreation) {
+      this.appointment.moduleId = this.moduleControl.value.moduleId;
+      this.appointment.name = this.appointmentForm.name;
+      this.appointment.start = this.appointmentForm.Datum;
+      this.appointments.addItem(this.appointment);
+    }
+
+    this.close();
   }
 
   isModule(control: FormControl): ValidationErrors {
@@ -81,6 +100,7 @@ export class AppointmentScreenComponent implements OnInit {
     return this.moduleControl.value && this.moduleControl.value instanceof Module;
   }
   private close() {
+    console.warn(this.appointment);
     this.router.navigate(['/termine'], { replaceUrl: true });
   }
 }
