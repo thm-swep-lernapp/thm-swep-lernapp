@@ -1,9 +1,9 @@
 import {PersistableEntity} from './persistable-entity';
-import { uuid } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import {Appointment} from './appointment';
 
 export class Reminder extends PersistableEntity {
-  reminderId: string = uuid.v4();
+  reminderId: string = uuidv4();
   appointmentId: string;
   date: number;
 
