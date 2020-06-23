@@ -14,7 +14,6 @@ import {GradeChangeScreenComponent} from './component/grades/grade-change-screen
 const routes: Routes = [
   { path: '', redirectTo: 'termine', pathMatch: 'full' },
   { path: 'termine', component: CalendarScreenComponent },
-  { path: 'termine/neu', component: AppointmentScreenComponent },
   { path: 'termine/:appointmentId', component: AppointmentScreenComponent },
   { path: 'decks', component: FlashcardBundleListScreenComponent },
   { path: 'decks/neu', component: FlashcardBundleChangeScreenComponent },

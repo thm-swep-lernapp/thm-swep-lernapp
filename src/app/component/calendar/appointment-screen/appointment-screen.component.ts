@@ -11,8 +11,6 @@ import {AppbarService} from '../../../service/appbar.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
-
-
 @Component({
   selector: 'app-appointment',
   templateUrl: './appointment-screen.component.html',
@@ -83,6 +81,9 @@ export class AppointmentScreenComponent implements OnInit {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
       this.appointment.name = this.appointmentForm.value.name;
       this.appointment.start = this.appointmentForm.value.Datum;
+      this.appointment.description = this.appointmentForm.value.Beschreibung;
+      this.appointment.place = this.appointmentForm.Ort;
+      console.warn(this.appointment);
       this.appointments.addItem(this.appointment);
     }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AppbarService} from '../../../service/appbar.service';
+import {AppointmentService} from '../../../service/appointment.service';
 
 @Component({
   selector: 'app-calendar',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalendarScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private appbar: AppbarService,
+    private appointmentService: AppointmentService,
+  ) { }
 
   ngOnInit(): void {
+    this.appbar.setTitle('Kalendar');
+
+    const appointmentsFromDb = this.appointmentService.getItems();
+
   }
 
 }
