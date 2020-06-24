@@ -4,9 +4,9 @@ import {Router} from '@angular/router';
 import {Appointment} from '../../../class/appointment';
 
 @Component({
-  selector: 'app-appointment-list',
-  templateUrl: './appointment-list.component.html',
-  styleUrls: ['./appointment-list.component.scss']
+  selector: 'app-appointment-list-item',
+  templateUrl: './appointment-list-item.component.html',
+  styleUrls: ['./appointment-list-item.component.scss']
 })
 export class AppointmentListItemComponent implements OnInit {
 
