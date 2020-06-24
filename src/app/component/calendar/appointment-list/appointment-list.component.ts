@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Appointment} from '../../../class/appointment';
+import {AppointmentService} from '../../../service/appointment.service';
 
 
 @Component({
@@ -9,10 +10,14 @@ import {Appointment} from '../../../class/appointment';
 })
 export class AppointmentListComponent implements OnInit {
 
-  @Input() Appointment: Appointment[];
-  constructor() { }
+  Appointments;
+  constructor(
+    private appointmentService: AppointmentService,
+  ) { }
+
 
   ngOnInit(): void {
+    this.Appointments = this.appointmentService.getItems;
   }
 
 }

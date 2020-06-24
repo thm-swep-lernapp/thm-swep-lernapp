@@ -10,7 +10,7 @@ import {Appointment} from '../../../class/appointment';
 })
 export class AppointmentListItemComponent implements OnInit {
 
-  @Input() AppointmentComp: Appointment = new Appointment();
+  Appointment;
   constructor(
     private router: Router
   ) {
@@ -21,6 +21,6 @@ export class AppointmentListItemComponent implements OnInit {
   }
 
   getAppointmentName(): string {
-    return this.AppointmentComp.Appointment ? this.AppointmentComp.Appointment.name : 'Kein Termin';
+    return this.Appointment.name;
   }
 }
