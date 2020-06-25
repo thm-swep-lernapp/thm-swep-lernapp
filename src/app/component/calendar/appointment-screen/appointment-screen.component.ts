@@ -79,7 +79,7 @@ export class AppointmentScreenComponent implements OnInit {
 
     if (this.isCreation) {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
-      this.appointment.name = this.appointmentForm.value.name;
+      this.appointment.name = this.appointmentForm.value.Titel;
       this.appointment.start = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.Ort;
