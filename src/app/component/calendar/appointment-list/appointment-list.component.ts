@@ -10,14 +10,14 @@ import {AppointmentService} from '../../../service/appointment.service';
 })
 export class AppointmentListComponent implements OnInit {
 
-  Appointments;
+  Appointments: Appointment[];
   constructor(
     private appointmentService: AppointmentService,
   ) { }
 
 
   ngOnInit(): void {
-    this.Appointments = this.appointmentService.getItems;
+    this.Appointments = this.appointmentService.getItems();
   }
 
 }

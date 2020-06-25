@@ -1,0 +1,36 @@
+mat-card {
+  margin: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .test-type {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .6);
+  }
+
+  .grade-values-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+
+    .grade-value {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+
+      &.reversed {
+        flex-direction: row-reverse;
+      }
+
+      mat-icon {
+        margin: 0 4px;
+      }
+    }
+  }
+}
