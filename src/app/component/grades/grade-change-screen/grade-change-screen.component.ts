@@ -33,14 +33,14 @@ export class GradeChangeScreenComponent implements OnInit {
     route.paramMap.subscribe(params => {
       const id = params.get('gradeId');
       if (id === 'neu') {
-        this.isCreation = true;
-        this.grade = new Grade();
-      } else {
-        this.isCreation = false;
-        this.grade = this.grades.getItemById(id);
-        this.moduleControl.setValue(this.modules.getItemById(this.grade.moduleId));
-        this.moduleControl.disable();
-        this.gradeControl.setValue(this.grade.grade);
+          this.isCreation = true;
+          this.grade = new Grade();
+        } else {
+          this.isCreation = false;
+          this.grade = this.grades.getItemById(id);
+          this.moduleControl.setValue(this.modules.getItemById(this.grade.moduleId));
+          this.moduleControl.disable();
+          this.gradeControl.setValue(this.grade.grade);
       }
     });
   }

@@ -42,6 +42,10 @@ export class AppointmentScreenComponent implements OnInit {
         this.appointment = new Appointment();
       } else {
         this.isCreation = false;
+        this.appointment = this.appointments.getItemById(id);
+        console.log(this.appointment);
+        this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
+        this.appointmentForm.controls[0].patchValue({Titel: this.appointment.name} );
       }
     });
     this.appointmentForm = this.formBuilder.group({

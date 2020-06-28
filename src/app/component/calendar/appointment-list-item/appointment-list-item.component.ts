@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {AppointmentService} from '../../../service/appointment.service';
 import {Router} from '@angular/router';
 import {Appointment} from '../../../class/appointment';
+import {Grade} from '../../../class/grade';
 
 @Component({
   selector: 'app-appointment-list-item',
@@ -21,7 +22,12 @@ export class AppointmentListItemComponent implements OnInit {
   }
 
   getAppointmentName(): string {
-    console.warn(this.appoin.name);
     return this.appoin.name;
+  }
+
+
+  editAppointment(appointment: Appointment) {
+    console.warn(appointment);
+    this.router.navigate(['/termine', appointment.appointmentId]);
   }
 }
