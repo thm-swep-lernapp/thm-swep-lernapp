@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FlashcardService} from '../../../service/flashcard.service';
+import {FormControl, Validators} from '@angular/forms';
+
 
 @Component({
   selector: 'app-flashcard-bundle-list-screen',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlashcardBundleListScreenComponent implements OnInit {
 
-  constructor() { }
+  cardDecks;
+
+  constructor(
+    private flashcardService: FlashcardService
+  ) { }
 
   ngOnInit(): void {
+    this.cardDecks = this.flashcardService.flashcardBundles;
   }
 
 }

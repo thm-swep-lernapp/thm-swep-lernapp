@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {FlashcardService} from '../../../service/flashcard.service';
+import {ActivatedRoute} from '@angular/router';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {FormControl, ValidationErrors, Validators} from '@angular/forms';
+import {Module} from '../../../class/module';
 
 @Component({
   selector: 'app-flashcard-bundle-change-screen',
@@ -7,9 +13,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlashcardBundleChangeScreenComponent implements OnInit {
 
-  constructor() { }
+  moduleControl = new FormControl(null, [this.isModule] );
+  titleControl = new FormControl('', [Validators.required]);
+
+  cardDecks;
+
+  constructor(
+    private flashcardService: FlashcardService,
+    public route: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+
+
+  }
+
+  isModule(control: FormControl): ValidationErrors {
+    return control.value === null || control.value instanceof Module ? null : { isModule: false };
   }
 
 }
