@@ -8,8 +8,8 @@ import { Input } from '@angular/core';
 })
 export class FlashcardBundleCardComponent implements OnInit {
 
-  @Input() titel;
-  @Input() anzahl;
+  @Input() title;
+  @Input() count;
 
   constructor() { }
 
