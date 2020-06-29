@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, NgModule, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, ValidationErrors, Validators} from '@angular/forms';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
 import {MatDatepicker} from '@angular/material/datepicker';
@@ -10,6 +10,12 @@ import {AppointmentService} from '../../../service/appointment.service';
 import {AppbarService} from '../../../service/appbar.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+
+@NgModule({
+  imports: [NgxMaterialTimepickerModule]
+})
+export class MyModule {}
 
 @Component({
   selector: 'app-appointment',
@@ -31,6 +37,7 @@ export class AppointmentScreenComponent implements OnInit {
     Beschreibung: new FormControl(''),
     Ort: new FormControl(''),
     Terminart: new FormControl(''),
+    StartZeit: new FormControl('')
   });
 
   constructor(
@@ -53,11 +60,12 @@ export class AppointmentScreenComponent implements OnInit {
         console.log(this.appointment);
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
         this.appointmentForm.patchValue({Titel: this.appointment.name,
-          Datum: this.appointment.start,
+          Datum: this.appointment.date,
           Intervall: this.appointment.interval,
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
-          Terminart: this.appointment.type});
+          Terminart: this.appointment.type,
+          StartZeit: this.appointment.start});
         console.log(this.appointmentForm.value.Titel);
       }
     });
@@ -90,17 +98,19 @@ export class AppointmentScreenComponent implements OnInit {
     if (this.isCreation) {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
       this.appointment.name = this.appointmentForm.value.Titel;
-      this.appointment.start = this.appointmentForm.value.Datum;
+      this.appointment.date = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
+      this.appointment.start = this.appointmentForm.value.StartZeit;
       console.warn(this.appointment);
       this.appointments.addItem(this.appointment);
     }else {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
       this.appointment.name = this.appointmentForm.value.Titel;
-      this.appointment.start = this.appointmentForm.value.Datum;
+      this.appointment.date = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
+      this.appointment.start = this.appointmentForm.value.StartZeit;
       this.appointments.updateItem(this.appointment);
     }
 

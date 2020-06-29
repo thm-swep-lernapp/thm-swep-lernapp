@@ -8,6 +8,7 @@ export class Appointment extends PersistableEntity {
   name: string;
   description: string;
   place: string;
+  date: number;
   start: number;
   end: number;
   allDay: boolean;

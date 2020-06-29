@@ -39,6 +39,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import { EmptyStateComponent } from './component/empty-state/empty-state.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import {MatSelectModule} from '@angular/material/select';
     ReactiveFormsModule,
     MatSliderModule,
     MatSnackBarModule,
-    MatSelectModule
+    MatSelectModule,
+    NgxMaterialTimepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
