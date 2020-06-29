@@ -21,10 +21,17 @@ export class AppointmentScreenComponent implements OnInit {
 
   moduleControl = new FormControl(null, [Validators.required, this.isModule]);
 
-  appointmentForm;
   appointment: Appointment;
 
   isCreation = false;
+  appointmentForm = this.formBuilder.group({
+    Titel: new FormControl(''),
+    Datum: new FormControl(''),
+    Intervall: new FormControl(''),
+    Beschreibung: new FormControl(''),
+    Ort: new FormControl(''),
+    Terminart: new FormControl(''),
+  });
 
   constructor(
     private appbar: AppbarService,
@@ -45,17 +52,16 @@ export class AppointmentScreenComponent implements OnInit {
         this.appointment = this.appointments.getItemById(id);
         console.log(this.appointment);
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
-        this.appointmentForm.controls[0].patchValue({Titel: this.appointment.name} );
+        this.appointmentForm.patchValue({Titel: this.appointment.name,
+          Datum: this.appointment.start,
+          Intervall: this.appointment.interval,
+          Beschreibung: this.appointment.description,
+          Ort: this.appointment.place,
+          Terminart: this.appointment.type});
+        console.log(this.appointmentForm.value.Titel);
       }
     });
-    this.appointmentForm = this.formBuilder.group({
-      Titel: '',
-      Datum: '',
-      Intervall: '',
-      Beschreibung: '',
-      Ort: '',
-      Terminart: '',
-    });
+
   }
 
 
@@ -86,9 +92,16 @@ export class AppointmentScreenComponent implements OnInit {
       this.appointment.name = this.appointmentForm.value.Titel;
       this.appointment.start = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
-      this.appointment.place = this.appointmentForm.Ort;
+      this.appointment.place = this.appointmentForm.value.Ort;
       console.warn(this.appointment);
       this.appointments.addItem(this.appointment);
+    }else {
+      this.appointment.moduleId = this.moduleControl.value.moduleId;
+      this.appointment.name = this.appointmentForm.value.Titel;
+      this.appointment.start = this.appointmentForm.value.Datum;
+      this.appointment.description = this.appointmentForm.value.Beschreibung;
+      this.appointment.place = this.appointmentForm.value.Ort;
+      this.appointments.updateItem(this.appointment);
     }
 
     this.close();
