@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FlashcardService} from '../../../service/flashcard.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {FormControl, ValidationErrors, Validators} from '@angular/forms';
 import {Module} from '../../../class/module';
 
@@ -18,7 +18,8 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
 
   constructor(
     private flashcardService: FlashcardService,
-    public route: ActivatedRoute,
+    private route: ActivatedRoute,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -32,5 +33,13 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
 
   save() {
 
+    this.flashcardService.createFlashcardBundle(this.titleControl.value, this.moduleControl.value);
+
+    this.close();
+
+  }
+
+  private close() {
+    this.router.navigate(['/decks'], { replaceUrl: true });
   }
 }

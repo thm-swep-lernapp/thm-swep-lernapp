@@ -8,7 +8,7 @@
   <div class="optional">Optional</div>
   <app-module-picker [control]="moduleControl" ></app-module-picker>
 
-  <button class="lower-right-fab" mat-fab color="accent" [disabled]="!moduleControl.valid" (click)="save()">
+  <button class="lower-right-fab" mat-fab color="accent" [disabled]="!moduleControl.valid || titleControl.value.trim() == ''" (click)="save()">
     <mat-icon svgIcon="check"></mat-icon>
   </button>
 
