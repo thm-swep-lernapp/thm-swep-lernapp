@@ -19,6 +19,10 @@ export class FlashcardService {
     this.flashcardBundles = this.db.read(FlashcardService.DB_KEY, FlashCardBundle);
   }
 
+  getFlashCardBundleById(id: string): FlashCardBundle {
+    return this.flashcardBundles.find(item => item.getPrimaryId() === id);
+  }
+
   createFlashcardBundle(name: string, linkedModule: Module) {
     const bundle = new FlashCardBundle();
 
@@ -35,6 +39,13 @@ export class FlashcardService {
     const index = this.flashcardBundles.findIndex(bundle => bundle.flashCardBundleId === flashcardBundle.flashCardBundleId);
     if (index === -1) { return false; }
     this.flashcardBundles.splice(index, 1);
+    this.db.sync(FlashcardService.DB_KEY, this.flashcardBundles);
+  }
+
+  updateFlashcardBundle(flashcardBundle: FlashCardBundle): boolean {
+    const index = this.flashcardBundles.findIndex(bundle => bundle.flashCardBundleId === flashcardBundle.flashCardBundleId);
+    if (index === -1) { return false; }
+    this.flashcardBundles[index] = flashcardBundle;
     this.db.sync(FlashcardService.DB_KEY, this.flashcardBundles);
   }
 
