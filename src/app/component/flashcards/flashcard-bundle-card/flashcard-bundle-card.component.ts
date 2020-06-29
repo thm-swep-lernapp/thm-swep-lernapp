@@ -8,7 +8,7 @@ import { Input } from '@angular/core';
 })
 export class FlashcardBundleCardComponent implements OnInit {
 
-  @Input()titel;
+  @Input() titel;
   @Input() anzahl;
 
   constructor() { }
