@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-flashcard-bundle-card',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flashcard-bundle-card.component.scss']
 })
 export class FlashcardBundleCardComponent implements OnInit {
+
+  @Input()titel;
+  @Input() anzahl;
 
   constructor() { }
 
