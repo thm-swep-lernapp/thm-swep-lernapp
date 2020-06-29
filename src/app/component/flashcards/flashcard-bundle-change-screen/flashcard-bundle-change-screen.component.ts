@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FlashcardService} from '../../../service/flashcard.service';
 import {ActivatedRoute} from '@angular/router';
-import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
 import {FormControl, ValidationErrors, Validators} from '@angular/forms';
 import {Module} from '../../../class/module';
 
@@ -32,4 +30,7 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
     return control.value === null || control.value instanceof Module ? null : { isModule: false };
   }
 
+  save() {
+
+  }
 }
