@@ -24,10 +24,12 @@ export class AppointmentListItemComponent implements OnInit {
   getAppointmentName(): string {
     return this.appoin.name;
   }
+  getAppointmentTime(): string {
+    return this.appoin.start.toString()+' - '+this.appoin.end.toString()  ;
+  }
 
 
   editAppointment(appointment: Appointment) {
-    console.warn(appointment);
     this.router.navigate(['/termine', appointment.appointmentId]);
   }
 }

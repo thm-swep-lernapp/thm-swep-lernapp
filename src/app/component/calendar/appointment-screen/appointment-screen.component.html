@@ -15,11 +15,18 @@
 
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
-    <mat-label>Zeit</mat-label>
-    <input [ngxTimepicker]="fullTime" matInput formControlName="StartZeit" [format]="24">
-    <ngx-material-timepicker #fullTime  ></ngx-material-timepicker>
+    <mat-label>Startzeit</mat-label>
+    <input [ngxTimepicker]="min" matInput formControlName="StartZeit" [format]="24">
+    <ngx-material-timepicker #min  ></ngx-material-timepicker>
   </mat-form-field>
 
+
+  <mat-form-field appearance="outline" >
+    <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
+    <mat-label>Endzeit</mat-label>
+    <input [ngxTimepicker]="max" matInput formControlName="EndZeit" [format]="24">
+    <ngx-material-timepicker #max  ></ngx-material-timepicker>
+  </mat-form-field>
 
 
   <div>Optional</div>

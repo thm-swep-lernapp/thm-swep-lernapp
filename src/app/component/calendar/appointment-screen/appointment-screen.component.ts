@@ -1,5 +1,5 @@
 import {Component, Input, NgModule, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, ValidationErrors, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, ValidationErrors, Validators, AbstractControl} from '@angular/forms';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
 import {MatDatepicker} from '@angular/material/datepicker';
 import {NavigationItem} from '../../../class/navigation-item';
@@ -11,6 +11,7 @@ import {AppbarService} from '../../../service/appbar.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import {min} from 'rxjs/operators';
 
 @NgModule({
   imports: [NgxMaterialTimepickerModule]
@@ -29,6 +30,8 @@ export class AppointmentScreenComponent implements OnInit {
 
   appointment: Appointment;
 
+  timeIsWrong = true;
+
   isCreation = false;
   appointmentForm = this.formBuilder.group({
     Titel: new FormControl(''),
@@ -37,7 +40,8 @@ export class AppointmentScreenComponent implements OnInit {
     Beschreibung: new FormControl(''),
     Ort: new FormControl(''),
     Terminart: new FormControl(''),
-    StartZeit: new FormControl('')
+    StartZeit: new FormControl(''),
+    EndZeit: new FormControl({value: '', disabled: true})
   });
 
   constructor(
@@ -48,6 +52,7 @@ export class AppointmentScreenComponent implements OnInit {
     private modules: ModuleService,
     private appointments: AppointmentService,
     private formBuilder: FormBuilder,
+    private snackBar: MatSnackBar
   ) {
     route.paramMap.subscribe(params => {
       const id = params.get('appointmentId');
@@ -57,6 +62,7 @@ export class AppointmentScreenComponent implements OnInit {
       } else {
         this.isCreation = false;
         this.appointment = this.appointments.getItemById(id);
+        this.appointmentForm.get('EndZeit').enable();
         console.log(this.appointment);
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
         this.appointmentForm.patchValue({Titel: this.appointment.name,
@@ -65,11 +71,24 @@ export class AppointmentScreenComponent implements OnInit {
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
           Terminart: this.appointment.type,
-          StartZeit: this.appointment.start});
+          StartZeit: this.appointment.start,
+          EndZeit: this.appointment.end});
         console.log(this.appointmentForm.value.Titel);
       }
     });
 
+    this.appointmentForm.get('EndZeit').valueChanges.subscribe(selectedValue => {
+      if (this.appointmentForm.get('EndZeit').value <=  this.appointmentForm.get('StartZeit').value){
+        this.appointmentForm.patchValue({EndZeit : null});
+        this.snackBar.open('Bitte gebe eine gültige Endzeit ein', '',{
+          duration: 4000,
+        });
+      }
+    });
+
+    this.appointmentForm.get('StartZeit').valueChanges.subscribe(selectedValue => {
+      this.appointmentForm.get('EndZeit').enable();
+    });
   }
 
 
@@ -102,6 +121,7 @@ export class AppointmentScreenComponent implements OnInit {
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
       this.appointment.start = this.appointmentForm.value.StartZeit;
+      this.appointment.end = this.appointmentForm.value.EndZeit;
       console.warn(this.appointment);
       this.appointments.addItem(this.appointment);
     }else {
@@ -111,11 +131,14 @@ export class AppointmentScreenComponent implements OnInit {
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
       this.appointment.start = this.appointmentForm.value.StartZeit;
+      this.appointment.end = this.appointmentForm.value.EndZeit;
       this.appointments.updateItem(this.appointment);
     }
 
     this.close();
   }
+
+
 
   isModule(control: FormControl): ValidationErrors {
     return control.value instanceof Module ? null : { isModule: false };
