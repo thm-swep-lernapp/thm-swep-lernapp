@@ -80,7 +80,7 @@ export class AppointmentScreenComponent implements OnInit {
     this.appointmentForm.get('EndZeit').valueChanges.subscribe(selectedValue => {
       if (this.appointmentForm.get('EndZeit').value <=  this.appointmentForm.get('StartZeit').value){
         this.appointmentForm.patchValue({EndZeit : null});
-        this.snackBar.open('Bitte gebe eine gültige Endzeit ein', '',{
+        this.snackBar.open('Bitte gebe eine gültige Endzeit ein', '', {
           duration: 4000,
         });
       }
