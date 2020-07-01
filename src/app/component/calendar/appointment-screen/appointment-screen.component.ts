@@ -18,6 +18,16 @@ import {min} from 'rxjs/operators';
 })
 export class MyModule {}
 
+enum AppointmentType {
+  TIMETABLE,
+  LEARNING_PLAN,
+  FREE_TIME,
+  EXAM
+}
+class AppointmentTypeClass{
+  constructor( public text: string, public type: AppointmentType) {}
+}
+
 @Component({
   selector: 'app-appointment',
   templateUrl: './appointment-screen.component.html',
@@ -29,8 +39,12 @@ export class AppointmentScreenComponent implements OnInit {
   moduleControl = new FormControl(null, [Validators.required, this.isModule]);
 
   appointment: Appointment;
+  AppointmentTypes;
+  ApType: AppointmentType;
+  public AppointmentTypeClass: AppointmentTypeClass;
 
-  timeIsWrong = true;
+  
+
 
   isCreation = false;
   appointmentForm = this.formBuilder.group({
@@ -40,6 +54,7 @@ export class AppointmentScreenComponent implements OnInit {
     Beschreibung: new FormControl(''),
     Ort: new FormControl(''),
     Terminart: new FormControl(''),
+    Enum: new FormControl(''),
     StartZeit: new FormControl(''),
     EndZeit: new FormControl({value: '', disabled: true})
   });
@@ -53,6 +68,7 @@ export class AppointmentScreenComponent implements OnInit {
     private appointments: AppointmentService,
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar
+
   ) {
     route.paramMap.subscribe(params => {
       const id = params.get('appointmentId');
@@ -65,15 +81,16 @@ export class AppointmentScreenComponent implements OnInit {
         this.appointmentForm.get('EndZeit').enable();
         console.log(this.appointment);
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
-        this.appointmentForm.patchValue({Titel: this.appointment.name,
+        this.appointmentForm.patchValue({
+          Titel: this.appointment.name,
           Datum: this.appointment.date,
           Intervall: this.appointment.interval,
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
+          Enum: this.appointment.type,
           Terminart: this.appointment.type,
           StartZeit: this.appointment.start,
           EndZeit: this.appointment.end});
-        console.log(this.appointmentForm.value.Titel);
       }
     });
 
@@ -85,6 +102,8 @@ export class AppointmentScreenComponent implements OnInit {
         });
       }
     });
+
+
 
     this.appointmentForm.get('StartZeit').valueChanges.subscribe(selectedValue => {
       this.appointmentForm.get('EndZeit').enable();
@@ -101,6 +120,18 @@ export class AppointmentScreenComponent implements OnInit {
         this.close();
       }
     ));
+    this.AppointmentTypes = Object.keys(AppointmentType);
+    this.AppointmentTypes = this.AppointmentTypes.slice(this.AppointmentTypes.length / 2);
+    console.log(this.AppointmentTypes);
+  }
+
+  parseValue(value: string){
+    this.ApType = AppointmentType[value];
+    console.log(this.ApType);
+  }
+
+  setType(type: AppointmentType){
+    this.AppointmentTypeClass.type = type;
   }
 
   onSubmit(appointmentForm){
@@ -120,9 +151,9 @@ export class AppointmentScreenComponent implements OnInit {
       this.appointment.date = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
+      this.appointment.type = this.appointmentForm.value.Enum;
       this.appointment.start = this.appointmentForm.value.StartZeit;
       this.appointment.end = this.appointmentForm.value.EndZeit;
-      console.warn(this.appointment);
       this.appointments.addItem(this.appointment);
     }else {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
@@ -130,6 +161,7 @@ export class AppointmentScreenComponent implements OnInit {
       this.appointment.date = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
+      this.appointment.type = this.appointmentForm.value.Enum;
       this.appointment.start = this.appointmentForm.value.StartZeit;
       this.appointment.end = this.appointmentForm.value.EndZeit;
       this.appointments.updateItem(this.appointment);
