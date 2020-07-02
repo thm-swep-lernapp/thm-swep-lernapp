@@ -8,8 +8,7 @@ import {FlashCardBundle} from '../../../class/flash-card-bundle';
   styleUrls: ['./flashcard-bundle-card.component.scss']
 })
 export class FlashcardBundleCardComponent implements OnInit {
-
-  @Input() BundleCard: FlashCardBundle;
+  @Input() flashCardBundle: FlashCardBundle;
 
   constructor() { }
 

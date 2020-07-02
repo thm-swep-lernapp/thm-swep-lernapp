@@ -19,10 +19,6 @@ export class FlashcardService {
     this.flashcardBundles = this.db.read(FlashcardService.DB_KEY, FlashCardBundle);
   }
 
-  getFlashCardBundleById(id: string): FlashCardBundle {
-    return this.flashcardBundles.find(item => item.getPrimaryId() === id);
-  }
-
   createFlashcardBundle(name: string, linkedModule: Module) {
     const bundle = new FlashCardBundle();
 
@@ -105,5 +101,13 @@ export class FlashcardService {
       .flashCards.findIndex(card => flashcard.flashCardId === card.flashCardId);
     if (cardIndex === -1) { return null; }
     return [index, cardIndex];
+  }
+
+  getFlashCardBundleById(id: string): FlashCardBundle {
+    return this.flashcardBundles.find(bundle => bundle.flashCardBundleId === id);
+  }
+
+  getFlashCardInBundleById(flashCardBundle: FlashCardBundle, id: string): FlashCard {
+    return flashCardBundle.flashCards.find(card => card.flashCardId === id);
   }
 }

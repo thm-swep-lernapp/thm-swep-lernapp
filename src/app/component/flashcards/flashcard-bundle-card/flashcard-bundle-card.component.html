@@ -1,13 +1,9 @@
-
-  <a [routerLink]="'/decks/' + BundleCard.moduleId">
-     <mat-card>
-
-      <mat-card-title>{{ BundleCard.name }}</mat-card-title>
-      <mat-card-subtitle>{{ BundleCard.flashCards.length }} {{ BundleCard.flashCards.length === 1 ? 'Karte' : 'Karten'}}</mat-card-subtitle>
-
+<a [routerLink]="'/decks/' + flashCardBundle.flashCardBundleId">
+    <mat-card>
+      <mat-card-title>{{ flashCardBundle.name }}</mat-card-title>
+      <mat-card-subtitle>{{ flashCardBundle.flashCards.length }} {{ flashCardBundle.flashCards.length === 1 ? 'Karte' : 'Karten'}}</mat-card-subtitle>
     </mat-card>
   </a>
-
 
 
 
