@@ -19,10 +19,6 @@ export class FlashcardService {
     this.flashcardBundles = this.db.read(FlashcardService.DB_KEY, FlashCardBundle);
   }
 
-  getFlashCardBundleById(id: string): FlashCardBundle {
-    return this.flashcardBundles.find(item => item.getPrimaryId() === id);
-  }
-
   createFlashcardBundle(name: string, linkedModule: Module) {
     const bundle = new FlashCardBundle();
 
