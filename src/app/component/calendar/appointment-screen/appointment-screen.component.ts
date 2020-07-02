@@ -24,9 +24,6 @@ enum AppointmentType {
   FREE_TIME,
   EXAM
 }
-class AppointmentTypeClass{
-  constructor( public text: string, public type: AppointmentType) {}
-}
 
 @Component({
   selector: 'app-appointment',
@@ -39,11 +36,10 @@ export class AppointmentScreenComponent implements OnInit {
   moduleControl = new FormControl(null, [Validators.required, this.isModule]);
 
   appointment: Appointment;
-  AppointmentTypes;
+  appointmentTypes = [AppointmentType.TIMETABLE, AppointmentType.EXAM, AppointmentType.LEARNING_PLAN, AppointmentType.FREE_TIME];
   ApType: AppointmentType;
-  public AppointmentTypeClass: AppointmentTypeClass;
 
-  
+
 
 
   isCreation = false;
@@ -120,18 +116,24 @@ export class AppointmentScreenComponent implements OnInit {
         this.close();
       }
     ));
-    this.AppointmentTypes = Object.keys(AppointmentType);
-    this.AppointmentTypes = this.AppointmentTypes.slice(this.AppointmentTypes.length / 2);
-    console.log(this.AppointmentTypes);
+  }
+
+  getAppointmentTypeStringFromType(type: AppointmentType) {
+    switch (type) {
+      case AppointmentType.TIMETABLE:
+        return 'Stundenplan';
+      case AppointmentType.LEARNING_PLAN:
+        return 'Lernen';
+      case AppointmentType.FREE_TIME:
+        return 'Freizeit';
+      case AppointmentType.EXAM:
+        return 'Prüfung';
+    }
   }
 
   parseValue(value: string){
     this.ApType = AppointmentType[value];
     console.log(this.ApType);
-  }
-
-  setType(type: AppointmentType){
-    this.AppointmentTypeClass.type = type;
   }
 
   onSubmit(appointmentForm){
