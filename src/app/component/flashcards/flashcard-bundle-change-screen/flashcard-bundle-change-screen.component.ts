@@ -30,7 +30,7 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
     private modules: ModuleService,
   ) {
     route.paramMap.subscribe(params => {
-      const id = params.get('gradeId');
+      const id = params.get('flashcardBundleId');
       if (id === 'neu') {
         this.isCreation = true;
         this.flashCardBundle = new FlashCardBundle();
