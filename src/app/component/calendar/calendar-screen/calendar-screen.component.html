@@ -3,7 +3,9 @@
   (currentDayChange)="onCurrentDayChange($event)"
   [appointmentCountMap]="currentAppointmentCountMap"></app-week-view>
 <div class="divider"></div>
-<span>{{ highlightedDay.format('D. MMMM YYYY') }}</span>
+<div id="currentDateContainer">
+  <span id="currentDate">{{ highlightedDay.format('D. MMMM YYYY') }}</span>
+</div>
 <app-appointment-list></app-appointment-list>
 <button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/termine/neu'">
   <mat-icon svgIcon="plus"></mat-icon>
