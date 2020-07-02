@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FlashcardBundleScreenComponent } from './flashcard-bundle-screen.component';
 
-describe('FlashcardBundleScreenComponent', () => {
+describe('FlashcardBundleCardListComponent', () => {
   let component: FlashcardBundleScreenComponent;
   let fixture: ComponentFixture<FlashcardBundleScreenComponent>;
 

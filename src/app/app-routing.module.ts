@@ -9,7 +9,7 @@ import {FlashcardChangeScreenComponent} from './component/flashcards/flashcard-c
 import {LearnScreenComponent} from './component/flashcards/learn-screen/learn-screen.component';
 import {GradesScreenComponent} from './component/grades/grades-screen/grades-screen.component';
 import {GradeChangeScreenComponent} from './component/grades/grade-change-screen/grade-change-screen.component';
-import {FlashcardBundleCardListComponent} from './component/flashcards/flashcard-bundle-card-list/flashcard-bundle-card-list.component';
+import {FlashcardBundleScreenComponent} from './component/flashcards/flashcard-bundle-screen/flashcard-bundle-screen.component';
 
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'termine/neu', component: AppointmentScreenComponent },
   { path: 'termine/:appointmentId', component: AppointmentScreenComponent },
   { path: 'decks', component: FlashcardBundleListScreenComponent },
-  { path: 'decks/:flashcardBundleId', component: FlashcardBundleCardListComponent },
+  { path: 'decks/:flashcardBundleId', component: FlashcardBundleScreenComponent },
   { path: 'decks/:flashcardBundleId/bearbeiten', component: FlashcardBundleChangeScreenComponent },
   { path: 'decks/:flashcardBundleId/karte/:flashcardId', component: FlashcardChangeScreenComponent },
   { path: 'decks/:flashcardBundleId/lernen', component: LearnScreenComponent },

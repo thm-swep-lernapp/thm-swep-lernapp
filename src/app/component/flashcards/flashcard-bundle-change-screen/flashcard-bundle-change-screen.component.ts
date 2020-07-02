@@ -32,9 +32,7 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
   }
 
   save() {
-
-    this.flashcardService.createFlashcardBundle(this.titleControl.value, this.moduleControl.value);
-
+    this.flashcardService.addFlashcardToBundle(this.titleControl.value, this.moduleControl.value);
     this.close();
 
   }

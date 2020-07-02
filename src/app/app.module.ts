@@ -18,7 +18,6 @@ import { GradeCardComponent } from './component/grades/grade-card/grade-card.com
 import { GradeCardListComponent } from './component/grades/grade-card-list/grade-card-list.component';
 import { GradeChangeScreenComponent } from './component/grades/grade-change-screen/grade-change-screen.component';
 import { FlashcardBundleScreenComponent } from './component/flashcards/flashcard-bundle-screen/flashcard-bundle-screen.component';
-import { FlashcardBundleCardListComponent } from './component/flashcards/flashcard-bundle-card-list/flashcard-bundle-card-list.component';
 import { FlashcardBundleCardComponent } from './component/flashcards/flashcard-bundle-card/flashcard-bundle-card.component';
 import { FlashcardBundleChangeScreenComponent } from './component/flashcards/flashcard-bundle-change-screen/flashcard-bundle-change-screen.component';
 import { FlashcardBundleListScreenComponent } from './component/flashcards/flashcard-bundle-list-screen/flashcard-bundle-list-screen.component';
@@ -54,7 +53,6 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     GradeCardListComponent,
     GradeChangeScreenComponent,
     FlashcardBundleScreenComponent,
-    FlashcardBundleCardListComponent,
     FlashcardBundleCardComponent,
     FlashcardBundleChangeScreenComponent,
     FlashcardBundleListScreenComponent,

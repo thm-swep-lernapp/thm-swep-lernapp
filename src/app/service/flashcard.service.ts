@@ -95,4 +95,12 @@ export class FlashcardService {
     if (cardIndex === -1) { return null; }
     return [index, cardIndex];
   }
+
+  getFlashCardBundleById(id: string): FlashCardBundle {
+    return this.flashcardBundles.find(bundle => bundle.flashCardBundleId === id);
+  }
+
+  getFlashCardInBundleById(flashCardBundle: FlashCardBundle, id: string): FlashCard {
+    return flashCardBundle.flashCards.find(card => card.flashCardId === id);
+  }
 }

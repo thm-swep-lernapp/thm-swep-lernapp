@@ -1,7 +1,4 @@
-
-<app-flashcard-bundle-card *ngFor="let deck of cardDecks" [title]="deck.name" [count]="deck.flashCards.length"></app-flashcard-bundle-card>
-
-
+<app-flashcard-bundle-card *ngFor="let deck of cardDecks" [flashCardBundle]="deck"></app-flashcard-bundle-card>
 
 <button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/decks/neu/bearbeiten'">
   <mat-icon svgIcon="plus"></mat-icon>

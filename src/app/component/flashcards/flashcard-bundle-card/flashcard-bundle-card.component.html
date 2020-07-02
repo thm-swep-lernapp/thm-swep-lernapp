@@ -1,10 +1,7 @@
-
-  <a [routerLink]="'/decks/:flashcardBundleId'">
+<a [routerLink]="'/decks/' + flashCardBundle.flashCardBundleId">
     <mat-card>
-
-      <mat-card-title>{{ title }}</mat-card-title>
-      <mat-card-subtitle>{{ count }} {{ count === 1 ? 'Karte' : 'Karten'}}</mat-card-subtitle>
-
+      <mat-card-title>{{ flashCardBundle.name }}</mat-card-title>
+      <mat-card-subtitle>{{ flashCardBundle.flashCards.length }} {{ flashCardBundle.flashCards.length === 1 ? 'Karte' : 'Karten'}}</mat-card-subtitle>
     </mat-card>
   </a>
 
