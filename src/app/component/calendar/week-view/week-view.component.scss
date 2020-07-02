@@ -1,0 +1,43 @@
+.week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    min-width: 32px;
+    .weekday-indicator {
+      text-align: center;
+      color: rgba(0, 0, 0, .6);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .day-inner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.highlighted {
+        background: #ff0000;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+
+        .day {
+          color: #fff;
+        }
+      }
+      .day {
+        text-align: center;
+        font-size: 16px;
+        line-height: 32px;
+
+        &.out-of-month {
+          opacity: .3;
+        }
+      }
+    }
+  }
+}

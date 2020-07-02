@@ -1,1 +1,15 @@
-<p>week-view works!</p>
+<div class="week">
+  <div *ngFor="let day of days" class="day-container">
+    <span class="weekday-indicator">
+      {{ day.format('dd') }}
+    </span>
+    <div class="day-inner-container" [class.highlighted]="day.isSame(highlightedDay, 'day')">
+          <span
+            class="day"
+            [class.out-of-month]="!day.isSame(currentDay, 'month')"
+            (click)="setHighlightedDay(day)">
+    {{ day.date() }}
+  </span>
+    </div>
+  </div>
+</div>
