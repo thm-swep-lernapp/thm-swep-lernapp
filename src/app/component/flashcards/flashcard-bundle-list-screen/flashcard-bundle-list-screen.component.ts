@@ -3,6 +3,7 @@ import {FlashcardService} from '../../../service/flashcard.service';
 import {FormControl, Validators} from '@angular/forms';
 import {FlashCard} from '../../../class/flash-card';
 import {FlashCardBundle} from '../../../class/flash-card-bundle';
+import {AppbarService} from '../../../service/appbar.service';
 
 
 @Component({
@@ -15,11 +16,14 @@ export class FlashcardBundleListScreenComponent implements OnInit {
   cardDecks: FlashCardBundle[];
 
   constructor(
-    private flashcardService: FlashcardService
+    private flashcardService: FlashcardService,
+    private appbar: AppbarService,
   ) { }
 
   ngOnInit(): void {
     this.cardDecks = this.flashcardService.flashcardBundles;
+
+    this.appbar.setTitle('Lernen');
   }
 
 }
