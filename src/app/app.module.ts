@@ -40,6 +40,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import {OWL_DATE_TIME_FORMATS, OwlDateTimeModule, OwlMomentDateTimeModule} from '@danielmoncada/angular-datetime-picker';
+import {MatListModule} from '@angular/material/list';
 
 
 export const MY_MOMENT_FORMATS = {
@@ -87,6 +88,7 @@ export const MY_MOMENT_FORMATS = {
     MatCardModule,
     MatButtonModule,
     MatInputModule,
+    MatListModule,
     MatAutocompleteModule,
     OverlayModule,
     ReactiveFormsModule,

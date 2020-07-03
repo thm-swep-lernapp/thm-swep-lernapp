@@ -93,14 +93,22 @@ export class CalendarScreenComponent implements OnInit {
   onHighlightedDayChange(day: Moment) {
     console.log(day);
     this.highlightedDay = day;
-    this.appointments = this.appointmentService.getItems().filter(appointment => {
-      return this.highlightedDay.isBetween(appointment.start, appointment.end) || this.highlightedDay.isSame(appointment.start, 'day') || this.highlightedDay.isSame(appointment.end, 'day');
-    });
+    this.refreshAppointments();
   }
 
   onCurrentDayChange(day: Moment) {
     this.currentDay = day;
     this.setAppbarTitleFromCurrentDay();
     this.buildCurrentAppointmentCountMap();
+  }
+
+  refreshAppointments() {
+    this.appointments = this.appointmentService.getItems().filter(appointment => {
+      return this.highlightedDay.isBetween(appointment.start, appointment.end) || this.highlightedDay.isSame(appointment.start, 'day') || this.highlightedDay.isSame(appointment.end, 'day');
+    });
+  }
+
+  onAppointmentDeleted() {
+    this.refreshAppointments();
   }
 }

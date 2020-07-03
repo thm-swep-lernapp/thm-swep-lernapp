@@ -25,6 +25,21 @@ export class Appointment extends PersistableEntity {
     this.start = moment.unix(json.start).utc();
     this.end = moment.unix(json.end).utc();
   }
+
+  static getTypeStringFromType(type: AppointmentType) {
+    switch (type) {
+      case AppointmentType.TIMETABLE:
+        return 'Stundenplan';
+      case AppointmentType.LEARNING_PLAN:
+        return 'Lernen';
+      case AppointmentType.FREE_TIME:
+        return 'Freizeit';
+      case AppointmentType.EXAM:
+        return 'Prüfung';
+      default:
+        return '';
+    }
+  }
 }
 
 export enum AppointmentType {

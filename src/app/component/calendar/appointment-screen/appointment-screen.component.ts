@@ -5,7 +5,7 @@ import {MatDatepicker} from '@angular/material/datepicker';
 import {NavigationItem} from '../../../class/navigation-item';
 import {ModuleService} from '../../../service/module.service';
 import {Module} from '../../../class/module';
-import {Appointment} from '../../../class/appointment';
+import {Appointment, AppointmentType} from '../../../class/appointment';
 import {AppointmentService} from '../../../service/appointment.service';
 import {AppbarService} from '../../../service/appbar.service';
 import {ActivatedRoute, Router} from '@angular/router';
@@ -18,13 +18,6 @@ import {error} from 'selenium-webdriver';
   imports: [NgxMaterialTimepickerModule]
 })
 export class MyModule {}
-
-enum AppointmentType {
-  TIMETABLE,
-  LEARNING_PLAN,
-  FREE_TIME,
-  EXAM
-}
 
 @Component({
   selector: 'app-appointment',
@@ -83,8 +76,7 @@ export class AppointmentScreenComponent implements OnInit {
           Intervall: this.appointment.interval,
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
-          Enum: this.appointment.type,
-          Terminart: this.appointment.type,
+          Enum: this.appointment.type.toString(),
           StartZeit: this.appointment.start,
           EndZeit: this.appointment.end});
       }
@@ -114,16 +106,7 @@ export class AppointmentScreenComponent implements OnInit {
   }
 
   getAppointmentTypeStringFromType(type: AppointmentType) {
-    switch (type) {
-      case AppointmentType.TIMETABLE:
-        return 'Stundenplan';
-      case AppointmentType.LEARNING_PLAN:
-        return 'Lernen';
-      case AppointmentType.FREE_TIME:
-        return 'Freizeit';
-      case AppointmentType.EXAM:
-        return 'Prüfung';
-    }
+    return Appointment.getTypeStringFromType(type);
   }
 
   parseValue(value: string){
@@ -153,24 +136,21 @@ export class AppointmentScreenComponent implements OnInit {
       return;
     }
 
+    this.appointment.moduleId = this.moduleControl.value.moduleId;
+    this.appointment.name = this.appointmentForm.value.Titel;
+    this.appointment.description = this.appointmentForm.value.Beschreibung;
+    this.appointment.place = this.appointmentForm.value.Ort;
+    this.appointment.type = this.appointmentForm.value.Enum;
+    const type = this.appointmentForm.value.Enum;
+    if (type && type.length > 0) {
+      this.appointment.type = parseInt(type, 10);
+    }
+    this.appointment.start = this.appointmentForm.value.StartZeit.utc();
+    this.appointment.end = this.appointmentForm.value.EndZeit.utc();
 
     if (this.isCreation) {
-      this.appointment.moduleId = this.moduleControl.value.moduleId;
-      this.appointment.name = this.appointmentForm.value.Titel;
-      this.appointment.description = this.appointmentForm.value.Beschreibung;
-      this.appointment.place = this.appointmentForm.value.Ort;
-      this.appointment.type = this.appointmentForm.value.Enum;
-      this.appointment.start = this.appointmentForm.value.StartZeit.utc();
-      this.appointment.end = this.appointmentForm.value.EndZeit.utc();
       this.appointments.addItem(this.appointment);
-    }else {
-      this.appointment.moduleId = this.moduleControl.value.moduleId;
-      this.appointment.name = this.appointmentForm.value.Titel;
-      this.appointment.description = this.appointmentForm.value.Beschreibung;
-      this.appointment.place = this.appointmentForm.value.Ort;
-      this.appointment.type = this.appointmentForm.value.Enum;
-      this.appointment.start = this.appointmentForm.value.StartZeit.utc();
-      this.appointment.end = this.appointmentForm.value.EndZeit.utc();
+    } else {
       this.appointments.updateItem(this.appointment);
     }
 

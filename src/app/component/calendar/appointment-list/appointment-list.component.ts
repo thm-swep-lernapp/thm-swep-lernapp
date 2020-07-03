@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Appointment} from '../../../class/appointment';
 import {AppointmentService} from '../../../service/appointment.service';
 
@@ -10,7 +10,9 @@ import {AppointmentService} from '../../../service/appointment.service';
 })
 export class AppointmentListComponent implements OnInit {
 
+  @Output() appointmentDeleted: EventEmitter<void> = new EventEmitter();
   @Input() appointments: Appointment[];
+
   constructor(
     private appointmentService: AppointmentService,
   ) { }
@@ -28,4 +30,7 @@ export class AppointmentListComponent implements OnInit {
     });
   }
 
+  onAppointmentDeleted() {
+    this.appointmentDeleted.emit();
+  }
 }
