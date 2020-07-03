@@ -1,23 +1,22 @@
 <mat-list-item>
-  <span class="title" matLine>{{ getAppointmentName() }}</span>
-
-  <div class="time" matLine  class="subline">
-    <mat-icon matListIcon svgIcon="clock"></mat-icon>
-    <span>{{ getAppointmentTime() }}</span>
-  </div>
-
-
-  <div *ngIf="appoin.description" matLine class="subline">
-    <mat-icon matListIcon svgIcon="text-subject"></mat-icon>
-    <span>{{appoin.description}} </span>
-  </div>
-  <div *ngIf="appoin.place" matLine class="subline">
-    <mat-icon matListIcon svgIcon="map-marker"></mat-icon>
-    <span> {{appoin.place}} </span>
-  </div>
-  <div *ngIf="appoin.moduleId" matLine class="subline">
-    <mat-icon matListIcon svgIcon="folder-text"></mat-icon>
-    <span> {{appoin.moduleId}} </span>
+  <div class="data">
+    <span class="title" matLine>{{ getAppointmentName() }}</span>
+    <div matLine  class="subline">
+      <mat-icon matListIcon svgIcon="clock"></mat-icon>
+      <span>{{ getAppointmentTime() }}</span>
+    </div>
+    <div *ngIf="appoin.description" matLine class="subline">
+      <mat-icon matListIcon svgIcon="text-subject"></mat-icon>
+      <span>{{appoin.description}} </span>
+    </div>
+    <div *ngIf="appoin.place" matLine class="subline">
+      <mat-icon matListIcon svgIcon="map-marker"></mat-icon>
+      <span> {{appoin.place}} </span>
+    </div>
+    <div *ngIf="appoin.moduleId" matLine class="subline">
+      <mat-icon matListIcon svgIcon="folder-text"></mat-icon>
+      <span> {{getModuleName(appoin.moduleId)}} </span>
+    </div>
   </div>
 
   <div class="icons">

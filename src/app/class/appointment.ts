@@ -40,6 +40,21 @@ export class Appointment extends PersistableEntity {
         return '';
     }
   }
+
+  static getTypeColorFromType(type: AppointmentType) {
+    switch (type) {
+      case AppointmentType.TIMETABLE:
+        return '#3F51B5';
+      case AppointmentType.LEARNING_PLAN:
+        return '#FB8C00';
+      case AppointmentType.FREE_TIME:
+        return '#43A047';
+      case AppointmentType.EXAM:
+        return '#f24835';
+      default:
+        return '#757575';
+    }
+  }
 }
 
 export enum AppointmentType {

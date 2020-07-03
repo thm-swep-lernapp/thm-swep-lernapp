@@ -7,6 +7,21 @@
 
 }
 
+::ng-deep mat-option.type-option {
+  .mat-option-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .color-indicator {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      margin: 0 16px 0 0;
+    }
+  }
+}
+
 div {
   margin: 16px;
 }

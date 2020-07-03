@@ -109,6 +109,10 @@ export class AppointmentScreenComponent implements OnInit {
     return Appointment.getTypeStringFromType(type);
   }
 
+  getAppointmentColorFromType(type: AppointmentType) {
+    return Appointment.getTypeColorFromType(type);
+  }
+
   parseValue(value: string){
     this.ApType = AppointmentType[value];
     console.log(this.ApType);

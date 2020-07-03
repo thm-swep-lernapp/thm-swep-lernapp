@@ -8,8 +8,14 @@
             class="day"
             [class.out-of-month]="!day.isSame(currentDay, 'month')"
             (click)="setHighlightedDay(day)">
-    {{ day.date() }}
-  </span>
+        {{ day.date() }}
+      </span>
+    </div>
+    <div class="appointment-count-indicators">
+      <ng-container *ngFor="let dateIndicator of getAppointmentDateIndicatorsForDay(day)">
+        <div *ngIf="dateIndicator.type === 'color'" [style.backgroundColor]="dateIndicator.color" class="indicator"></div>
+        <span *ngIf="dateIndicator.type === 'more'" class="more-indicator">+{{ dateIndicator.count }}</span>
+      </ng-container>
     </div>
   </div>
 </div>

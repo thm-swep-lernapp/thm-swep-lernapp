@@ -1,16 +1,27 @@
 mat-list-item {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 8px;
   margin-bottom: 8px;
 
+  .data {
+    max-width: calc(100% - 118px);
+    flex: 1;
+    padding: 16px;
+  }
   .title {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 4px;
   }
 
   ::ng-deep .mat-list-item-content {
+    display: flex;
     padding: 0 !important;
   }
 
   ::ng-deep .subline {
+    max-width: 100%;
     display: flex !important;
     align-items: center;
     margin-top: 4px !important;
@@ -23,15 +34,21 @@ mat-list-item {
       padding: 0 !important;
     }
     span {
-      margin-left: 4px;
+      margin-left: 8px;
+      white-space: normal;
+      word-wrap: break-word;
     }
   }
 
-  .icons{
-    position: absolute;
-    right: 0;
+  .icons {
+    display: flex;
+    flex-direction: row;
   }
 }
 
-
+.divider {
+  width: calc(100% - 38px);
+  min-width: calc(100% - 38px);
+  margin-left: 38px;
+}
 
