@@ -17,7 +17,15 @@ export class AppointmentService extends BaseCrudService<Appointment> {
 
   getItemsByDay(day: Moment): Appointment[] {
     return this.getItems().filter(appointment => {
-      return day.isBetween(appointment.start, appointment.end) || day.isSame(appointment.start, 'day') || day.isSame(appointment.end, 'day');
+      let start = appointment.start.clone();
+      let end = appointment.end.clone();
+      if (appointment.interval && appointment.interval > 0) {
+        while (start.isBefore(day, 'day')) {
+          start = start.add(appointment.interval, 'second');
+          end = end.add(appointment.interval, 'second');
+        }
+      }
+      return day.isBetween(start, end) || day.isSame(start, 'day') || day.isSame(end, 'day');
     });
   }
 

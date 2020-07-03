@@ -31,7 +31,7 @@ export class AppointmentListItemComponent implements OnInit {
   }
 
   getAppointmentName(): string {
-    const anhang = this.appoin.type ? this.getAppointmentTypeStringFromType(this.appoin.type) + ': ' : '';
+    const anhang = this.appoin.type >= 0 ? this.getAppointmentTypeStringFromType(this.appoin.type) + ': ' : '';
     return  anhang + this.appoin.name;
   }
 
