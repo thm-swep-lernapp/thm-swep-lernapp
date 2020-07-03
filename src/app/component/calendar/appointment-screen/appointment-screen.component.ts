@@ -108,6 +108,7 @@ export class AppointmentScreenComponent implements OnInit {
 
   disableIntervalIfMultiDay(start, end) {
     if (start && end && !start.isSame(end, 'day')) {
+      this.appointmentForm.patchValue({Intervall : null});
       this.appointmentForm.get('Intervall').disable();
     } else {
       this.appointmentForm.get('Intervall').enable();
