@@ -1,2 +1,7 @@
-<app-appointment-list-item *ngFor="let appointment of appointments" [appoin] = "appointment"></app-appointment-list-item>
+<mat-list>
+  <app-appointment-list-item
+    *ngFor="let appointment of appointments"
+    [appoin] = "appointment"
+    (appointmentDeleted)="onAppointmentDeleted()"></app-appointment-list-item>
+</mat-list>
 

@@ -1,31 +1,33 @@
-<mat-card  >
-  <span class="title">{{ getAppointmentName() }}</span>
+<mat-list-item>
+  <span class="title" matLine>{{ getAppointmentName() }}</span>
 
-  <span class="time">{{ getAppointmentTime() }}</span>
-
-  <div class="icons">
-  <button mat-icon-button color="accent" (click)="editAppointment(appoin)">
-    <mat-icon svgIcon="pencil">pencil</mat-icon>
-  </button>
-  <button mat-icon-button color="primary" (click)="deleteAppointment(appoin)">
-    <mat-icon svgIcon="delete">delete</mat-icon>
-  </button>
+  <div class="time" matLine  class="subline">
+    <mat-icon matListIcon svgIcon="clock"></mat-icon>
+    <span>{{ getAppointmentTime() }}</span>
   </div>
 
 
-  <mat-list>
-    <mat-list-item *ngIf="appoin.description">
-      <mat-icon matListIcon svgIcon="text-subject"></mat-icon>
-      <span> {{appoin.description}} </span>
-    </mat-list-item>
-    <mat-list-item *ngIf="appoin.place">
-      <mat-icon matListIcon svgIcon="map-marker"></mat-icon>
-        <span> {{appoin.place}} </span>
-    </mat-list-item>
-    <mat-list-item *ngIf="appoin.moduleId">
-      <mat-icon matListIcon svgIcon="folder-text"></mat-icon>
-      <span> {{appoin.moduleId}} </span>
-    </mat-list-item>
-  </mat-list>
+  <div *ngIf="appoin.description" matLine class="subline">
+    <mat-icon matListIcon svgIcon="text-subject"></mat-icon>
+    <span>{{appoin.description}} </span>
+  </div>
+  <div *ngIf="appoin.place" matLine class="subline">
+    <mat-icon matListIcon svgIcon="map-marker"></mat-icon>
+    <span> {{appoin.place}} </span>
+  </div>
+  <div *ngIf="appoin.moduleId" matLine class="subline">
+    <mat-icon matListIcon svgIcon="folder-text"></mat-icon>
+    <span> {{appoin.moduleId}} </span>
+  </div>
 
-</mat-card>
+  <div class="icons">
+    <button mat-icon-button color="accent" (click)="editAppointment(appoin)">
+      <mat-icon svgIcon="pencil">pencil</mat-icon>
+    </button>
+    <button mat-icon-button color="primary" (click)="deleteAppointment(appoin)">
+      <mat-icon svgIcon="delete">delete</mat-icon>
+    </button>
+  </div>
+
+</mat-list-item>
+<div class="divider"></div>

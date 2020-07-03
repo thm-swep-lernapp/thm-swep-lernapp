@@ -6,7 +6,7 @@
 <div id="currentDateContainer">
   <span id="currentDate">{{ highlightedDay.format('D. MMMM YYYY') }}</span>
 </div>
-<app-appointment-list [appointments]="appointments"></app-appointment-list>
+<app-appointment-list [appointments]="appointments" (appointmentDeleted)="onAppointmentDeleted()"></app-appointment-list>
 <button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/termine/neu'">
   <mat-icon svgIcon="plus"></mat-icon>
 </button>
