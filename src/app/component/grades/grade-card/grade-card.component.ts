@@ -25,7 +25,7 @@ export class GradeCardComponent implements OnInit {
   }
 
   getModuleCreditPoints(): string {
-    return this.gradeWithModule.module ? this.gradeWithModule.module.creditPoints + 'CP' : '?CP';
+    return this.gradeWithModule.module ? (this.gradeWithModule.grade.grade >= 50 ? this.gradeWithModule.module.creditPoints : 0) + 'CP' : '?CP';
   }
 
   getReadableTestType(): string {

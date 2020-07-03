@@ -80,6 +80,7 @@ export class CalendarScreenComponent implements OnInit {
     let currDay = startOfWeek.clone();
     while (!currDay.isSame(startOfNextWeek, 'day')) {
       const appointments = this.appointmentService.getItemsByDay(currDay);
+      console.log(appointments);
       appointmentCountMap[currDay.format('YYYYMMD')] = {
         [AppointmentType.TIMETABLE]: appointments.filter(appointment => appointment.type === AppointmentType.TIMETABLE).length,
         [AppointmentType.FREE_TIME]: appointments.filter(appointment => appointment.type === AppointmentType.FREE_TIME).length,
@@ -89,6 +90,7 @@ export class CalendarScreenComponent implements OnInit {
       };
       currDay = currDay.add(1, 'days').clone();
     }
+    console.log(appointmentCountMap);
 
     this.currentAppointmentCountMap = appointmentCountMap;
   }

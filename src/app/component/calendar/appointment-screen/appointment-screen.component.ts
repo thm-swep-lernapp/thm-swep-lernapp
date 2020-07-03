@@ -73,23 +73,24 @@ export class AppointmentScreenComponent implements OnInit {
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
         this.appointmentForm.patchValue({
           Titel: this.appointment.name,
-          Intervall: this.appointment.interval,
+          Intervall: this.appointment.interval ? this.appointment.interval.toString() : null,
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
-          Enum: this.appointment.type.toString(),
+          Enum: this.appointment.type ? this.appointment.type.toString() : -1,
           StartZeit: this.appointment.start,
           EndZeit: this.appointment.end});
       }
     });
 
-    this.appointmentForm.get('EndZeit').valueChanges.subscribe(selectedValue => {
-      console.log(selectedValue);
-    });
-
-
+    this.disableIntervalIfMultiDay(this.appointmentForm.value.StartZeit, this.appointmentForm.value.EndZeit);
 
     this.appointmentForm.get('StartZeit').valueChanges.subscribe(selectedValue => {
       this.appointmentForm.get('EndZeit').enable();
+      this.disableIntervalIfMultiDay(selectedValue, this.appointmentForm.value.EndZeit);
+    });
+
+    this.appointmentForm.get('EndZeit').valueChanges.subscribe(selectedValue => {
+      this.disableIntervalIfMultiDay(this.appointmentForm.value.StartZeit, selectedValue);
     });
   }
 
@@ -103,6 +104,15 @@ export class AppointmentScreenComponent implements OnInit {
         this.close();
       }
     ));
+  }
+
+  disableIntervalIfMultiDay(start, end) {
+    if (start && end && !start.isSame(end, 'day')) {
+      this.appointmentForm.patchValue({Intervall : null});
+      this.appointmentForm.get('Intervall').disable();
+    } else {
+      this.appointmentForm.get('Intervall').enable();
+    }
   }
 
   getAppointmentTypeStringFromType(type: AppointmentType) {
@@ -151,6 +161,10 @@ export class AppointmentScreenComponent implements OnInit {
     }
     this.appointment.start = this.appointmentForm.value.StartZeit.utc();
     this.appointment.end = this.appointmentForm.value.EndZeit.utc();
+    const interval = this.appointmentForm.value.Intervall;
+    if (interval && interval.length > 0) {
+      this.appointment.interval = parseInt(interval, 10);
+    }
 
     if (this.isCreation) {
       this.appointments.addItem(this.appointment);
