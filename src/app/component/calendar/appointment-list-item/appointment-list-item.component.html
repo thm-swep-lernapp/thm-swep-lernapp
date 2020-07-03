@@ -1,6 +1,31 @@
-<mat-card  (click)="editAppointment(appoin)">
+<mat-card  >
   <span class="title">{{ getAppointmentName() }}</span>
 
   <span class="time">{{ getAppointmentTime() }}</span>
+
+  <div class="icons">
+  <button mat-icon-button color="accent" (click)="editAppointment(appoin)">
+    <mat-icon svgIcon="pencil">pencil</mat-icon>
+  </button>
+  <button mat-icon-button color="primary" (click)="deleteAppointment(appoin)">
+    <mat-icon svgIcon="delete">delete</mat-icon>
+  </button>
+  </div>
+
+
+  <mat-list>
+    <mat-list-item *ngIf="appoin.description">
+      <mat-icon matListIcon svgIcon="text-subject"></mat-icon>
+      <span> {{appoin.description}} </span>
+    </mat-list-item>
+    <mat-list-item *ngIf="appoin.place">
+      <mat-icon matListIcon svgIcon="map-marker"></mat-icon>
+        <span> {{appoin.place}} </span>
+    </mat-list-item>
+    <mat-list-item *ngIf="appoin.moduleId">
+      <mat-icon matListIcon svgIcon="folder-text"></mat-icon>
+      <span> {{appoin.moduleId}} </span>
+    </mat-list-item>
+  </mat-list>
 
 </mat-card>

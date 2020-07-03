@@ -9,9 +9,19 @@ mat-card {
     font-weight: bold;
   }
 
-  .test-type {
-    font-size: 14px;
-    color: rgba(0, 0, 0, .6);
+  .icons{
+    position: absolute;
+    right: 0;
   }
 
 }
+
+.mat-list-base .mat-list-item.mat-list-item-with-avatar, .mat-list-base .mat-list-option.mat-list-item-with-avatar {
+  height: 30px;
+  .mat-list-item-content{
+    padding: 0px 0px;
+  }
+}
+
+
+

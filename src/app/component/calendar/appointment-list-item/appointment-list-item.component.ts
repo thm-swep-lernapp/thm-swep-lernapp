@@ -2,7 +2,13 @@ import {Component, Input, OnInit} from '@angular/core';
 import {AppointmentService} from '../../../service/appointment.service';
 import {Router} from '@angular/router';
 import {Appointment} from '../../../class/appointment';
-import {Grade} from '../../../class/grade';
+
+enum AppointmentType {
+  TIMETABLE,
+  LEARNING_PLAN,
+  FREE_TIME,
+  EXAM
+}
 
 @Component({
   selector: 'app-appointment-list-item',
@@ -12,8 +18,10 @@ import {Grade} from '../../../class/grade';
 export class AppointmentListItemComponent implements OnInit {
 
   @Input() public appoin: Appointment = new Appointment();
+
   constructor(
-    private router: Router
+    private router: Router,
+    private appointments: AppointmentService
   ) {
 
   }
@@ -21,15 +29,35 @@ export class AppointmentListItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getAppointmentTypeStringFromType(type: Appointment['type']) {
+    console.log('test');
+    switch (type) {
+      case AppointmentType.TIMETABLE:
+        return 'Stundenplan - ';
+      case AppointmentType.LEARNING_PLAN:
+        return 'Lernen - ';
+      case AppointmentType.FREE_TIME:
+        return 'Freizeit - ';
+      case AppointmentType.EXAM:
+        return 'Prüfung - ';
+      default:
+        return '';
+    }
+  }
+
   getAppointmentName(): string {
-    return this.appoin.name;
+    const Anhang = this.getAppointmentTypeStringFromType(this.appoin.type);
+    return  Anhang + this.appoin.name;
   }
   getAppointmentTime(): string {
-    return this.appoin.start.toString()+' - '+this.appoin.end.toString()  ;
+    return this.appoin.start.toString() + ' - ' + this.appoin.end.toString()  ;
   }
 
 
   editAppointment(appointment: Appointment) {
     this.router.navigate(['/termine', appointment.appointmentId]);
+  }
+  deleteAppointment(appointment: Appointment) {
+    this.appointments.deleteItem(appointment);
   }
 }
