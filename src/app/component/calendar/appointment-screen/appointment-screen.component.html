@@ -1,1 +1,64 @@
-<p>appointment works!</p>
+<form [formGroup]="appointmentForm" >
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="text-short"></mat-icon>
+    <mat-label>Titel</mat-label>
+    <input type="text" matInput formControlName="Titel">
+    <mat-placeholder class="placeholder">Titel</mat-placeholder>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
+    <mat-label>Start</mat-label>
+    <input [owlDateTime]="startTime" matInput formControlName="StartZeit" [owlDateTimeTrigger]="startTime" >
+    <owl-date-time #startTime></owl-date-time>
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
+    <mat-label>Ende</mat-label>
+    <input [owlDateTime]="endTime" matInput formControlName="EndZeit" [owlDateTimeTrigger]="endTime" >
+    <owl-date-time #endTime></owl-date-time>
+  </mat-form-field>
+
+
+  <div>Optional</div>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="sync"></mat-icon>
+    <mat-label>Intervall</mat-label>
+    <mat-select formControlName="Intervall" >
+      <mat-option value="86400">Täglich</mat-option>
+      <mat-option value="604800">Wöchentlich</mat-option>
+      <mat-option value="2628000">Monatlich</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="text-subject"></mat-icon>
+    <mat-label>Beschreibung</mat-label>
+    <input type="text" matInput placeholder="Beschreibung" formControlName="Beschreibung">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="map-marker"></mat-icon>
+    <mat-label>Ort</mat-label>
+    <input type="text" matInput placeholder="Ort" formControlName="Ort">
+  </mat-form-field>
+
+  <app-module-picker [control]="moduleControl"></app-module-picker>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix svgIcon="format-list-bulleted-type"></mat-icon>
+    <mat-label>Terminart</mat-label>
+    <mat-select formControlName="Enum" >
+      <mat-option *ngFor="let type of appointmentTypes" value="{{type}}">{{getAppointmentTypeStringFromType(type)}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</form>
+
+<button class="lower-right-fab" mat-fab color="accent" (click)="save()">
+  <mat-icon svgIcon="check"></mat-icon>
+</button>

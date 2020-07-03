@@ -1,1 +1,6 @@
-<p>appointment-list-item works!</p>
+<mat-card  (click)="editAppointment(appoin)">
+  <span class="title">{{ getAppointmentName() }}</span>
+
+  <span class="time">{{ getAppointmentTime() }}</span>
+
+</mat-card>

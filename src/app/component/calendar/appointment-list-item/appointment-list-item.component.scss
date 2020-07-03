@@ -1,0 +1,17 @@
+mat-card {
+  margin: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .test-type {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .6);
+  }
+
+}

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Appointment} from '../../../class/appointment';
+import {AppointmentService} from '../../../service/appointment.service';
+
 
 @Component({
   selector: 'app-appointment-list',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppointmentListComponent implements OnInit {
 
-  constructor() { }
+  @Input() appointments: Appointment[];
+  constructor(
+    private appointmentService: AppointmentService,
+  ) { }
+
 
   ngOnInit(): void {
+    this.appointments = this.appointments.sort((Appointment1, Appointment2) => {
+      if (Appointment1.start > Appointment2.start) {
+        return 1;
+      }
+      if (Appointment1.start < Appointment2.start) {
+        return -1;
+      }
+      return 0;
+    });
   }
 
 }

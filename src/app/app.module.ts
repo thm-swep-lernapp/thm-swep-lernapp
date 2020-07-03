@@ -37,6 +37,20 @@ import { ModulePickerComponent } from './component/module-picker/module-picker.c
 import {MatSliderModule} from '@angular/material/slider';
 import { EmptyStateComponent } from './component/empty-state/empty-state.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatSelectModule} from '@angular/material/select';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import {OWL_DATE_TIME_FORMATS, OwlDateTimeModule, OwlMomentDateTimeModule} from '@danielmoncada/angular-datetime-picker';
+
+
+export const MY_MOMENT_FORMATS = {
+  parseInput: 'l LT',
+  fullPickerInput: 'l LT',
+  datePickerInput: 'l',
+  timePickerInput: 'LT',
+  monthYearLabel: 'MMM YYYY',
+  dateA11yLabel: 'LL',
+  monthYearA11yLabel: 'MMMM YYYY',
+};
 
 @NgModule({
   declarations: [
@@ -77,9 +91,13 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     OverlayModule,
     ReactiveFormsModule,
     MatSliderModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSelectModule,
+    NgxMaterialTimepickerModule,
+    OwlDateTimeModule,
+    OwlMomentDateTimeModule
   ],
-  providers: [],
+  providers: [ {provide: OWL_DATE_TIME_FORMATS, useValue: MY_MOMENT_FORMATS}],
   bootstrap: [AppComponent]
 })
 export class AppModule {
