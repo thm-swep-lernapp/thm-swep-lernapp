@@ -10,16 +10,14 @@ import {AppointmentService} from '../../../service/appointment.service';
 })
 export class AppointmentListComponent implements OnInit {
 
-  Appointments: Appointment[];
-  Appointmentsunsorted: Appointment[];
+  @Input() appointments: Appointment[];
   constructor(
     private appointmentService: AppointmentService,
   ) { }
 
 
   ngOnInit(): void {
-    this.Appointmentsunsorted = this.appointmentService.getItems();
-    this.Appointments = this.Appointmentsunsorted.sort((Appointment1, Appointment2) => {
+    this.appointments = this.appointments.sort((Appointment1, Appointment2) => {
       if (Appointment1.start > Appointment2.start) {
         return 1;
       }

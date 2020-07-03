@@ -1,4 +1,4 @@
-<form [formGroup]="appointmentForm" (ngSubmit)="onSubmit(appointmentForm.value)">
+<form [formGroup]="appointmentForm" >
 
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="text-short"></mat-icon>
@@ -9,23 +9,17 @@
 
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
-    <mat-label>Datum</mat-label>
-    <input type="date" matInput placeholder="Datum" formControlName="Datum">
+    <mat-label>Start</mat-label>
+    <input [owlDateTime]="startTime" matInput formControlName="StartZeit" [owlDateTimeTrigger]="startTime" >
+    <owl-date-time #startTime></owl-date-time>
   </mat-form-field>
+
 
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
-    <mat-label>Startzeit</mat-label>
-    <input [ngxTimepicker]="min" matInput formControlName="StartZeit" [format]="24">
-    <ngx-material-timepicker #min  ></ngx-material-timepicker>
-  </mat-form-field>
-
-
-  <mat-form-field appearance="outline" >
-    <mat-icon matPrefix svgIcon="clock-time-four-outline"></mat-icon>
-    <mat-label>Endzeit</mat-label>
-    <input [ngxTimepicker]="max" matInput formControlName="EndZeit" [format]="24">
-    <ngx-material-timepicker #max  ></ngx-material-timepicker>
+    <mat-label>Ende</mat-label>
+    <input [owlDateTime]="endTime" matInput formControlName="EndZeit" [owlDateTimeTrigger]="endTime" >
+    <owl-date-time #endTime></owl-date-time>
   </mat-form-field>
 
 

@@ -10,9 +10,8 @@ export class Appointment extends PersistableEntity {
   name: string;
   description: string;
   place: string;
-  date: number;
-  start: number;
-  end: number;
+  start: Moment;
+  end: Moment;
   allDay: boolean;
   interval: number;
   moduleId: string;
@@ -21,12 +20,10 @@ export class Appointment extends PersistableEntity {
     return this.appointmentId;
   }
 
-  getStartAsMoment(): Moment {
-    return moment.utc(this.start);
-  }
-
-  getEndAsMoment(): Moment {
-    return moment.utc(this.end);
+  fromJSON(json: any) {
+    super.fromJSON(json);
+    this.start = moment.unix(json.start).utc();
+    this.end = moment.unix(json.end).utc();
   }
 }
 

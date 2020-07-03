@@ -12,6 +12,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import {min} from 'rxjs/operators';
+import {error} from 'selenium-webdriver';
 
 @NgModule({
   imports: [NgxMaterialTimepickerModule]
@@ -79,7 +80,6 @@ export class AppointmentScreenComponent implements OnInit {
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
         this.appointmentForm.patchValue({
           Titel: this.appointment.name,
-          Datum: this.appointment.date,
           Intervall: this.appointment.interval,
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
@@ -91,12 +91,7 @@ export class AppointmentScreenComponent implements OnInit {
     });
 
     this.appointmentForm.get('EndZeit').valueChanges.subscribe(selectedValue => {
-      if (this.appointmentForm.get('EndZeit').value <=  this.appointmentForm.get('StartZeit').value){
-        this.appointmentForm.patchValue({EndZeit : null});
-        this.snackBar.open('Bitte gebe eine gültige Endzeit ein', '', {
-          duration: 4000,
-        });
-      }
+      console.log(selectedValue);
     });
 
 
@@ -136,36 +131,46 @@ export class AppointmentScreenComponent implements OnInit {
     console.log(this.ApType);
   }
 
-  onSubmit(appointmentForm){
-    console.warn(appointmentForm);
+  onSubmit(){
+    if (this.isCreation && !this.moduleControl.valid) {
+      this.snackbar.open('Bitte ein Modul angeben.', null, {duration: 2000});
+      return true;
+    }
+    if (this.appointmentForm.get('EndZeit').value <=  this.appointmentForm.get('StartZeit').value){
+      this.appointmentForm.patchValue({EndZeit : null});
+      this.snackBar.open('Bitte gebe eine gültige Endzeit ein', '', {
+        duration: 4000,
+      });
+      return true;
+    }
+    return false;
   }
 
   save() {
-    this.onSubmit(this.appointmentForm);
-    if (this.isCreation && !this.moduleControl.valid) {
-      this.snackbar.open('Bitte ein Modul angeben.', null, {duration: 2000});
+
+
+    if (this.onSubmit()){
       return;
     }
+
 
     if (this.isCreation) {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
       this.appointment.name = this.appointmentForm.value.Titel;
-      this.appointment.date = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
       this.appointment.type = this.appointmentForm.value.Enum;
-      this.appointment.start = this.appointmentForm.value.StartZeit;
-      this.appointment.end = this.appointmentForm.value.EndZeit;
+      this.appointment.start = this.appointmentForm.value.StartZeit.utc();
+      this.appointment.end = this.appointmentForm.value.EndZeit.utc();
       this.appointments.addItem(this.appointment);
     }else {
       this.appointment.moduleId = this.moduleControl.value.moduleId;
       this.appointment.name = this.appointmentForm.value.Titel;
-      this.appointment.date = this.appointmentForm.value.Datum;
       this.appointment.description = this.appointmentForm.value.Beschreibung;
       this.appointment.place = this.appointmentForm.value.Ort;
       this.appointment.type = this.appointmentForm.value.Enum;
-      this.appointment.start = this.appointmentForm.value.StartZeit;
-      this.appointment.end = this.appointmentForm.value.EndZeit;
+      this.appointment.start = this.appointmentForm.value.StartZeit.utc();
+      this.appointment.end = this.appointmentForm.value.EndZeit.utc();
       this.appointments.updateItem(this.appointment);
     }
 

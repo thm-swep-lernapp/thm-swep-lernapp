@@ -10,5 +10,6 @@ import * as moment from 'moment';
 export class AppComponent {
   constructor() {
     moment.locale('de');
+    moment.fn.toJSON = function() { return this.unix(); };
   }
 }
