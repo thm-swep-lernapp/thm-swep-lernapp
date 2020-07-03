@@ -28,7 +28,11 @@
   <mat-form-field appearance="outline">
     <mat-icon matPrefix svgIcon="sync"></mat-icon>
     <mat-label>Intervall</mat-label>
-    <input type="number" matInput placeholder="Intervall" formControlName="Intervall">
+    <mat-select formControlName="Intervall" >
+      <mat-option value="86400">Täglich</mat-option>
+      <mat-option value="604800">Wöchentlich</mat-option>
+      <mat-option value="2628000">Monatlich</mat-option>
+    </mat-select>
   </mat-form-field>
 
   <mat-form-field appearance="outline">
