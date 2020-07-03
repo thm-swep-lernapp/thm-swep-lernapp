@@ -5,6 +5,7 @@ import {FlashCard} from '../../../class/flash-card';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Grade} from '../../../class/grade';
 import {FlashCardBundle} from '../../../class/flash-card-bundle';
+import {AppbarService} from '../../../service/appbar.service';
 
 @Component({
   selector: 'app-flashcard-bundle-screen',
@@ -16,7 +17,8 @@ export class FlashcardBundleScreenComponent implements OnInit {
 
   constructor(private flashcardService: FlashcardService,
               private route: ActivatedRoute,
-              private router: Router) {
+              private router: Router,
+              private appbar: AppbarService) {
 
     route.paramMap.subscribe(params => {
       const id = params.get('flashcardBundleId');
@@ -25,6 +27,7 @@ export class FlashcardBundleScreenComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.appbar.setTitle(this.flashCardBundle.name);
   }
 
   add() {
