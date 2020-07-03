@@ -38,14 +38,19 @@ export class GradesScreenComponent implements OnInit {
 
   getCreditPoints(): number {
     let cp = 0;
-    this.grades.forEach(grade => cp += grade.module.creditPoints);
+    this.grades.forEach(grade => cp += grade.grade.grade >= 50 ? grade.module.creditPoints : 0);
     return cp;
   }
 
   getAverageGrade(): number {
     let grade = 0;
-    this.grades.forEach(currGrade => grade += currGrade.grade.grade);
-    grade /= this.grades.length;
+    let creditPoints = 0;
+    this.grades.forEach(currGrade => {
+      const passed = currGrade.grade.grade >= 50;
+      grade += passed ? (currGrade.grade.grade * currGrade.module.creditPoints) : 0;
+      creditPoints += passed ? currGrade.module.creditPoints : 0;
+    });
+    grade /= creditPoints;
     grade = Math.round((grade + Number.EPSILON) * 100) / 100;
     return grade;
   }
