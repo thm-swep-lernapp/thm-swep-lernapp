@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Appointment} from '../class/appointment';
 import {DatabaseService} from './database.service';
-import {ReminderService} from './reminder.service';
 import {BaseCrudService} from './base-crud-service';
+import {Moment} from 'moment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,21 +11,14 @@ export class AppointmentService extends BaseCrudService<Appointment> {
 
   private static readonly DB_KEY = 'appointments';
 
-  constructor(
-    db: DatabaseService,
-    private reminders: ReminderService
-  ) {
+  constructor(db: DatabaseService) {
     super(db, Appointment);
   }
 
-  updateItem(item: Appointment): boolean {
-    this.reminders.updateReminderForAppointment(item);
-    return super.updateItem(item);
-  }
-
-  deleteItem(item: Appointment): boolean {
-    this.reminders.deleteReminderForAppointment(item);
-    return super.deleteItem(item);
+  getItemsByDay(day: Moment): Appointment[] {
+    return this.getItems().filter(appointment => {
+      return day.isBetween(appointment.start, appointment.end) || day.isSame(appointment.start, 'day') || day.isSame(appointment.end, 'day');
+    });
   }
 
   protected getDbKey(): string {

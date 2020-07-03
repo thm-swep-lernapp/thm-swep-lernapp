@@ -3,6 +3,7 @@ import {AppointmentService} from '../../../service/appointment.service';
 import {Router} from '@angular/router';
 import {Appointment, AppointmentType} from '../../../class/appointment';
 import {Moment} from 'moment';
+import {ModuleService} from '../../../service/module.service';
 
 @Component({
   selector: 'app-appointment-list-item',
@@ -16,7 +17,8 @@ export class AppointmentListItemComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private appointments: AppointmentService
+    private appointments: AppointmentService,
+    private modules: ModuleService,
   ) {
 
   }
@@ -29,14 +31,17 @@ export class AppointmentListItemComponent implements OnInit {
   }
 
   getAppointmentName(): string {
-    console.log(this.appoin.type);
     const anhang = this.appoin.type ? this.getAppointmentTypeStringFromType(this.appoin.type) + ': ' : '';
     return  anhang + this.appoin.name;
   }
+
   getAppointmentTime(): string {
     return this.appoin.start.format('HH:mm') + ' - ' + this.appoin.end.format('HH:mm');
   }
 
+  getModuleName(id: string): string {
+    return this.modules.getItemById(id).name;
+  }
 
   editAppointment(appointment: Appointment) {
     this.router.navigate(['/termine', appointment.appointmentId]);

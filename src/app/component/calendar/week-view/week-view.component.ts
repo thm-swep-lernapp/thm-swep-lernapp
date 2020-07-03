@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Moment} from 'moment';
 import * as moment from 'moment';
+import {Appointment, AppointmentType} from '../../../class/appointment';
 
 @Component({
   selector: 'app-week-view',
@@ -9,12 +10,15 @@ import * as moment from 'moment';
 })
 export class WeekViewComponent implements OnInit {
 
+  AppointmentType: AppointmentType;
   @Output() highlightedDayChange: EventEmitter<Moment> = new EventEmitter();
   @Output() currentDayChange: EventEmitter<Moment> = new EventEmitter();
-  @Input() appointmentCountMap: { [key: string]: number };
+  @Input() appointmentCountMap: { [key: string]: {[type: number]: number } };
   highlightedDay: Moment;
   currentDay: Moment;
   days: Moment[];
+
+  private static readonly MAX_DAY_INDICATORS = 2;
 
   constructor() {
     this.highlightedDay = moment.utc();
@@ -71,5 +75,40 @@ export class WeekViewComponent implements OnInit {
     }
   }
 
+  getAppointmentDateIndicatorsForDay(day: Moment): AppointmentDateIndicator[] {
+    const countMapForDay = this.appointmentCountMap[day.format('YYYYMMD')];
+    if (!countMapForDay) { return; }
+    let indicators: AppointmentDateIndicator[] = [];
 
+    indicators = indicators.concat(this.getAppointmentDateIndicatorsForTypeAndCount(AppointmentType.EXAM, countMapForDay[AppointmentType.EXAM]));
+    indicators = indicators.concat(this.getAppointmentDateIndicatorsForTypeAndCount(AppointmentType.LEARNING_PLAN, countMapForDay[AppointmentType.LEARNING_PLAN]));
+    indicators = indicators.concat(this.getAppointmentDateIndicatorsForTypeAndCount(AppointmentType.TIMETABLE, countMapForDay[AppointmentType.TIMETABLE]));
+    indicators = indicators.concat(this.getAppointmentDateIndicatorsForTypeAndCount(AppointmentType.FREE_TIME, countMapForDay[AppointmentType.FREE_TIME]));
+    indicators = indicators.concat(this.getAppointmentDateIndicatorsForTypeAndCount(-1, countMapForDay[-1]));
+
+    if (indicators.length > WeekViewComponent.MAX_DAY_INDICATORS) {
+      const moreLength = indicators.length - WeekViewComponent.MAX_DAY_INDICATORS;
+      indicators.length = WeekViewComponent.MAX_DAY_INDICATORS;
+      indicators.push(new AppointmentDateIndicator('more', null, moreLength));
+    }
+
+    return indicators;
+  }
+
+  getAppointmentDateIndicatorsForTypeAndCount(type: number, count: number): AppointmentDateIndicator[] {
+    return [...Array(count)].map(_ => new AppointmentDateIndicator('color', Appointment.getTypeColorFromType(type)));
+  }
+}
+
+export class AppointmentDateIndicator {
+  type: 'color' | 'more';
+  color: string;
+  count: number;
+
+
+  constructor(type: ('color' | 'more'), color: string, count: number = 0) {
+    this.type = type;
+    this.color = color;
+    this.count = count;
+  }
 }

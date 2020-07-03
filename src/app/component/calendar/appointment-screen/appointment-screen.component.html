@@ -53,7 +53,10 @@
     <mat-icon matPrefix svgIcon="format-list-bulleted-type"></mat-icon>
     <mat-label>Terminart</mat-label>
     <mat-select formControlName="Enum" >
-      <mat-option *ngFor="let type of appointmentTypes" value="{{type}}">{{getAppointmentTypeStringFromType(type)}}</mat-option>
+      <mat-option *ngFor="let type of appointmentTypes" value="{{type}}" class="type-option">
+        <div class="color-indicator" [style.backgroundColor]="getAppointmentColorFromType(type)"></div>
+        {{getAppointmentTypeStringFromType(type)}}
+      </mat-option>
     </mat-select>
   </mat-form-field>
 

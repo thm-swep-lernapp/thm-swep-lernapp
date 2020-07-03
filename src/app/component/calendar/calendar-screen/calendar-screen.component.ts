@@ -5,7 +5,7 @@ import {NavigationItem} from '../../../class/navigation-item';
 import {WeekViewComponent} from '../week-view/week-view.component';
 import * as moment from 'moment';
 import {Moment} from 'moment';
-import {Appointment} from '../../../class/appointment';
+import {Appointment, AppointmentType} from '../../../class/appointment';
 
 @Component({
   selector: 'app-calendar',
@@ -15,7 +15,7 @@ import {Appointment} from '../../../class/appointment';
 export class CalendarScreenComponent implements OnInit {
 
   @ViewChild(WeekViewComponent) weekView: WeekViewComponent;
-  currentAppointmentCountMap: { [key: string]: number };
+  currentAppointmentCountMap: { [key: string]: {[type: number]: number} };
   highlightedDay: Moment;
   currentDay: Moment;
   appointments: Appointment[] = [];
@@ -75,23 +75,25 @@ export class CalendarScreenComponent implements OnInit {
   buildCurrentAppointmentCountMap() {
     const startOfWeek = this.currentDay.clone().startOf('isoWeek');
     const startOfNextWeek = this.currentDay.clone().endOf('isoWeek').add(1, 'day');
-    const appointmentCountMap: { [key: string]: number } = {};
+    const appointmentCountMap: { [key: string]: {[type: number]: number} } = {};
 
     let currDay = startOfWeek.clone();
     while (!currDay.isSame(startOfNextWeek, 'day')) {
-      console.log('jooooo');
-      appointmentCountMap[currDay.format('YYYYMMD')] = this.appointmentService.getItems().filter(appointment => {
-       return  currDay.isBetween(appointment.start, appointment.end) || currDay.isSame(appointment.start, 'day') || currDay.isSame(appointment.end, 'day');
-      }).length;
+      const appointments = this.appointmentService.getItemsByDay(currDay);
+      appointmentCountMap[currDay.format('YYYYMMD')] = {
+        [AppointmentType.TIMETABLE]: appointments.filter(appointment => appointment.type === AppointmentType.TIMETABLE).length,
+        [AppointmentType.FREE_TIME]: appointments.filter(appointment => appointment.type === AppointmentType.FREE_TIME).length,
+        [AppointmentType.LEARNING_PLAN]: appointments.filter(appointment => appointment.type === AppointmentType.LEARNING_PLAN).length,
+        [AppointmentType.EXAM]: appointments.filter(appointment => appointment.type === AppointmentType.EXAM).length,
+        [-1]: appointments.filter(appointment => !(appointment.type >= 0)).length
+      };
       currDay = currDay.add(1, 'days').clone();
     }
 
-    console.log(appointmentCountMap);
     this.currentAppointmentCountMap = appointmentCountMap;
   }
 
   onHighlightedDayChange(day: Moment) {
-    console.log(day);
     this.highlightedDay = day;
     this.refreshAppointments();
   }
@@ -103,9 +105,7 @@ export class CalendarScreenComponent implements OnInit {
   }
 
   refreshAppointments() {
-    this.appointments = this.appointmentService.getItems().filter(appointment => {
-      return this.highlightedDay.isBetween(appointment.start, appointment.end) || this.highlightedDay.isSame(appointment.start, 'day') || this.highlightedDay.isSame(appointment.end, 'day');
-    });
+    this.appointments = this.appointmentService.getItemsByDay(this.highlightedDay);
   }
 
   onAppointmentDeleted() {
