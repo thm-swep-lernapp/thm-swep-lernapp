@@ -27,7 +27,7 @@ export class MyModule {}
 
 export class AppointmentScreenComponent implements OnInit {
 
-  moduleControl = new FormControl(null, [Validators.required, this.isModule]);
+  moduleControl = new FormControl(null, []);
 
   appointment: Appointment;
   appointmentTypes = [AppointmentType.TIMETABLE, AppointmentType.EXAM, AppointmentType.LEARNING_PLAN, AppointmentType.FREE_TIME];
@@ -123,14 +123,12 @@ export class AppointmentScreenComponent implements OnInit {
     return Appointment.getTypeColorFromType(type);
   }
 
-  parseValue(value: string){
-    this.ApType = AppointmentType[value];
-    console.log(this.ApType);
-  }
-
   onSubmit(){
-    if (this.isCreation && !this.moduleControl.valid) {
-      this.snackbar.open('Bitte ein Modul angeben.', null, {duration: 2000});
+    if (!this.appointmentForm.get('Titel').value){
+      console.log('kein name');
+      this.snackBar.open('Bitte gebe einen Titel an', '', {
+        duration: 4000,
+      });
       return true;
     }
     if (this.appointmentForm.get('EndZeit').value <=  this.appointmentForm.get('StartZeit').value){
@@ -177,9 +175,7 @@ export class AppointmentScreenComponent implements OnInit {
 
 
 
-  isModule(control: FormControl): ValidationErrors {
-    return control.value instanceof Module ? null : { isModule: false };
-  }
+
   getChosenModule(): Module {
     return this.moduleControl.value as Module;
   }
