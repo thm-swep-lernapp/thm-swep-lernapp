@@ -8,4 +8,9 @@
 
 app-flashcard {
   width: 20%;
+  display: flex;
+}
+
+mat-card {
+  align-content: center;
 }
