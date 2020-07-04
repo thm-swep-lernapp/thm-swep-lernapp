@@ -1,16 +1,7 @@
 .flex {
+  margin: 0 16px ;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  text-align: center;
-  align-items: stretch;
 }
 
-app-flashcard {
-  width: 20%;
-  display: flex;
-}
-
-mat-card {
-  align-content: center;
-}
