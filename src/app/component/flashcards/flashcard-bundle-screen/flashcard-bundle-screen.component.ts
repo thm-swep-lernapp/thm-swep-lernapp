@@ -36,6 +36,13 @@ export class FlashcardBundleScreenComponent implements OnInit {
         () => {
           this.router.navigate(['decks/' + this.flashCardBundle.flashCardBundleId + '/bearbeiten']);
         }
+      ),
+      new NavigationItem(
+        'Durcharbeiten',
+        'play',
+        () => {
+          this.router.navigate(['decks/' + this.flashCardBundle.flashCardBundleId + '/lernen']);
+        }
       )
     ]);
   }

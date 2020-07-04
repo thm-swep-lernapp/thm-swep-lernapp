@@ -1,15 +1,15 @@
 <mat-form-field appearance="outline" class="question-input">
-  <mat-icon matPrefix svgIcon="help"></mat-icon>
+  <mat-icon matPrefix svgIcon="help-circle"></mat-icon>
   <mat-label>Frage</mat-label>
   <input type="text" matInput [formControl]="questionControl" placeholder="Frage eingeben">
 </mat-form-field>
 
 <mat-form-field appearance="outline" class="answer-input">
-  <mat-icon matPrefix svgIcon="feedback"></mat-icon>
+  <mat-icon matPrefix svgIcon="alert-circle"></mat-icon>
   <mat-label>Antwort</mat-label>
   <input type="text" matInput [formControl]="answerControl" placeholder="Antwort eingeben">
 </mat-form-field>
 
-<button class="lower-right-fab" mat-fab color="accent" (click)="save()">
+<button class="lower-right-fab" mat-fab color="accent" (click)="save()" [disabled]="this.questionControl.value.trim() === '' || this.answerControl.value.trim() === ''">
   <mat-icon svgIcon="check"></mat-icon>
 </button>

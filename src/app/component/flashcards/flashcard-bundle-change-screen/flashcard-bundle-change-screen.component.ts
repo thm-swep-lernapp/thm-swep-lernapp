@@ -47,7 +47,7 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.appbar.setTitle(this.isCreation ? 'Neue Karteikarte' : 'Karteikarte bearbeiten');
+    this.appbar.setTitle(this.isCreation ? 'Neues Karteikartendeck' : 'Karteikartendeck bearbeiten');
     this.appbar.setLeftNavigationItem(new NavigationItem(
       'Schließen',
       'close',
