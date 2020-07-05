@@ -13,6 +13,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import {min} from 'rxjs/operators';
 import {error} from 'selenium-webdriver';
+import {ModulePickerValidators} from '../../module-picker/module-picker-validators';
 
 @NgModule({
   imports: [NgxMaterialTimepickerModule]
@@ -27,7 +28,7 @@ export class MyModule {}
 
 export class AppointmentScreenComponent implements OnInit {
 
-  moduleControl = new FormControl(null, [Validators.required, this.isModule]);
+  moduleControl = new FormControl(null, [ModulePickerValidators.isModuleOrNull]);
 
   appointment: Appointment;
   appointmentTypes = [AppointmentType.TIMETABLE, AppointmentType.EXAM, AppointmentType.LEARNING_PLAN, AppointmentType.FREE_TIME];
@@ -38,15 +39,15 @@ export class AppointmentScreenComponent implements OnInit {
 
   isCreation = false;
   appointmentForm = this.formBuilder.group({
-    Titel: new FormControl(''),
+    Titel: new FormControl('', [Validators.required]),
     Datum: new FormControl(''),
     Intervall: new FormControl(''),
     Beschreibung: new FormControl(''),
     Ort: new FormControl(''),
     Terminart: new FormControl(''),
     Enum: new FormControl(''),
-    StartZeit: new FormControl(''),
-    EndZeit: new FormControl({value: '', disabled: true})
+    StartZeit: new FormControl(null, [Validators.required]),
+    EndZeit: new FormControl({value: null, disabled: true}, [Validators.required])
   });
 
   constructor(
@@ -69,14 +70,13 @@ export class AppointmentScreenComponent implements OnInit {
         this.isCreation = false;
         this.appointment = this.appointments.getItemById(id);
         this.appointmentForm.get('EndZeit').enable();
-        console.log(this.appointment);
         this.moduleControl.setValue(this.modules.getItemById(this.appointment.moduleId));
         this.appointmentForm.patchValue({
           Titel: this.appointment.name,
           Intervall: this.appointment.interval ? this.appointment.interval.toString() : null,
           Beschreibung: this.appointment.description,
           Ort: this.appointment.place,
-          Enum: this.appointment.type ? this.appointment.type.toString() : -1,
+          Enum: this.appointment.type || this.appointment.type === 0 ? this.appointment.type.toString() : -1,
           StartZeit: this.appointment.start,
           EndZeit: this.appointment.end});
       }
@@ -123,14 +123,15 @@ export class AppointmentScreenComponent implements OnInit {
     return Appointment.getTypeColorFromType(type);
   }
 
-  parseValue(value: string){
-    this.ApType = AppointmentType[value];
-    console.log(this.ApType);
-  }
-
   onSubmit(){
     if (this.isCreation && !this.moduleControl.valid) {
-      this.snackbar.open('Bitte ein Modul angeben.', null, {duration: 2000});
+      this.snackbar.open('Bitte ein korrektes Modul oder keines angeben.', null, {duration: 2000});
+      return true;
+    }
+    if (!this.appointmentForm.get('Titel').value || this.appointmentForm.get('Titel').value === ''){
+      this.snackBar.open('Bitte gebe einen Titel an', '', {
+        duration: 4000,
+      });
       return true;
     }
     if (this.appointmentForm.get('EndZeit').value <=  this.appointmentForm.get('StartZeit').value){
@@ -140,7 +141,7 @@ export class AppointmentScreenComponent implements OnInit {
       });
       return true;
     }
-    return false;
+    return !this.appointmentForm.valid;
   }
 
   save() {
@@ -150,7 +151,9 @@ export class AppointmentScreenComponent implements OnInit {
       return;
     }
 
-    this.appointment.moduleId = this.moduleControl.value.moduleId;
+    if (this.moduleControl.value) {
+      this.appointment.moduleId = this.moduleControl.value.moduleId;
+    }
     this.appointment.name = this.appointmentForm.value.Titel;
     this.appointment.description = this.appointmentForm.value.Beschreibung;
     this.appointment.place = this.appointmentForm.value.Ort;
@@ -158,6 +161,8 @@ export class AppointmentScreenComponent implements OnInit {
     const type = this.appointmentForm.value.Enum;
     if (type && type.length > 0) {
       this.appointment.type = parseInt(type, 10);
+    } else {
+      this.appointment.type = -1;
     }
     this.appointment.start = this.appointmentForm.value.StartZeit.utc();
     this.appointment.end = this.appointmentForm.value.EndZeit.utc();

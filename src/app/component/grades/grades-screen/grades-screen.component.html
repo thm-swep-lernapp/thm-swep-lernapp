@@ -12,7 +12,7 @@
   <div class="divider"></div>
   <app-grade-card-list [grades]="grades"></app-grade-card-list>
 </ng-container>
-<app-empty-state [icon]="'star'" [text]="'Du hast noch keine Leistungen hinzugeügt. Tippe zum Hinzufügen auf den Button rechts unten.'" *ngIf="grades.length === 0"></app-empty-state>
+<app-empty-state [icon]="'star'" [text]="'Du hast noch keine Leistungen hinzugefügt. Tippe zum Hinzufügen auf den Button rechts unten.'" *ngIf="grades.length === 0"></app-empty-state>
 <button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/leistungen/neu'">
   <mat-icon svgIcon="plus"></mat-icon>
 </button>

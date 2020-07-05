@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
 })
 export class BottomnavComponent implements OnInit {
 
-  private url = '/';
+  private url = '/termine';
 
   constructor(
     private router: Router
