@@ -8,6 +8,7 @@ import {Module} from '../../../class/module';
 import {FormControl, ValidationErrors, ValidatorFn, Validators} from '@angular/forms';
 import {NavigationItem} from '../../../class/navigation-item';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {ModulePickerValidators} from '../../module-picker/module-picker-validators';
 
 @Component({
   selector: 'app-new-grade',
@@ -16,7 +17,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class GradeChangeScreenComponent implements OnInit {
 
-  moduleControl = new FormControl(null, [Validators.required, this.isModule]);
+  moduleControl = new FormControl(null, [Validators.required, ModulePickerValidators.isModule]);
   gradeControl = new FormControl(0);
 
   isCreation = false;
@@ -95,10 +96,6 @@ export class GradeChangeScreenComponent implements OnInit {
 
   isModuleReady() {
     return this.moduleControl.value && this.moduleControl.value instanceof Module;
-  }
-
-  isModule(control: FormControl): ValidationErrors {
-    return control.value instanceof Module ? null : { isModule: false };
   }
 
   private close() {

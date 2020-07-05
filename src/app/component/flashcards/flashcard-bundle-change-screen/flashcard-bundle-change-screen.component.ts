@@ -8,6 +8,7 @@ import {AppbarService} from '../../../service/appbar.service';
 import {Grade} from '../../../class/grade';
 import {FlashCardBundle} from '../../../class/flash-card-bundle';
 import {ModuleService} from '../../../service/module.service';
+import {ModulePickerValidators} from '../../module-picker/module-picker-validators';
 
 @Component({
   selector: 'app-flashcard-bundle-change-screen',
@@ -16,7 +17,7 @@ import {ModuleService} from '../../../service/module.service';
 })
 export class FlashcardBundleChangeScreenComponent implements OnInit {
 
-  moduleControl = new FormControl(null, [this.isModule] );
+  moduleControl = new FormControl(null, [ModulePickerValidators.isModuleOrNull] );
   titleControl = new FormControl('', [Validators.required]);
 
   isCreation: boolean;
@@ -65,10 +66,6 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
         }
       ));
     }
-  }
-
-  isModule(control: FormControl): ValidationErrors {
-    return control.value === null || control.value instanceof Module ? null : { isModule: false };
   }
 
   save() {

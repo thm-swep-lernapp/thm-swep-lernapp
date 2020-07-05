@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {FormControl} from '@angular/forms';
+import {FormControl, ValidationErrors} from '@angular/forms';
 import {ModuleService} from '../../service/module.service';
 import {Module} from '../../class/module';
 import {Observable} from 'rxjs';

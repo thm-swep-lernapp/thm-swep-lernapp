@@ -1,5 +1,7 @@
-<app-flashcard-bundle-card *ngFor="let deck of cardDecks" [flashCardBundle]="deck"></app-flashcard-bundle-card>
-
+<ng-container *ngIf="cardDecks && cardDecks.length > 0">
+  <app-flashcard-bundle-card *ngFor="let deck of cardDecks" [flashCardBundle]="deck"></app-flashcard-bundle-card>
+</ng-container>
+<app-empty-state *ngIf="!cardDecks || cardDecks.length === 0" [icon]="'school'" [text]="'Du hast noch keine Decks hinzugefügt. Tippe zum Hinzufügen auf den Button rechts unten.'"></app-empty-state>
 <button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/decks/neu/bearbeiten'">
   <mat-icon svgIcon="plus"></mat-icon>
 </button>
