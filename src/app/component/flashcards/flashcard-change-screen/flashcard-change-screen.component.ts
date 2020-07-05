@@ -19,8 +19,8 @@ export class FlashcardChangeScreenComponent implements OnInit {
   flashCard: FlashCard;
   isCreation: boolean;
 
-  questionControl = new FormControl(null, [Validators.required] );
-  answerControl = new FormControl(null, [Validators.required]);
+  questionControl = new FormControl('', [Validators.required] );
+  answerControl = new FormControl('', [Validators.required]);
 
   constructor(
     private flashcardService: FlashcardService,
