@@ -1,1 +1,6 @@
-<p>flashcard-bundle-screen works!</p>
+<app-flashcard-list *ngIf="flashCardBundle && flashCardBundle.flashCards.length > 0" [flashCards]="flashCardBundle ? flashCardBundle.flashCards : []" [flashCardBundle]="flashCardBundle">
+</app-flashcard-list>
+<app-empty-state *ngIf="!flashCardBundle || flashCardBundle.flashCards.length === 0" [icon]="'card-text'" [text]="'Du hast noch keine Karteikarten hinzugefügt. Tippe zum Hinzufügen auf den Button rechts unten.'"></app-empty-state>
+<button class="lower-right-fab" mat-fab color="accent" (click)="add()">
+  <mat-icon svgIcon="plus"></mat-icon>
+</button>

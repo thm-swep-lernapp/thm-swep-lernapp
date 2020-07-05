@@ -1,0 +1,10 @@
+mat-form-field {
+  width: calc(100% - 32px);
+  margin: 0 16px;
+}
+
+.no-bottom-padding {
+  ::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+}

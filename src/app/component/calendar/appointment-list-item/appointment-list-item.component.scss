@@ -1,0 +1,54 @@
+mat-list-item {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  .data {
+    max-width: calc(100% - 118px);
+    flex: 1;
+    padding: 16px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  ::ng-deep .mat-list-item-content {
+    display: flex;
+    padding: 0 !important;
+  }
+
+  ::ng-deep .subline {
+    max-width: 100%;
+    display: flex !important;
+    align-items: center;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    color: rgba(0, 0, 0, .6);
+    mat-icon, mat-icon svg {
+      width: 18px !important;
+      height: 18px !important;
+      font-size: 18px !important;
+      padding: 0 !important;
+    }
+    span {
+      margin-left: 8px;
+      white-space: normal;
+      word-wrap: break-word;
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.divider {
+  width: calc(100% - 38px);
+  min-width: calc(100% - 38px);
+  margin-left: 38px;
+}
+

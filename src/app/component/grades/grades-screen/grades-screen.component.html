@@ -1,1 +1,18 @@
-<p>grades works!</p>
+<ng-container  *ngIf="grades.length > 0">
+  <div class="grade-header">
+    <div class="grade">
+      <span class="title">{{ getAverageGrade() }}%</span>
+      <span class="description">Notenschnitt</span>
+    </div>
+    <div class="grade">
+      <span class="title">{{ getCreditPoints() }}CP</span>
+      <span class="description">Creditpoints</span>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <app-grade-card-list [grades]="grades"></app-grade-card-list>
+</ng-container>
+<app-empty-state [icon]="'star'" [text]="'Du hast noch keine Leistungen hinzugefügt. Tippe zum Hinzufügen auf den Button rechts unten.'" *ngIf="grades.length === 0"></app-empty-state>
+<button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/leistungen/neu'">
+  <mat-icon svgIcon="plus"></mat-icon>
+</button>

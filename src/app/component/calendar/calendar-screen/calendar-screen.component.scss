@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#currentDate{
+  font-weight:500;
+}
+#currentDateContainer{
+  text-align:center;
+  margin-top:10px;
+}

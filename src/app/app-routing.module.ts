@@ -9,24 +9,24 @@ import {FlashcardChangeScreenComponent} from './component/flashcards/flashcard-c
 import {LearnScreenComponent} from './component/flashcards/learn-screen/learn-screen.component';
 import {GradesScreenComponent} from './component/grades/grades-screen/grades-screen.component';
 import {GradeChangeScreenComponent} from './component/grades/grade-change-screen/grade-change-screen.component';
+import {FlashcardBundleScreenComponent} from './component/flashcards/flashcard-bundle-screen/flashcard-bundle-screen.component';
 
 
 const routes: Routes = [
-  { path: '', component: CalendarScreenComponent },
-  { path: 'termine/neu', component: AppointmentScreenComponent },
+  { path: '', redirectTo: 'termine', pathMatch: 'full' },
+  { path: 'termine', component: CalendarScreenComponent },
   { path: 'termine/:appointmentId', component: AppointmentScreenComponent },
   { path: 'decks', component: FlashcardBundleListScreenComponent },
-  { path: 'decks/neu', component: FlashcardBundleChangeScreenComponent },
+  { path: 'decks/:flashcardBundleId', component: FlashcardBundleScreenComponent },
   { path: 'decks/:flashcardBundleId/bearbeiten', component: FlashcardBundleChangeScreenComponent },
-  { path: 'decks/:flashcardBundleId/karte/neu', component: FlashcardChangeScreenComponent },
   { path: 'decks/:flashcardBundleId/karte/:flashcardId', component: FlashcardChangeScreenComponent },
   { path: 'decks/:flashcardBundleId/lernen', component: LearnScreenComponent },
   { path: 'leistungen', component: GradesScreenComponent },
-  { path: 'leistungen/neu', component: GradeChangeScreenComponent },
+  { path: 'leistungen/:gradeId', component: GradeChangeScreenComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

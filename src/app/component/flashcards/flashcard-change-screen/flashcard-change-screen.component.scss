@@ -1,0 +1,23 @@
+.question-input {
+
+  width: calc(100% - 32px);
+  margin: 0 16px;
+
+}
+.answer-input {
+
+  width: calc(100% - 32px);
+  margin: 0 16px;
+
+}
+.flex_one {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.flex_two {
+  height: 50%;
+  display: flex;
+  padding: 10% 0 0 0;
+}

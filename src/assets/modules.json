@@ -1,0 +1,3419 @@
+﻿[
+  {
+    "id": "MIB1",
+    "name": "Grafische Datenverarbeitung: Modellierung",
+    "img": "img/modules/gd-modeling.jpg",
+    "semester": 1,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB6"
+      },
+      {
+        "kind": "module",
+        "id": "MIB11"
+      }
+    ],
+    "extra": null,
+    "content": [
+      "Einführung in die grundlegenden Verfahren, Modelle und Methoden der grafischen Datenverarbeitung,Transformationen und Projektionen, Visibilitätsverfahren, Modellierungtechniken von 3D-Objekten und UV-Mapping, Einführung in eine 3D-Software (zur Zeit Autodesk Maya).",
+      "Für die Mathematik: Lineare Algebra (Mengen und Aussagenlogik, Abbildungen, Dimensionen, Lineare Gleichungssysteme, Vektorräume, Matrizen, Lineare Abbildungen, Polynome, Geometrie der Ebene und des Raums)"
+    ],
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": "Studierende erlangen einen Überblick über die Grundlagen der grafischen Datenvearbeitung (GDV) und ihrer wichtigsten Teilgebiete. Sie verstehen die grundlegenden Verfahren, Modelle und Methoden der Computergrafik. Dieses erste von drei aufeinanderfolgenden Modulen zur GDV behandelt als Schwerpunkt die geometrische Modellierung von virtuellen Objekten."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Die Studierenden beherrschen die grundlegenden Algorithmen und Methoden in Theorie und nutzen diese in praktischen Arbeiten."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Sie wenden die notwendigen Arbeitsphasen bei der Erstellung von 3D-Modellen selbstständig an. Sie sind in der Lage, ein 3D-Modell unter Anleitung mit einer 3D-Software (zur Zeit Autodesk Maya) zu erzeugen. Sie wenden die wichtigsten Techniken der Modellierung an und sind in der Lage, ihre Kenntnisse auf diesem Gebiet eigenständig zu erweitern."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Die Themengebiete werden in der Vorlesung erarbeitet und anhand eines semesterbegleitenden Projekts angewendet und vertieft."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Das Modul beinhaltet Mathematik im Umfang von 2 CrP. Insbesondere die Grundlagen der Linearen Algebra werden grundlegend und anwendungsbezogen behandelt, da sie die Grundlage der geometrischen Modellierung bilden. Die Studierenden transferieren das erlernte mathematische Wissen auf den Bereich der Computergrafik."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Die Studierenden setzen kreative und künstlerische Prozesse in der technisch geprägten Anwendung der 3D-Modellierung um."
+      }
+    ],
+    "literature": [
+      "Brüderlin, B., Meier, A., Johnson, M. (2001). Computergrafik und geometrisches Modellieren, Leipzig: Teubner Verlag.",
+      "Foley, J., van Dam, A., Feiner, S. (2013). Computer Graphics – Principles and Practice, Addison-Wesley.",
+      "Murdock, K., (2017) Autodesk Maya 2017 Basics Guide, Sdc Publications",
+      "Jähnich, K. (2011). Lineare Algebra, Heidelberg, Springer • Fischer, G., (2001). Lineare Algebra, Vieweg und Teubner"
+    ]
+  },
+  {
+    "id": "MIB2a",
+    "name": "Audiovisuelle Medien 1: Studiotechnik",
+    "img": "img/modules/av1-st.jpg",
+    "semester": 1,
+    "creditPoints": 4,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": null,
+    "testKinds": [
+      {
+        "percentage": 50,
+        "kind": "course record book"
+      },
+      {
+        "percentage": 50,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB12a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB12b"
+      }
+    ],
+    "extra": null,
+    "isTestOrderMandatory": true,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Als angehende Ingenieure sind die Studierenden mit allen technischen Komponenten eines Studios für audiovisuelle musikalische Live-Studioproduktionen (Systeme) und den damit verbundenen physikalischen Grundlagen vertraut."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie besitzen die Fähigkeit, die technischen Komponenten eines Studios für audiovisuelle musikalische Live-Studioproduktionen zu planen, diese für Produktionen zu konfigurieren und live bei Produktionen einzusetzen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die individuelle Ausdifferenzierung von Kompetenzen im Bereich der medientechnischen Grundlagen sowie des System Engineerings ist dafür notwendig und wird im Kurs unterstützt."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " selbstgesteuertes Lernen und Selbstmanagementkompetenz"
+      }
+    ],
+    "content": [
+      "Inhalte der Vorlesung, die in \"hands on\"- Workshops (Praktikum) vertieft werden:",
+      "Kamerasysteme und weitere bildabnehmende Systeme",
+      "Mikrophone und weitere tonabnehmende Systeme",
+      "Lichtsysteme",
+      "Übertragung, Monitoring und Qualitätsbewertung von Audio- und Videosignalen",
+      "Intercom-System",
+      "Bildmischungs- und Aufzeichnungssysteme",
+      "Tonmischungs - und Aufzeichnungssysteme",
+      "Ingest- und Data Wrangling Systeme",
+      "Non-linear Editing Systeme",
+      "Finalisierungs- und Enkodierungssysteme",
+      "Distributionssysteme",
+      "Archvierungssysteme"
+    ],
+    "literature": [
+      "Heinen, G. (2012). AV-Medientechnik (1. Aufl). Haan-Gruiten: Verl. Europa-Lehrmittel Nourney, Vollmer.",
+      "Online-Semesterapparat"
+    ]
+  },
+  {
+    "id": "MIB2b",
+    "name": "Audiovisuelle Medien 1: Studioproduktion",
+    "img": "img/modules/av1-sp.jpg",
+    "semester": 1,
+    "creditPoints": 5,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "attendance"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "practice"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 4,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB12a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB12b"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden sind in der Lage, alle medialen Artefakte einer audiovisuellen, musikalischen LiveStudioproduktion team- und projektorientiert selbstänig zu planen und zu produzieren."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie kennen die Gestaltungsmöglichkeiten einer audiovisuellen musikalischen Live-Studioproduktion in der Theorie und können diese in der Praxis anwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Weiterhin sind sie im Stande, audiovisuelle Gestaltungskonzepte bestehender audiovisueller musikalischer Live-Studioproduktionen zu analyisieren und diese partiell für ihre eigenen medialen Artefakte zu adaptieren."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Als zukünftige Medienproduzierende sind sie mit dem Konzept der Unschärfe in den einzelnen Produktionsschritten einer audiovisuellen musikalischen Live-Studioproduktion vetraut und können in der Praxis damit professionell umgehen."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Teamfähigkeit und Kooperationswille"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Verantwortungsbewußtsein und Verlässlichkeit"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " kommunikative Kompetenz und Projektmanagementkompetenz"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " selbstgesteuertes Lernen und Selbstmanagementkompetenz "
+      }
+    ],
+    "content": [
+      "Konzept der Unschärfe in der Medienproduktion",
+      "Audiovisuelle musikalische Studioproduktion",
+      "als gestalterischer Medienproduktionsprozess: Preproduktion, Produktion, Postproduktion, Distribution",
+      "als ökonomischer Medienproduktionsprozess: Selektion, Bearbeitung, Bündelung, Reproduktion",
+      "als technischer Medienproduktionsprozess",
+      "audiovisuelle musikalische Live-Studioproduktion einer Sendung der Konzertserie @Campus - Winterstaffel (30 min. Länge) inklusive vorbereitender Aufgaben"
+    ],
+    "literature": [
+      "Albrecht, C. (2017). Der Tonmeister : Mikrofonierung akustischer Instrumente in der Popmusik (2. Aufl.). Berlin: Fachverlag Schiele & Schön.",
+      "Müller, A. H. (2014): Geheimnisse der Filmgestaltung : Das Handwerk. Die Regeln der Kunst. Berlin : Fachverlag Schiele & Schön",
+      "Online-Semesterapparat"
+    ]
+  },
+  {
+    "id": "MIB3",
+    "name": "Web-Programmierung 1",
+    "img": "img/modules/web-pg1.jpg",
+    "semester": 1,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB7"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden kennen die technischen Grundlagen des Internets."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können statische Webseiten für unterschiedliche Endgeräte entwerfen und mit Hilfe der gängigen Auszeichnungssprachen erstellen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Dabei können sie Grundsätze der Software-Ergonomie und der Barrierefreiheit anwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden sind in der Lage, Webseiten mit client-seitigem Skriptcode anzureichern, um dynamisches Verhalten zu ermöglichen."
+      }
+    ],
+    "content": [
+      "Grundlagen des Internets, Netzwerkprotokolle",
+      "HTML, CSS, Responsive Design",
+      "Ergonomie, barrierearme Gestaltung",
+      "Client-seitige Web-Programmierung"
+    ],
+    "literature": [
+      "aktuelle Lehrbücher wie z.B. Pomaska, G. (2012). Webseiten-Programmierung. Springer Vieweg.",
+      "Web-Ressourcen wie SelfHTML, w3schools"
+    ]
+  },
+  {
+    "id": "MIB4a",
+    "name": "Softwareentwicklung 1 : Einführung in die Programmierung",
+    "img": "img/modules/swe1-pg.jpg",
+    "semester": 1,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB8"
+      },
+      {
+        "kind": "module",
+        "id": "MIB15"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden beschreiben, analysieren, strukturieren und visualisieren informationstechnische Vorgänge."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie formulieren informationstechnische Vorgänge in syntaktisch und semantisch fehlerfreiem Code einer aktuellen Programmiersprache."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "• Die Studierenden setzen informationstechnische Symbolsprachen und Hilfsmittel zielgerichtet ein."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie nennen die grundlegenden Begriffe, Formate, Modelle und Arbeitsweisen der Informatik und setzen diese fachlich korrekt ein."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie kennen binäre und verwandte Darstellungen und führen geeignete Umwandlungen sowie Codierungen durch."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie können grundlegende Algorithmen und Datenstrukturen effizient bei der Lösung von informationstechnischen Problemen anwenden."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Sie wenden die passenden Lerntechniken und Methoden zur Organisation ihres Lernprozesses situations- und fachinhaltsbezogen an."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Sie arbeiten strukturiert und zielorientiert, führen Problemanalysen durch, sammeln Informationen und wenden diese bei der Entwicklung von Lösungswegen an."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Sie formulieren konkrete Anforderungen über ihren Bedarf an Hilfen und geben angemessenes Feedback an Kommiliton/inn/en und Dozent/inn/en."
+      }
+    ],
+    "content": [
+      "Algorithmus, Struktogramm, Ablaufplan,",
+      "Syntax, Semantik, Programmcode,",
+      "Einfache und komplexe Datentypen: Variable, Feld, Objekt, Referenz,",
+      "Kontrollstrukturen: Sequenz, Verzweigung, Schleife, Funktion, Methode,",
+      "Rechenschemata: z.B. Horner, Fanø, Huffman, Baumstruktur,",
+      "Tools: Struktogrammeditor, Programmierumgebung, Kommentierung,",
+      "Zahlensysteme und Umrechnungen, Zeichen-/Zahlenformate, Informationstheorie, Logik, Codierung,",
+      "Mathematische Hilfsmittel: ganzzahlige Division, Modulo, Potenzreihe, Kombinatorik, Wahrscheinlichkeit."
+    ],
+    "literature": [
+      "Ernst, H., Schmidt, J.: Grundkurs Informatik, Grundlagen und Konzepte für die erfolgreiche IT-Praxis, Vieweg 2016",
+      "Schwarzenberger, E.: Struktogramme – Aufgaben und Lösungen zur Darstellung von Programmlogik, Franzis",
+      "Schneider, U., Werner, D.: Taschenbuch der Informatik, Fachbuchverlag Leipzig 2012",
+      "Goll, J., Heinisch, C.: Java als erste Programmiersprache, Springer 2016"
+    ]
+  },
+  {
+    "id": "MIB4b",
+    "name": "Softwareentwicklung 1 : Reflexives Lernen",
+    "img": "img/modules/swe1-rl.jpg",
+    "semester": 1,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": null,
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "seminar"
+      }
+    ],
+    "requirements": "keine ",
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB8"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": "Die Studierenden können Zeitmanagementmethoden anwenden, um basierend auf dem errechneten Workload ihren individuellen Lernplan zu entwickeln."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Sie wenden die passenden Lerntechniken und Methoden zur Organisation ihres Lernprozesses situations- und fachinhaltsbezogen an."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Die Studierenden organisieren sich angeleitet durch die Mentoren/-innen in Teams. Sie arbeiten strukturiert und zielorientiert, führen Problemanalysen durch, sammeln Informationen und wenden diese bei der Entwicklung von Lösungswegen an. Im Rahmen von Peer Reviews geben die Studierenden sich gegenseitig zu einer erbrachten Leistung und den kommunizierten Feedbackregeln entsprechend Rückmeldung."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Begleitet durch Mentoren/-innen reflektieren die Studierenden ihren individuellen sowie den Gruppenlernprozess hinsichtlich gelingender und herausfordernder Aspekte und passen ggf. ihr Lernverhalten an."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Sie können ihren Lernfortschritt mit den zur Verfügung gestellten Hilfsmitteln ermitteln und beurteilen."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Sie dokumentieren ihre Erkenntnisse nach vorgegebenen Kriterien z.B. in Form eines Lerntagebuchs bzw. Lernportfolios."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Sie kennen die Studiengangs- und Fachbereichsorganisation und ihre Einflussmöglichkeiten."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Sie formulieren konkrete Anforderungen über ihren Bedarf an Hilfen und geben angemessenes Feedback an Kommiliton/inn/en und Dozent/inn/en."
+      }
+    ],
+    "content": [
+      "Zeitmanagement und Workloadberechnung,",
+      "Arbeits- und Lerntechniken (Lernen an der Hochschule, Teamwork, Selbstorganisation, Problemlösung, etc.),",
+      "Erstellung eines individuellen Lernplans,",
+      "Reflexion des individuellen und (Gruppen-) Lernprozesses,",
+      "konstruktives Feedback im Peer Review Verfahren,",
+      "Einführung in Wissenschaftliches Arbeiten (Formalia, Literaturrecherche, Lernportfolio etc.),",
+      "Lehrorganisation in Hochschule, Fachbereich und Studiengang."
+    ],
+    "literature": [
+      "Heesen (2010): Wissenschaftliches Arbeiten. Vorlagen und Techniken für das Bachelor-, Master- und Promotionsstudium. Berlin u.a., Springer.",
+      "Boeglin (2007): Wissenschaftlich arbeiten Schritt für Schritt. Gelassen und effektiv studieren. München u.a., Fink (UTB, 2927).",
+      "Hofmann, Löhle (2012): Erfolgreich Lernen. Effiziente Lern-und Arbeitsstrategien für Schule, Studium und Beruf. Göttingen u.a., Hogrefe"
+    ]
+  },
+  {
+    "id": "MIB5",
+    "name": "Mediengestaltung 1: Bewegtbild und Ton",
+    "img": "img/modules/mg1-bt.jpg",
+    "semester": 1,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "paper"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 3,
+        "kind": "seminar"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB12a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB12b"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": "Als zukünftige Medienproduzierende können Studierende auf Basis von Film- und Fernsehanalysen mediale Artefakte im Bereich Bewegtbild und Ton gestalten."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Im Speziellen haben die Studierenden grundlegende forschungsmethodische Kenntnisse der Film- und Fernsehanalyse und können diese in einem eigenständigen kleinem Forschungsprojekt anwenden."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Kompetenz, analytisch zu bewerten und zu argumentieren"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Kompetenz, ein Forschungsprojekt eigenständing zu planen und durchzuführen"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Kompetenz des wissenschaftlichen Schreibens inklusive Recherchieren von Fachliteratur"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Kompetenz des selbstgesteuerten Lernens und Arbeitens"
+      }
+    ],
+    "content": [
+      "Inhalte des Online-Forschungsseminars:",
+      "Was ist Film- und Fernsehanalyse?",
+      "Film- und Fernsehanalyse – Methoden",
+      "Film- und Fernsehanalyse - Inhalt und Repräsentation",
+      "Film- und Fernsehanalyse - Narration und Dramaturgie",
+      "Film- und Fernsehanalyse - Figuren und Akteure",
+      "Film- und Fernsehanalyse - Ästhetik und Gestaltung",
+      "Film- und Fernsehanalyse - Kontexte"
+    ],
+    "literature": [
+      "Hickethier, K. (2012). Film- und Fernsehanalyse (5., aktualisierte und erw. Aufl). Stuttgart: Metzler.",
+      "Kromrey, H., Roose, J., & Strübing, J. (2016). Empirische Sozialforschung (13., völlig überarbeitete Auflage). Stuttgart: UTB.",
+      "Mikos, L. (2015). Film- und Fernsehanalyse (3., überarbeitete und aktualisierte Auflage). Konstanz: UVK Verlagsgesellschaft mbH.",
+      "Peltzer, A., & Keppler, A. (2015). Die soziologische Film- und Fernsehanalyse: eine Einführung. Berlin ; Boston: De Gruyter Oldenbourg."
+    ]
+  },
+  {
+    "id": "MIB6",
+    "name": "Grafische Datenverarbeitung: Shading/Rendering",
+    "img": "img/modules/gd-shading.jpg",
+    "semester": 2,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB1"
+      }
+    ],
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB28"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": "Studierende erlangen einen Überblick über die Grundlagen der Oberflächen- und Materialbeschreibung von 3D-Modellen, der virtuellen Lichtsetzung und der digitalen Bilderzeugung. Dieses zweite von drei aufeinanderfolgenden Modulen zur GDV behandelt als Schwerpunkt das 3D-Rendering"
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Die Studierenden beherrschen die grundlegenden Algorithmen und Methoden in der Theorie und nutzen diese in praktischen Arbeiten. Die Themengebiete werden in der Vorlesung erarbeitet und anhand eines semesterbegleitenden Projekts angewendet und vertieft."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Die Studierenden sind in der Lage, die Verfahren anzuwenden und eigene 3D-Renderings zu erzeugen und ihr Wissen auf dem Gebiet eigenständig zu erweitern."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "Das Modul beinhaltet Mathematik im Umfang von 1 CrP. Insbesondere die analytische Geometrie wird grundlegend und anwendungsbezogen behandelt, da sie die Grundlage der wichtigsten globalen Beleuchtungsmodelle ist. Die Studierenden transferieren das erlernte mathematische Wissen auf den Bereich der Computergrafik."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Als Praxistransfer wenden die Studierenden die in anderen Modulen erworbenen Gestaltungskompetenzen im Bereich der Computergrafik an."
+      }
+    ],
+    "content": [
+      "Einführung in die grundlegenden Verfahren von Oberflächenbeschreibungen (Shading), Lichtsetzung (Lighting) und Bilderzeugung (Rendering), Rendering-Pipeline, Shader-Modelle und BRDFs, Theorien virtueller Lichtquellen, lokale und globale Beleuchtungsmodelle, Beleuchtungsalgorithmen, TexturMapping-Verfahren, Image Sampling.",
+      "Einführung in eine 3D-Rendering-Software (zur Zeit Solidangle Arnold)",
+      "Für die Mathematik: Analytische Geometrie der Ebene und des euklidischen Raums, Koordinaten- und Parametergleichungen, Schnittmengenbestimmung"
+    ],
+    "literature": [
+      "Birn, J., (2015). Lighting & Rendering, 3. Ausgabe, Rodenburg Verlag. • Lanier, L., (2015). Advanced Maya Texturing and Lighting, John Wiley & Sons Inc."
+    ]
+  },
+  {
+    "id": "MIB7",
+    "name": "Web-Programmierung 2",
+    "img": "img/modules/web-pg2.jpg",
+    "semester": 2,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 3,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB3"
+      }
+    ],
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können grundlegende Konzepte von Betriebssystemen erklären und können ein ausgewähltes Server-Betriebssystem bedienen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie sind in der Lage, einen Web-Server aufzusetzen und zu administrieren."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Des Weiteren können sie Chancen und Risiken von Cloud-Lösungen gegenüberstellen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können dynamisch generierte Webseiten mit Hilfe einer aktuellen server-seitigen Skriptsprache erstellen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Dabei können sie mögliche Sicherheitslücken identifizieren und schließen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie sind in der Lage, eine Datenbankanbindung herzustellen und einfache Datenbankanfragen zu stellen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können den Zusammenhang unterschiedlicher Web-Technologien erklären und einen Überblick über das Themengebiet \"Web- und mobile Anwendungen\" wiedergeben."
+      }
+    ],
+    "content": [
+      "Betrieb von Webservern, inklusive Grundlagen von Server-Betriebssystemen und Grundlagen der Cloud",
+      "Server-seitige Web-Programmierung, inklusive Datenbankanbindung und Sicherheitsaspekte",
+      "Ausblick auf weiterführende Aspekte des Schwerpunkts \"Web- und mobile Anwendungen\" (z.B. Content Management Systeme, Web Frameworks, hybride mobile Apps)"
+    ],
+    "literature": [
+      "Pomaska, G. (2012). Webseiten-Programmierung. Springer Vieweg.",
+      "Beighley, L. & Morrison, M. (2009). PHP & MySQL von Kopf bis Fuß. O'Reilly.",
+      "Kunz, C. & Esser, S. (2006). PHP-Sicherheit. dpunkt.verlag.",
+      "Hockmann, V. & Knöll, H.-D. (2008). Profikurs Sicherheit von Web-Servern. Vieweg+Teubner.",
+      "Web-Ressourcen wie PHP Manual, MySQL Dokumentation."
+    ]
+  },
+  {
+    "id": "MIB8",
+    "name": "Softwareentwicklung 2",
+    "img": "img/modules/swe2.jpg",
+    "semester": 2,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB4a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB4b"
+      }
+    ],
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB14"
+      },
+      {
+        "kind": "module",
+        "id": "MIB10"
+      },
+      {
+        "kind": "module",
+        "id": "MIB19"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden beherrschen die Grundlagen und Konzepte der objektorientierten Programmierung und können diese in mindestens einer objektorientierten Programmiersprache anwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie formulieren informationstechnische Vorgänge in syntaktisch und semantisch fehlerfreiem Code einer aktuellen objektorientierten Programmiersprache."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie können objektorientiert formulierte Algorithmen und Datenstrukturen effizient bei der Lösung von informationstechnischen Problemen anwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie erzeugen und verwenden modularen Programmcode, dabei wählen sie vorhandene Programmbibliotheken gezielt aus und setzen diese bewusst ein."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Sie nutzen die Methoden des wissenschaftlichen Arbeitens bei ihren Tätigkeiten im Studium wie Recherche, Zitierung, Texterstellung, Diskussion."
+      }
+    ],
+    "content": [
+      "Objektorientierung als Paradigma",
+      "Grundlagen der objektorientierten Programmierung",
+      "Klassen, Objekte und deren Eigenschaften, assoziative Beziehungen, Vererbung, Aggregation",
+      "Modellbildung mit Hilfe von UML",
+      "Einführung in objektorientierte Programmiertechniken",
+      "Polymorphismus, Kommunikation zwischen den Objekten, einfache Design-Pattern, Benutzung von Klassenbibliotheken, grafische Benutzeroberflächen",
+      "Programmierpraxis in einer objektorientierten Programmiersprache und deren API"
+    ],
+    "literature": [
+      "Abts (2016). Grundkurs Java (9. Auflage). Springer.",
+      "Solymosi & Grude (2014). Grundkurs Algorithmen und Datenstrukturen in Java (5. Auflage). Springer.",
+      "Ullenboom (2016). Java ist auch eine Insel (8. Auflage). Rheinwerk.",
+      "Freeman & Sierra (2015). Entwurfsmuster von Kopf bis Fuß (2. Auflage). O’Reilly.",
+      "Gamma, Helm, Johnson & Vlissides (2015). Design patterns: Entwurfsmuster als Elemente wiederverwendbarer objektorientierter Software. Mitp.",
+      "Rupp & Queins (2012). UML 2 Glasklar (4. Auflage). Hanser."
+    ]
+  },
+  {
+    "id": "MIB9",
+    "name": "Mediengestaltung 2: Text und Bild",
+    "img": "img/modules/mg2-tb.jpg",
+    "semester": 2,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB5"
+      }
+    ],
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können exemplarisch den Anmutungsaspekt in der Gestaltung moderner Medien umsetzen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie sind in der Lage, Internetpräsenzen zu gestalten, genauso wie interaktive Präsentationen und Druckvorlagen – in Text und Bild."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Desweiteren kennen sie moderne Herangehensweisen zu Design Thinking und Story-Telling."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden kennen die kognitionspsychologischen Grundlagen, um zielgruppenbezogene und typografisch sowie visuell einwandfreie Unterlagen und Präsentationen zu erstellen."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Die Studierenden haben ein Gefühl für gestalterische Aspekte für alle gängigen Medien entwickelt. Sie beachten die Wichtigkeit von Details, nutzen ihr Gespür für das Zusammenwirken von Farben, Gestaltungselementen und Typografie."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Sie haben sich hinsichtlich der Kritikfähigkeit im Dialog weiterentwickelt und setzen diese Kompetenz in Präsentationen um."
+      }
+    ],
+    "content": [
+      "Kognitionspsychologie und Rezeptionsaspekt von Informationen.",
+      "Design als Mittel der Kommunikation. Design Thinking und nutzerzentriertes Arbeiten.",
+      "Gestaltpsychologie, Farbpsychologie, Gestaltung und Entwurfstechniken, Typografie, Regeln digitaler Typografie.",
+      "Layout und Satz, Bilder und Aufteilung von Flächen. Storytelling-Methoden. Signalwirkung von Formen, Farben, Bildern.",
+      "Web-Seiten-Gestaltung, Web-Sites-Strukturierung, Web-Sites-Mockup. Responsive Webdesign.",
+      "Grundlagen Farbraum, Farbmodelle. Programme zur Bildbearbeitung.",
+      "Projektpräsentation und Präsentationstechnik.",
+      "Praxisbezug: konstruktive Kritik an Inhalten, Präsentationsform. Praxisübungen zu Präsentation und Technik"
+    ],
+    "literature": [
+      "Hammer, N. (2008). Mediendesign für Studium und Beruf: Grundlagenwissen und Entwurfssystematik in Layout, Typografie und Farbgestaltung. Springer, Berlin.",
+      "Fries, C. (2010). Grundlagen der Mediengestaltung: Konzeption, Ideenfindung, Visualisierung, Bildaufbau, Farbe, Typografie (4. Auflage). Hanser, München.",
+      "Lewandowsky, P. (2010). Schnellkurs Grafik-Design (2. Auflage). DuMont, Köln"
+    ]
+  },
+  {
+    "id": "MIB10",
+    "name": "Mathematik",
+    "img": "img/modules/math.jpg",
+    "semester": 2,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB15"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden verstehen mathematische Grundstrukturen und sind in der Lage, die mathematischen Konzepte auf Fragestellungen der Informatik anzuwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Das Modul erhält einen Ausblick auf die angewandte Statistik als Vorbereitung auf wiss. Arbeiten."
+      }
+    ],
+    "content": [
+      "Mengen, Zahlen und Aussagenlogik; Relationen und Funktionen; Folgen, Reihen und Grenzwerte; Stetigkeit und Differenzierbarkeit; Integralrechnung; Differenzen- und Differenzialgleichungen",
+      "Ausblick auf die angewandte Statistik"
+    ],
+    "literature": [
+      "Rießinger, T., (2011). Mathematik für Ingenieure, 8. Aufl., Heidelberg: Springer",
+      "Brill, M., (2004). Mathematik für Informatiker, 2., neu bearb. Aufl., Hanser"
+    ]
+  },
+  {
+    "id": "MIB11",
+    "name": "Grafische Datenverarbeitung: Animation",
+    "img": "img/modules/gd-animation.jpg",
+    "semester": 3,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": false,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB1"
+      }
+    ],
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB25"
+      },
+      {
+        "kind": "module",
+        "id": "MIB26"
+      },
+      {
+        "kind": "module",
+        "id": "MIB27"
+      },
+      {
+        "kind": "module",
+        "id": "MIB28"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden erlangen einen Überblick über Konzepte und Techniken der 3D-Animation. Sie kreieren mittels einer 3D-Software (zur Zeit Autodesk Maya) eigene Animationen. Sie sind in der Lage, Animationen anhand von Animationsprinzipien zu analysieren und zu bewerten. Sie erweitern ihr Wissen auf dem Gebiet eigenständig."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Dieses letzte von drei aufeinanderfolgenden Modulen zur GDV behandelt als Schwerpunkt das Gebiet der Animation und der Character Animation."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden beherrschen die grundlegenden Algorithmen und Methoden in Theorie und nutzen diese in praktischen Arbeiten. Die Themengebiete werden in der Vorlesung erarbeitet und anhand eines semesterbegleitenden Projekts angewendet und vertieft."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Das Modul beinhaltet Physik im Umfang von 1 CrP. Insbesondere die Mechanik wird grundlegend und anwendungsbezogen behandelt, da sie elementare Grundlage für realistisch wirkende Animationen ist. Die Studierenden transferieren das Erlernte auf den Bereich der Computergrafik."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Dokumentation und Präsentation der Projektergebnisse in geeigneten Darstellungsformen "
+      }
+    ],
+    "content": [
+      "Einführung in die grundlegenden Verfahren der 3D-Animation. Animationstechniken und -prinzipien, Aufbau und Animation von 3D-Charakteren (Rigging und Skinning).",
+      "Für die Physik: Mechanik (Körper und Kräfte, Kinematik, Dynamik, Biomechanik)"
+    ],
+    "literature": [
+      "Naas, P., (2017). How to Cheat in Maya 2017: Tools and Techniques for Character Animation, CRC Press"
+    ]
+  },
+  {
+    "id": "MIB12a",
+    "name": "Audiovisuelle Medien 2: Filmtechnik",
+    "img": "img/modules/av2-ft.jpg",
+    "semester": 3,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": null,
+    "testKinds": [
+      {
+        "percentage": 50,
+        "kind": "course record book"
+      },
+      {
+        "percentage": 50,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB2a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB2b"
+      },
+      {
+        "kind": "module",
+        "id": "MIB5"
+      }
+    ],
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB17a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB17b"
+      }
+    ],
+    "extra": null,
+    "isTestOrederMandatory": true,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Als angehende Ingenieure sind die Studierenden mit allen technischen Komponenten der Filmproduktion (Systeme) und den damit verbundenen physikalischen Grundlagen vertraut."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie besitzen die Fähigkeit, die technischen Komponenten für Filproduktionen zu planen, diese für Produktionen zu konfigurieren und einzusetzen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die individuelle Ausdifferenzierung von Kompetenzen im Bereich der medientechnischen Grundlagen sowie des System Engineerings ist dafür notwendig und wird im Kurs unterstützt."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " selbstgesteuertes Lernen und Selbstmanagementkompetenz "
+      }
+    ],
+    "content": [
+      "Inhalte der Vorlesung, die in \"hands on\"- Workshops (Praktium) vertieft werden:",
+      "Kamerasysteme und weitere bildabnehmende Systeme",
+      "Mikrophone und weitere tonabnehmende Systeme",
+      "Lichtsysteme",
+      "Übertragung, Monitoring und Qualitätsbewertung von Audio- und Videosignalen",
+      "Intercom-System",
+      "Bildmischungs- und Aufzeichnungssysteme",
+      "Tonmischungs - und Aufzeichnungssysteme",
+      "Ingest- und Data Wrangling Systeme",
+      "Non-linear Editing Systeme",
+      "Finalisierungs- und Enkodierungssysteme",
+      "Distributionssysteme und Archivierungssysteme"
+    ],
+    "literature": [
+      "Münch, M. (2014). Einsteigerkurs DSLR-Video : von der richtigen Ausrüstung, Technik und Vorbereitung zum perfekten Dreh und Schnitt (1. Aufl. ). dpunkt-Verlag.",
+      "Schmidt, U. (2013). Professionelle Videotechnik : Grundlagen, Filmtechnik, Fernsehtechnik, Geräte- und Studiotechnik in SD, HD, DI, 3D (6. Aufl.). Berlin, Heidelberg: Springer Vieweg.",
+      "Online-Semesterapparat"
+    ]
+  },
+  {
+    "id": "MIB12b",
+    "name": "Audiovisuelle Medien 2: Filmproduktion",
+    "img": "img/modules/av2-fp.jpg",
+    "semester": 3,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "attendance"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "oral exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB2a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB2b"
+      },
+      {
+        "kind": "module",
+        "id": "MIB5"
+      }
+    ],
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB17a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB17b"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Als Film-Content-Erschaffende kennen die Studierenden die Grundlagen der Bild- sowie Tongestaltung für Filmproduktionen in der Theorie und können diese in der Praxis anwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie sind in der Lage, Bild- sowie Tongestaltung von Musik-Videos zu analyisieren und diese partiell für ihre eigenen Produktionen zu adaptieren."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Im Sinne einer fortgeschrittenen Medienproduktionskompetenz sind die Studierenden im Stande, ein Musik-Video audiovisuell (nach) zu produzieren und sind mit den damit verbundenen Produktionsschritten vertraut."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Teamfähigkeit und Kooperationswille"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Verantwortungsbewußtsein und Verlässlichkeit • kommunikative Kompetenz und Projektmanagementkompetenz"
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "selbstgesteuertes Lernen und Selbstmanagementkompetenz "
+      }
+    ],
+    "content": [
+      "Bildgestaltung (Bildausschnitt, Perspektive, Bild einrichten, Kamera entfesseln, Bilder verbinden, Licht setzen, Licht gestalten, Bedeutung erschaffen, Schnitte planen) sowie Tongestaltung (Setton / O-Ton, Soundtracks / Filmmusik, Sounddesign, Soundarchive, Mischung)",
+      "Workshops (Praktikum): (Nach-)Produktion eines Musik-Videos inklusive vorbereitender Aufgaben"
+    ],
+    "literature": [
+      "Jovy, J. (2017). Digital filmen: Das umfassende Handbuch: Filme planen, aufnehmen, bearbeiten und präsentieren (2. Aufl.). Bonn: Rheinwerk Verlag GmbH.",
+      "Landsiedel, T. (2012). Filmen wie Ballhaus : Basics der Bildgestaltung (1. Aufl.). Hamburg: Atoll-Medien.",
+      "Lensing, J. U. (2017). Sound-Design, Sound-Montage, Soundtrack-Komposition : Über die Gestaltung von Filmton (3. Aufl.). Berlin: Fachverlag Schiele & Schön.",
+      "Online-Semesterapparat"
+    ]
+  },
+  {
+    "id": "MIB13",
+    "name": "Datenbanken",
+    "img": "img/modules/database.jpg",
+    "semester": 3,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": false,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "test"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden erlernen die Grundlagen der Datenbanktheorie und erhalten die Handlungskompetenz eine Datenbankanwendung zu entwickeln, zu administrieren und zu nutzen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie werden in die Lage versetzt, Entwicklungen und Architekturen von unterschiedlichen Datenbanksystemen zu beurteilen."
+      }
+    ],
+    "content": [
+      "Einführung DB-Grundlagen,",
+      "Einführung in SQL,",
+      "Relationenalgebra,",
+      "Semantische Datenmodellierung (z.B. ERM, UML),",
+      "Logische Datenmodellierung (u.a. Relationenmodell, Normalisierung),",
+      "Fortgeschrittene SQL-Konzepte ( z.B. Stored Routines, Trigger, Metadaten),",
+      "Elemente der Systemarchitektur (Systemarchitektur, Transaktionsverwaltung, Anfrageverarbeitung u. Optimierung, Speicher- und Zugriffsverwaltung),",
+      "Datenbankentwicklung,",
+      "Polyglott-Persistence-Architektur (z.B. NoSQL-Datenbanken),",
+      "Datenbankentwicklungstrends,",
+      "Verwendung von Datenbanken in Programmiersprachen, Steuerung- und Durchführung von Datenbankentwicklungsprojekten (Fallstudienübungen im Praktikumsteil)"
+    ],
+    "literature": [
+      "Bossert, Böttcher & Teich (2014). LUIS-Handbuch: SQL - Grundlagen und Datenbankdesign (12. Auflage). Leibniz Universität IT-Services, Hannover.",
+      "Meier, A. & Kaufmann, M. (2016). SQL- & und NoSQL-Datenbanken (8. Aufl.). Springer Vieweg, Berlin.",
+      "Vossen, G. (2008). Datenmodelle, Datenbanksprachen und DBMS (5. Auflage). Oldenbourg, München.",
+      "Cordts, S., Blakowski, G. & Brosius, G. (2011). Datenbanken für Wirtschaftsinformatiker: nach dem aktuellen Standard SQL:2008. Vieweg+Teubner, Wiesbaden.",
+      "Elmasri, R. & Navathe, S. B. (2009). Grundlagen von Datenbanksystemen – Bachelorausgabe (3. Auflage). Pearson Studium, München.",
+      "Steiner, R. (2014). Grundkurs - Relationale Datenbanken (8. Auflage). Springer Vieweg, Wiesbaden.",
+      "Kemper, A. & Eickler, A. (2015). Datenbanksysteme - eine Einführung (10. Auflage). De Gruyter Oldenbourg, München.",
+      "Kleuker, S. (2013). Grundkurs - Datenbankentwicklung (3. Auflage). Springer Vieweg, Wiesbaden.",
+      "Geisler, F. (2014). Datenbanken - Grundlagen und Design (5. Auflage). mitp, Heidelberg u.a..",
+      "Saake, G., Sattler, K.-U. & Heuer, A. (2013). Datenbanken – Konzepte und Sprachen (5. Auflage). mitp, Heidelberg.",
+      "Pröll, S., Zangerle, E. & Gassler, W. (2015). MySQL – das umfassende Handbuch (aktuell zu MySQL 5.7) (3. Auflage). Rheinwerk Computing.",
+      "Emrich, M. (2013). Datenbanken & SQL für Einsteiger: Datenbankdesign und MySQL in der Praxis (3. Auflage). CreateSpace Publishing."
+    ]
+  },
+  {
+    "id": "MIB14",
+    "name": "Softwareentwicklungsprojekt",
+    "img": "img/modules/swep.jpg",
+    "semester": 3,
+    "creditPoints": 9,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": [
+      {
+        "kind": "attendance"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 50,
+        "kind": "exam"
+      },
+      {
+        "percentage": 50,
+        "kind": "project"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      },
+      {
+        "weekHours": 2,
+        "kind": "exercise"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB8"
+      }
+    ],
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden verstehen die wesentlichen Phasen des Vorgehens in Softwareentwicklungsprojekten. Sie kennen die unterschiedlichen Paradigmen des Vorgehens in solchen Projekten, kennen und verstehen konkrete Vorgehensmodelle und können eine Zuordnung von Vorgehensmodell zu Vorgehensparadigmen treffen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden kennen und verstehen die Ergebnisartefakte der einzelnen Entwicklungsphasen (z.B. Lastenheft, Pflichtenheft, Architekturdokumentation)."
+      },
+      {
+        "kind": "disciplinary",
+        "text": "• Die Studierenden kennen und verstehen die Aktivitäten des Requirements Engineering."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden sind in der Lage Anforderungen an eine Software natürlichsprachig und modellbasiert zu dokumentieren. Die Studierenden sind in der Lage, für die modellbasierte Dokumentation von Anforderungen auf geeignete Diagrammtypen der Unified Modeling Language (UML) zurückzugreifen."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden kennen Werkzeuge des Konfigurationsmanagements und können insbesondere Source-Code Management Software (z.B. git) anwenden."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden sind in der Lage die vermittelten Kompetenzen in einem Praxisprojekt anzuwenden."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Dokumentation und Präsentation der Projektergebnisse in geeigneten Darstellungsformen "
+      }
+    ],
+    "content": [
+      "Projektbegriff und Projektmanagement in SW-Entwicklungsprojekten",
+      "Vorgehensmodelle",
+      "Anforderungs- und Architekturdokumentation (fachlich und technisch)",
+      "Testen und Qualitätssicherung",
+      "Konfigurationsmanagement",
+      "Praktische Projektdurchführung und Anwendung der vermittelten Inhalte",
+      "Fallbeispiel"
+    ],
+    "literature": [
+      "Siedersleben, J. (2002).. Softwaretechnik: Praxiswissen für Softwareingenieure. Carl Hanser Verlag GmbH & Co. KG.",
+      "Pohl, K. & Rupp, C. (2011). Basiswissen Requirements Engineering: Aus- und Weiterbildung nach IREBStandard. dpunkt.verlag.",
+      "Balzert, H. (2009). Lehrbuch der Softwaretechnik: Basiskonzepte und Requirements Engineering. Spektrum Akademischer Verlag.",
+      "Kecher, C. & Salvanos, A. (2015). UML 2.5: Das umfassende Handbuch. Rheinwerk Computing.",
+      "Wirdemann, R. (2017). Scrum mit User Stories. Hanser Verlag."
+    ]
+  },
+  {
+    "id": "MIB15",
+    "name": "Theoretische Informatik und Algorithmik",
+    "img": "img/modules/tia.jpg",
+    "semester": 3,
+    "creditPoints": 6,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": null,
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 4,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "exercise"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB4a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB4b"
+      },
+      {
+        "kind": "module",
+        "id": "MIB8"
+      },
+      {
+        "kind": "module",
+        "id": "MIB10"
+      }
+    ],
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können die Grundlagen der Berechenbarkeitstheorie, der Komplexitätstheorie und der Algorithmik erklären."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie sind in der Lage, für Probleme aus ausgewählten Bereichen, wie z.B. Sortieren, Suchen und Graphentheorie, geeignete Algorithmen zu entwerfen und zu analysieren."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die dafür benötigten mathematischen Grundlagen, insbesondere Beweistechniken, können sie anwenden. Der Umfang der im Modul integrierten mathematischen Grundlagen beträgt 1 CrP."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die Studierenden können Algorithmen und Datenstrukturen in einer höheren Programmiersprache implementieren und die Effizienz evaluieren."
+      }
+    ],
+    "content": [
+      "Mathematische Grundlagen, insbesondere Beweistechniken",
+      "Berechenbarkeitstheorie (insbesondere Turing-Maschinen, Halteproblem)",
+      "Komplexitätstheorie (insbesondere Komplexitätsklassen P und NP)",
+      "Grundlagen der Algorithmik (Algorithmenbegriff, Pseudo Notation, grundlegende Eigenschaften wie z.B. Determinismus, Korrektheit, O-Notation)",
+      "häufig gebrauchte Algorithmen und Datenstrukturen, z.B. aus den Bereichen Sortieren, Suchen und Graphentheorie",
+      "Experimentelle Algorithmik"
+    ],
+    "literature": [
+      "Hoffmann, D. (2011). Theoretische Informatik. Hanser.",
+      "Barth, A. (2013). Algorithmik für Einsteiger. Springer Spektrum.",
+      "Sedgewick, R. (2007). Algorithmen in Java, Teil 1-4, Pearson Studium.",
+      "Sedgewick, R. (2003). Algorithms in Java, Teil 5: Graph algorithms, Addison-Wesley Longman.",
+      "Saake, G. & Sattler, K. (2014). Algorithmen und Datenstrukturen, dpunkt."
+    ]
+  },
+  {
+    "id": "MIB16",
+    "name": "Einführung in die BWL",
+    "img": "img/modules/bwl.jpg",
+    "semester": 3,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": true,
+    "isMediaProduction": true,
+    "language": "de",
+    "preTestKinds": null,
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "exam"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": null,
+    "consecutiveModules": [
+      {
+        "kind": "module",
+        "id": "MIB36"
+      }
+    ],
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Fachliche Kompetenzen: Die Studierenden können nach erfolgreichem Abschluss des Moduls:"
+      },
+      {
+        "kind": "disciplinary",
+        "text": "die Betriebswirtschaftslehre in das Wissenschaftssystem einordnen und kennen die Grundbegriffe der Betriebswirtschaft"
+      },
+      {
+        "kind": "disciplinary",
+        "text": " die wichtigsten Rechtsformen und ihre Haftungseigenschaften unterscheiden,"
+      },
+      {
+        "kind": "disciplinary",
+        "text": " den Aufbau des Unternehmens mit den grundlegenden Funktionsbereichen (Beschaffung, Produktion, Vertrieb, Verwaltung) darstellen,"
+      },
+      {
+        "kind": "disciplinary",
+        "text": " die Grundlagen von Kostenrechnung und Materialbeschaffung beschreiben."
+      }
+    ],
+    "content": [
+      "Unternehmen als Gegenstand der Betriebswirtschaftslehre",
+      "Überblick der wichtigsten Rechtsformen",
+      "Aufbau des Unternehmens",
+      "Grundfunktionen im Unternehmen",
+      "Grundlagen der Kostenrechnung",
+      "Grundlagen der Materialwirtschaft"
+    ],
+    "literature": [
+      "Thommen, Achleitner, Gilbert, Hachmeister & Kaiser (2012). Allgemeine Betriebswirtschaftslehre (aktuelle Auflage). Springer Verlag, Wiesbaden.",
+      "Wöhe, Döring & Brösel (2012). Einführung in die Allgemeine Betriebswirtschaftslehre (aktuelle Auflage). Vahlen Verlag, München."
+    ]
+  },
+  {
+    "id": "MIB17a",
+    "name": "Audiovisuelle Medien 3: Outside abd Remote Technology",
+    "img": "img/modules/av3-ort.jpg",
+    "semester": 4,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": false,
+    "isMediaProduction": true,
+    "language": "en",
+    "preTestKinds": null,
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "paper"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "lecture"
+      },
+      {
+        "weekHours": 2,
+        "kind": "seminar"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB12a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB12b"
+      }
+    ],
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": " Als in die Zukunft blickende Nachwuchs(führungs)kräfte in der audiovisuellen Medienproduktion sind die Studierenden mit den technischen Entwicklung im Bereich Outside and Remote Production vertraut."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Die individuelle Ausdifferenzierung von Kompetenzen im Bereich der medientechnischen Grundlagen sowie des System Engineerings ist dafür notwendig und wird im Kurs unterstützt."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " selbstgesteuertes Lernen und Selbstmanagementkompetenz "
+      }
+    ],
+    "content": [
+      "Im Rahmen einer Online-Vorlesungsreihe, die an das akademische Format Media in a Nutshell gekoppelt ist, werden externe Experten von ihren aktuellen Projekten im Bereich Outiside and Remote Production berichten.",
+      "Dabei liegt der Schwerpunkt vor allem auf den medientechnischen Systemen für das jeweilige Projekt.",
+      "Im Online-Semiar wird die Erstellung der Hausarbeit thematisch und methodisch unterstützt."
+    ],
+    "literature": [
+      "• Online-Semesterapparat"
+    ]
+  },
+  {
+    "id": "MIB17b",
+    "name": "Audiovisuelle Medien 3: Outside abd Remote Production",
+    "img": "img/modules/av3-orp.jpg",
+    "semester": 4,
+    "creditPoints": 3,
+    "isMandatory": true,
+    "isWebAndMobile": false,
+    "isMediaProduction": true,
+    "language": "en",
+    "preTestKinds": [
+      {
+        "kind": "attendance"
+      }
+    ],
+    "testKinds": [
+      {
+        "percentage": 100,
+        "kind": "project"
+      }
+    ],
+    "work": [
+      {
+        "weekHours": 2,
+        "kind": "seminar"
+      },
+      {
+        "weekHours": 2,
+        "kind": "practice"
+      }
+    ],
+    "requirements": null,
+    "recommendedRequirements": [
+      {
+        "kind": "module",
+        "id": "MIB12a"
+      },
+      {
+        "kind": "module",
+        "id": "MIB12b"
+      }
+    ],
+    "consecutiveModules": null,
+    "extra": null,
+    "learnGoals": [
+      {
+        "kind": "disciplinary",
+        "text": "• Die Studierenden sind mit dem Medienproduktionsprozessen von Outside and Remote Productions vertraut."
+      },
+      {
+        "kind": "disciplinary",
+        "text": " Sie sind im Stande, ein Live-Event-Format wie bspw. Media in a Nutshell abgesetzt audiovisuell zu produzieren."
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " Teamfähigkeit und Kooperationswille "
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": "Verantwortungsbewußtsein und Verlässlichkeit "
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " kommunikative Kompetenz und Projektmanagementkompetenz "
+      },
+      {
+        "kind": "interdisciplinary",
+        "text": " selbstgesteuertes Lernen und Selbstmanagementkompetenz "
+      }
+    ],
+        "content": [
+          "Im Mittelpunkt des Produktionsseminars steht die audiovisuell Umsetzung eines Live-Event-Formates wie bspw. Media in a Nutshell.",
+          "Die damit verbundenen Medienproduktionskompetenzen werden individuell differenziert vermittelt"
+        ],
+        "literature": [
+          "Online-Semesterapparat"
+        ]
+      },
+      {
+        "id": "MIB18",
+        "name": "Medien-Projekt",
+        "img": "img/modules/mpm.jpg",
+        "semester": 4,
+        "creditPoints": 9,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "special",
+            "text": "Die empfohlenen projektspezifischen Voraussetzungen werden zu Beginn der Veranstaltung bekannt gegeben."
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden sind in der Lage, Medienprojekte selbständig, fachlich und gemeinschaftlich zu konzipieren, durchzuführen und zu dokumentieren."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "• Sie können eine Aufgabenstellung in kleinen Gruppen selbständig analysieren, strukturieren sowie praxisgerecht lösen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die Fragestellungen werden je nach Schwerpunktwahl an typischen Aufgabenstellungen aus der Praxis angelehnt."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden wenden Gelerntes an und können ergänzendes Fachwissen im Team neu erarbeiten."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden sind in der Lage, Medienprojekte zu planen, zu organisieren, zu koordinieren und zu dokumentieren."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie können Struktur- und Ressourcenpläne für Medienprojekte entwerfen und erstellen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie sind in der Lage ein medientypisches Projekt gemeinschaftlich und selbstständig durchzuführen, zu dokumentieren und zu präsentieren."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Im Team sind sie in der Lage, fachliches Vorwissens praxisnah zu vertiefen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden bearbeiten und lösen die ihnen gestellten Aufgaben teamorientiert."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Sie sind in der Lage, erarbeitetes Wissen und Projektergebnisse anderen zu präsentieren "
+          }
+        ],
+        "content": [
+          "Projektmanagement-Methoden, Projektplanung, Ressourcenmanagement und Projektmonitoring, Dokumentationsmethoden, Tools zum kollektiven Arbeiten.",
+          "Fachliche Inhalte hängen vom gewählten aktuellen Projektthema ab."
+        ],
+        "literature": [
+          "Felkai, R. & Beiderwieden, A. (2015). Projektmanagement für technische Projekte: Ein Leitfaden für Studium und Beruf. Heidelberg: Springer.",
+          "Schwaber, K. (2007). Agiles Projektmanagement mit Scrum. Microsoft Press."
+        ]
+      },
+      {
+        "id": "MIB19",
+        "name": "Mobile Anwendungen 1",
+        "img": "img/modules/mow1.jpg",
+        "semester": 4,
+        "creditPoints": 6,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": null,
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "exam"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 3,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB8"
+          }
+        ],
+        "consecutiveModules": [
+          {
+            "kind": "module",
+            "id": "MIB29"
+          }
+        ],
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": "Die Studierenden haben ein breites Grundlagenwissen bzgl. der Entwicklung mobiler Anwendungen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Sie können wesentliche technische Eigenschaften mobiler Geräte und wesentliche Konzepte mobiler Betriebssysteme benennen und erklären."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Sie sind in der Lage, unterschiedliche Ansätze zur Entwicklung von mobilen Anwendungen gegenüberzustellen und zu beurteilen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Sie können allgemeine Regeln der Gestaltung von Benutzerschnittstellen wiedergeben und erklären und diese konkret bei der Entwicklung von mobilen Anwendungen umsetzen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Die Studierenden können einfache mobile Anwendungen in einer nativen Programmiersprache (z.B. Java für Android) erstellen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Dabei können Sie auch Prinzipien der nebenläufigen Programmierung (Multi-Threading) erklären und anwenden."
+          }
+        ],
+        "content": [
+          "technische Eigenschaften mobiler Geräte und Grundlagen mobiler Betriebssysteme",
+          "Überblick über unterschiedliche Entwicklungsansätze",
+          "Gestaltung von Benutzerschnittstellen: allgemeine Grundlagen und konkrete Besonderheiten bei mobilen Anwendungen",
+          "Native Programmierung mobiler Anwendungen",
+          "Nebenläufige Programmierung: allgemeine Grundlagen und konkrete Besonderheiten bei mobilen Anwendungen"
+        ],
+        "literature": [
+          "Post, U. (2016). Android-Apps entwickeln für Einsteiger. Rheinwerk Computing.",
+          "Web-Ressourcen wie developer.android.com",
+          "Heinecke, A. (2012). Mensch-Computer-Interaktion. Springer.",
+          "Stapelkamp, T. (2007). Screen- und Interfacedesign. Springer.",
+          "Goll, J. & Heinisch, C. (2014). Java als erste Programmiersprache. Springer Vieweg"
+        ]
+      },
+      {
+        "id": "MIB20",
+        "name": "Netzwerksicherheit",
+        "img": "img/modules/nws.jpg",
+        "semester": 4,
+        "creditPoints": 6,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": null,
+        "testKinds": [
+          {
+            "percentage": 0,
+            "kind": "practice"
+          },
+          {
+            "percentage": 100,
+            "kind": "special",
+            "text": "Klausur,• mündliche Prüfung• oder schriftliche Ausarbeitung mit Präsentation(wird jeweils zu Beginn des Semesters bekannt gegeben)"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 4,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden lernen wesentliche Komponenten des Internets unter sicherheitsrelevanten Aspekten kennen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie lernen Details zu den Protokollen, können die Daten interpretieren und verstehen die insbesondere aus Kommunikationstechnik stammenden Probleme und Risiken des Netzes."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie erhalten einen Überblick über Schadsoftware."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie erhalten Grundwissen über Verschlüsselungstechniken, PKI Strukturen und wenden diese in praxisbezogenen Laborversuchen an."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Teamfähigkeit und Kooperationswille"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Verantwortungsbewußtsein und Verlässlichkeit"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " selbstgesteuertes Lernen und Selbstmanagementkompetenz"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "Problembewusstsein für etische und datenschutzrechtliche Fragestellungen"
+          }
+        ],
+        "content": [
+          "Risikoanalysen und Sicherheitspolitiken",
+          "Internet Protocol (IP) (Grundlagen, Anwendungsprotokolle, IPv6)",
+          "Firewall Architekturen (optional)",
+          "Angriffsmechanismen (Malware, Denial of Service, Ausspähung)",
+          "Handhabung von Vorfällen",
+          "Zuverlässigkeit und Skalierbarkeit",
+          "Verschlüsselungsmethoden und –anwendungen",
+          "Zertifizierung und Authentifizierung",
+          "Sicherheitsprobleme in Funknetzen (WLAN, Mobilfunk)",
+          "Anwendungen (z.B.: Cloud, VPN, NAT, Steganografie, Watermarks, Digitales Geld oder aktueller Punkt)"
+        ],
+        "literature": [
+          "Busch, C. & Wolthusen, S. (2002). Netzwerksicherheit. Spektrum Akademischer Verlag, Heidelberg",
+          "Literaturliste wird zu Beginn des Semesters im Moodle Kurs bekanntgegeben"
+        ]
+      },
+      {
+        "id": "MIB21",
+        "name": "IT- und Medienrecht",
+        "img": "img/modules/iumr.jpg",
+        "semester": 4,
+        "creditPoints": 3,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": null,
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "exam"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 3,
+            "kind": "lecture"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": null,
+        "consecutiveModules": [
+          {
+            "kind": "module",
+            "id": "MIB36"
+          }
+        ],
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden haben ein Bewusstsein für Rechtsfragen und kennen mögliche rechtliche Implikationen ihres späteren Arbeitsumfeldes. Dazu gehören insbesondere die Kenntnisse über Grundlagen des Bürgerlichen Gesetzbuchs BGB sowie rechtliche Aspekte der Informatik."
+          }
+        ],
+        "content": [
+          "Einführung in das Recht: Struktur und Aufbau der Rechtsgebiete, Grundlagen des Schuldrechts und des Sachenrechts, Vertragsrecht, Aufbau der Gerichtsbarkeit in Deutschland,",
+          "Internet- und Onlinerecht, Urheberrecht: TMG, TKG, Dienstanbieter, Impressumspflicht, Synonyme/pseudonyme Nutzung, Provider, Vertrags- und Haftungsrecht, eCommerce, Namensrecht, Markenrecht, Urheberrecht, Die Denic, WIPO/UDRP, Verwertungsrechte des Urheberrechts, Vortragsrecht, Aufführungsrecht, Vorführungsrecht, Recht der öffentlichen Zugänglichmachung, Senderecht, Europäische Satellitensendung, Kabelweitersendung, Recht der Wiedergabe durch Bild und Tonträger, Softwareurheberrecht, Urhebervertragsrecht: Nutzungsverträge und Gastspielverträge",
+          "Grundlagen des Datenschutzrechts: Grundzüge und Geschichte, Entwicklung von IuK-Technologie und Recht, Technologiefolgenabschätzung, Terminologie des Datenschutzes, Datenschutz und Datensicherheit, Aufgaben des betrieblichen Datenschutzbeauftragten, Kontrolle des betrieblichen Datenschutzes durch die Aufsichtsbehörde, Rechtliche Rahmenbedingungen der Videoüberwachung, Datenschutz im Arbeitsrecht, Wettbewerbs- und datenschutzrechtliche Regelungen bei Direktmarketing und Kundenbetreuung"
+        ],
+        "literature": [
+          "Danne, H. & Keil, T. (2012). Wirtschaftsprivatrecht Grundlagen: Bürgerliches Recht – Handelsrecht. Cornelsen.",
+          "Telemediarecht: TeleMediaR, Beck im dtv.",
+          "Tinnefeld, Buchner & Petri (2017). Einführung in das Datenschutzrecht. Oldenbourg"
+        ]
+      },
+      {
+        "id": "MIB22",
+        "name": "Seminar",
+        "img": "img/modules/seminar.jpg",
+        "semester": 4,
+        "creditPoints": 6,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "special",
+            "text": "Schriftliche Ausarbeitung mit Präsentation, mindestens jeweilige Kurzfassung in Englisch"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 4,
+            "kind": "seminar"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "special",
+            "text": "Eingangsniveau Englisch B1 gemäß GER"
+          }
+        ],
+        "consecutiveModules": [
+          {
+            "kind": "module",
+            "id": "MIB24a"
+          }
+        ],
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Teilnehmenden sind in der Lage, Medieninformatik-Aufgabenstellungen wissenschaftlich zu bearbeiten und die Ergebnisse fachgerecht darzustellen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Die Studierenden entwickeln ihre Englisch-sprachlichen Fähigkeiten auf mindestens mittlerem Niveau, um besser auf das Arbeiten in einem internationalen Umfeld vorbereitet zu sein."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "Die Studierenden können Literatur zu einem vorgegebenen Thema recherchieren, aufarbeiten und niederschreiben. Das Ergebnis können sie in einem Vortrag präsentieren und anschließend mit anderen Teilnehmenden diskutieren."
+          }
+        ],
+        "content": [
+          "Die Fachinhalte werden jedes Semester neu festgelegt. Sie orientieren sich sehr stark an aktuellen Themen der Medieninformatik bzw. an neueren Techniken, Methoden oder Werkzeugen aus dem kommerziellen Bereich.",
+          "Erstellen von Texten mit LaTeX",
+          "Students learn the basics of academic writing.",
+          "Reading comprehension: special purpose texts on a range of topics in computer science such as: operating systems, technological innovations, software comparisons, internet and e- mails, communications industry and developments, careers in IT, e-commerce, multimedia",
+          "Students learn how to hold presentations in English on a topic in the field.",
+          "Revision of persistent problems with English grammar"
+        ],
+        "literature": [
+          "Liss, D. (2012). Effective Academic Writing. OUP.",
+          "Murphy, R. (2015). English Grammar in Use. Cambridge University Press.",
+          "Grussendorf, M. (2009). Presenting in English. Cornelsen."
+        ]
+      },
+      {
+        "id": "MIB25",
+        "name": "Fortgeschrittene Modellierung",
+        "img": "img/modules/gd-admodeling.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "test"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB1"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden kennen die gängigen Verfahren zur Erzeugung von 3D-Modellen. Sie bewerten und wählen entsprechende Methoden bei der Planung und der Umsetzung von eigenen Modellen. Sie kennen und beurteilen die verschiedenen Methoden zur Oberflächenabbildung und wenden diese auf ihre Modelle an."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden beurteilen die unterschiedlichen Verfahren in Bezug auf die typischen Anwendungsgebiete wie fotorealistisches Rendering und Echtzeitrendering in VR und Games."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden wenden die Verfahren in einem 3D-Animationstool (zur Zeit Autodesk Maya) an. Sie beherrschen den Umgang mit einem 3D Sculpting Tool (zur Zeit Autodesk Mudbox) und sind in der Lage, eigene Modelle zu planen, zu erzeugen und in einem 3D-Animationstool weiter zu verarbeiten."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden arbeiten selbstständig unter Anleitung an eigenen Projekten."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Sie planen und organisieren ihre Arbeit effektiv und dokumentieren und präsentieren ihre Ergebnisse angemessen."
+          }
+        ],
+        "content": [
+          "Modellierungstechniken: Polygonale Modelle (Box/Subdivision Modeling, Edge/Contour Modeling), NURBS/Splines, Digital Sculpting, Procedural Modeling",
+          "Texture Mapping Methoden UV Mapping, Ptex"
+        ],
+        "literature": [
+          "Brüderlin, B., Meier, A., Johnson, M., (2001). Computergrafik und geometrisches Modellieren, Teubner",
+          "Foley, J., van Dam, A., Feiner, S., (2013). Computer Graphics – Principles and Practice, Addison-Wesley",
+          "Kermanikian, A., (2010). Introducing Mudbox, Sybex",
+          "Online Tutorials Autodesk Knowledge Network, 2017"
+        ]
+      },
+      {
+        "id": "MIB26",
+        "name": "Dynamik und Effekte",
+        "img": "img/modules/dynamic-effects.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "test"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB11"
+          }
+        ],
+        "consecutiveModules": [
+          {
+            "kind": "module",
+            "id": "MIB27"
+          }
+        ],
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden kennen die Möglichkeiten für den Einsatz von 3D-Software zur Erzeugung von Rigid Body-, Partikel- und Fluid-basierten Simulationen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie planen und entwickeln Animationssequenzen mit simulierten Effekten in einem 3D-Programm (zur Zeit Autodesk Maya)."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie sind in der Lage, glaubwürdige und physikalisch plausible Effekte als Videosequenzen zu simulieren und zu rendern und können den Realitätsgrad der Ergebnisse untersuchen und bewerten."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden arbeiten sich selbständig unter Anleitung in neue Themenfelder ein. Sie recherchieren relevante Literatur und online-Tutorials in englischer Sprache."
+          }
+        ],
+        "content": [
+          "Theorie und Anwendungen von Rigid- und Soft Bodies-Simulationen, Partikelsimulationen, Fluidsimulationen, Stoffsimulationen, atmosphärischen Effekten"
+        ],
+        "literature": [
+          "Palamar, T., (2016). Mastering Autodesk Maya, John Wiley & Sons Inc.",
+          "Keller, E., (2013). Maya Visual Effects The Innovator's Guide: Autodesk Official Press, Sybex",
+          "Stam, J., (2015). The Art of Fluid Animation, Taylor & Francis Ltd.",
+          "Online Tutorials Autodesk Knowledge Network, 2017"
+        ]
+      },
+      {
+        "id": "MIB27",
+        "name": "Motion-Design",
+        "img": "img/modules/motion-design.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "test"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB26"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden beherrschen die Prinzipien der visuellen Gestaltung von Motion Graphics, Typografie und Logos insbesondere im Bereich der Effekterzeugung durch 3D-Grafikprogramme."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Sie verstehen die Abgrenzung zu herkömmlichen 2D-Animationen im Motion-Design."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie entwerfen und erstellen eigene 3D-Sequenzen in einem Animationsprogramm (zur Zeit Autodesk Maya)."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie wenden 3D-Simulationsmethoden an und kreieren komplexe prozedurale Effekte und Animationen mit Instanzobjekten."
+          }
+        ],
+        "content": [
+          "Animation von 3D-Schriftzügen und Grafikelementen für die Erzeugung von Titelsequenzen",
+          "Prozedurale Effekte und Animationen mit Instanzobjekten",
+          "3D Skriptsprachen (z.B. Maya Embedded Language)"
+        ],
+        "literature": [
+          "Murdock, K., (2017). Autodesk Maya 2017 Basics Guide, Sdc Publications",
+          "Online Tutorials Autodesk Knowledge Network, 2017"
+        ]
+      },
+      {
+        "id": "MIB28",
+        "name": "e.media International Summer School",
+        "img": "img/modules/emedia-iss.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 4,
+            "kind": "lecture"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB1"
+          },
+          {
+            "kind": "module",
+            "id": "MIB6"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden sind in der Lage, sich unter Anleitung ein Spezialthema der Medieninformatik und der Computergrafik zu erarbeiten."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie beherrschen exemplarisch die wichtigsten theoretischen und praktischen Grundlagen eines aktuellen Forschungsgebiets."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie kennen die Relevanz des Themas und können die weiteren Entwicklungen nachvollziehen und sich eigenständig aneignen. Sie sind in der Lage, Projektergebnisse zielgruppenangepasst zu präsentieren."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden recherchieren effizient relevante Literatur und arbeiten sich in neue Themenfelder ein, um sich bislang unbekanntes Wissen anzueignen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Sie arbeiten und präsentieren Ergebnisse in englischer Sprache."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Darüber hinaus sind die Studierenden in der Lage, interkulturelle Unterschiede wahrzunehmen und darauf angemessen zu reagieren."
+          }
+        ],
+        "content": [
+          "Für die e.media Summer School werden Themen aufgegriffen, die eine nachgewiesene internationale Relevanz auf dem Gebiet der Medieninformatik haben und sich besonders dazu eignen, im Rahmen einer Sommerakademie bearbeitet zu werden. Zum einen sind die Themengebiete von aktuellem Forschungsinteresse, zum anderen werden viele der Themengebiete insbesondere durch englischsprachige Literatur erschlossen und sind daher auch für eine Annäherung auf einem auch sprachlich internationalen Niveau geeignet. Beispiele für mögliche Themengebiete sind beispielsweise: High Dynamic Range Rendering, Theory and Practice of Crowd and Swarm Simulation, Motion Capturing and Motion Editing."
+        ],
+        "literature": [
+          "• Themenabhängige Spezialliteratur in englischer Sprache"
+        ]
+      },
+      {
+        "id": "MIB29",
+        "name": "Mobile Anwendungen 2",
+        "img": "img/modules/mow2.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 1,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 3,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB19"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden haben ein vertieftes Wissen bzgl. ausgewählter, grundlegender Aspekte der Entwicklung mobiler Anwendungen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Hierbei sind wechselnde Schwerpunktthemen vorgesehen, z.B. die Mensch-Maschine-Interaktion oder die plattformübergreifende Entwicklung."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden können sich selbstständig Spezialwissen anhand technischer Dokumente und Fachliteratur aneignen und sich gegenseitig bei dem Lernprozess unterstützen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Sie lernen bestimmte Rollen im Projektteam einzunehmen und auszufüllen, z.B. mit der REBL-Methode (Role-Experience-Based Learning)."
+          }
+        ],
+        "content": [
+          "Die inhaltliche Ausgestaltung hängt vom wechselnden Schwerpunktthema ab. Beispielthema 1 \"Mensch-Maschine-Interaktion\":",
+          "Einsatz von Sensoren",
+          "Wearables wie z.B. Smartwatches",
+          "Sprachsteuerung",
+          "Beispielthema 2 \"plattformübergreifende Entwicklung\":",
+          "Entwicklung hybrider Apps, z.B. mit Apache Cordova",
+          "Entwicklung cross-kompilierter Apps, z.B. mit Qt oder Xamarin"
+        ],
+        "literature": [
+          "Web-Ressourcen wie developer.android.com",
+          "Heinecke, A. (2012). Mensch-Computer-Interaktion. Springer.",
+          "weitere Literatur und Web-Ressourcen in Abhängigkeit vom konkreten Schwerpunktthema"
+        ]
+      },
+      {
+        "id": "MIB30",
+        "name": "Internet of Things",
+        "img": "img/modules/internet-of-things.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "test"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB19"
+          },
+          {
+            "kind": "module",
+            "id": "MIB20"
+          },
+          {
+            "kind": "module",
+            "id": "MIB7"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studenten sollen in dieser Lehrveranstaltung Systeme, Anwendungen, Technologien und aktuelle Trends des Internet der Dinge kennenlernen. Schwerpunkte liegen hierbei auf den Bereichen Smart Living, Smart Home und Industrie 4.0 Anwendungen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Technologien und Vorgehensweisen werden in einer seminaristischen Vorlesung exemplarisch dargestellt und vom Endgerät (Thing) über die Middleware bis zu cloudbasierten Services und Bedienoberflächen (Mobile Apps oder Portalen) technisch und wirtschaftlich analysiert."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Im zugehörigen Praktikum werden anhand praktischer Umsetzungsprojekte Erfahrungen mit der Anwendung der behandelten Technologien gesammelt."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Vernetztes Denken, Arbeit mit Originalliteratur, Teamarbeit, Projektarbeit, Vorgehen in Innovationsprojekten"
+          }
+        ],
+        "content": [
+          "Einführung in vernetzte Systeme und das Internet of Things",
+          "Systemarchitekturen im Internet of Things",
+          "Anwendungen in den Bereichen Smart Living und Smart Home (Heimautomatisierung, Assistenzsysteme, Smart City, Ambient Assisted Living, eHealth, Smart Gardening, Home Robotics …)",
+          "Anwendungen im Bereich von Industrie 4.0",
+          "IoT Kommunikationsstandards und Middleware Lösungen",
+          "IoT Cloud Plattformen und Services",
+          "Big Data, Data Analytics, Machine Learning, Data Visualisation",
+          "Mobile App Anwendungen im IoT",
+          "Assistenzsysteme im IoT (Amazon Alexa, Google Home, Apple Siri, MS Cortana, ...)",
+          "Sensor Netzwerke",
+          "Praktische Übungen: Vernetzung von Sensoren in eine IoT Cloud und Praxisprojekt im Bereich IoT"
+        ],
+        "literature": [
+          "McEwen, A., Cassimally, H. (2014). Designing the Internet of Things (1. Aufl.). Chichester. Wiley.",
+          "Gilchrist, A. (2016). Industry 4.0: the industrial internet of things (1. Aufl.). Apress",
+          "Amazon Web Services. Online Dokumentation AWS IoT. Source: https://aws.amazon.com/de/documentation/iot/."
+        ]
+      },
+      {
+        "id": "MIB31",
+        "name": "Frontend Development",
+        "img": "img/modules/frontend-dev.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 1,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 3,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB3"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden sollen im Rahmen dieser Lehrveranstaltung ein erweitertes Wissen über die ansprechende Gestaltung und Programmierung von Weboberflächen erwerben. Im Zentrum steht die Bedienung unter anderem per Touchscreen."
+          }
+        ],
+        "content": [
+          "Einführung in die Bedienung von touchbasierten Systemen.",
+          "Vertiefung der Kenntnisse in der Erstellung barrierearmer sowie responsiver Anwendungen.",
+          "Im Zentrum steht die Frontendentwicklung von Anwendungen für Smartphones bis zu großen touchbasierten Screens.",
+          "Es sollen verschiedene Tools und Frameworks zur Frontendgestaltung genutzt werden. Die verwendeten Systeme passen sich aktuellen Technologien an. Aktuell sind das z.B. jQuery, Animationen (z.B. über JavaScript / CSS) wie GreenSock, u.a."
+        ],
+        "literature": [
+          "Ertel, A. & Laborenz, K. (2017). Responsive Webdesign. Rheinwerk.",
+          "Rohles, B. (2017). Grundkurs gutes Webdesign. Rheinwerk.",
+          "Müller, P. (2015). Flexible Boxes. Rheinwerk.",
+          "Hoffmann, M. (2012). Modernes Webdesign. Rheinwerk.",
+          "Krug, S. (2014). Don't make me think. mitp.",
+          "Aufgrund der Aktualität wird die Dokumentation von entsprechend technologibasierten Webseiten genutzt (z.B. api.jquery.com; greensock.com/docs)."
+        ]
+      },
+      {
+        "id": "MIB32",
+        "name": "Content Management Systeme",
+        "img": "img/modules/cms.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 1,
+            "kind": "Seminar"
+          },
+          {
+            "weekHours": 3,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB7"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": "Die Studierenden sollen am Ende dieser Lehrveranstaltung die Fähigkeiten von Content-ManagementSystemen (CMS) kennen und nutzen können."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Dazu gehört die Beurteilung geeigneter Einsatzbereiche, die Erstellung und Aufbereitung von Inhalten sowie die Entwicklung von selbst programmierten Erweiterungen."
+          }
+        ],
+        "content": [
+          "Wechselnde Themenschwerpunkte und Content Management Systeme",
+          "Mögliche Themenschwerpunkte sind: Untersuchung eines großen Systems, Verarbeitung von Texten, Bildern und Formularen, Formatierung und Layout, Einbindung von Skript- und PlugIn-Dateien, Mehrsprachigkeit, Berechtigungen, Workflow, Entwicklung eigener Erweiterungen",
+          "Eine Übersicht in Frage kommender Systeme kann unter http://www.cms-garden.org/ eingesehen werden."
+        ],
+        "literature": [
+          "Literatur und Web-Ressourcen zum behandelten Content Management System, z. B. für Typo3:",
+          "Deuling, T., Hasenau, J., & Strobach, K. (2015). TYPO3 Theming und Distribution. O'Reilly.",
+          "Lobacher, P. (2014). TYPO3 Extbase. Open Source Press."
+        ]
+      },
+      {
+        "id": "MIB33",
+        "name": "Web-Frameworks",
+        "img": "img/modules/web-frameworks.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB7"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden kennen aktuelle Frameworks zur Entwicklung von Webanwendungen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie haben praktische Erfahrung mit einer aktuellen Technologie gesammelt."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Darüber hinaus haben sie Überblick über unterschiedliche Ansätze gewonnen und können Entwicklungstendenzen abschätzen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Teamfähigkeit und Kooperationswille"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "selbstgesteuertes Lernen und Selbstmanagementkompetenz"
+          }
+        ],
+        "content": [
+          "Die Studierenden realisieren in Teams Web-Anwendungen unter Einsatz von aktuellen Web-Frameworks (aktuelle Beispiele: Laravel, node.js, Ruby on Rails).",
+          "Auf der Basis der dabei gesammelten Erfahrungen geben Sie eine Bewertung für die gewählte Technologie ab."
+        ],
+        "literature": [
+          "Aktuelle Bücher und Online-Dokumentationen zu den eingesetzten Frameworks"
+        ]
+      },
+      {
+        "id": "MIB34",
+        "name": "Aktuelle Web&Mobile-Technologien",
+        "img": "img/modules/current-web-mobile-technology.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": true,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 1,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 3,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB7"
+          },
+          {
+            "kind": "module",
+            "id": "MIB17"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden haben ein vertieftes Wissen bzgl. aktueller Technologien und Ansätze der Medieninformatik im Bereich \"Web- und mobile Anwendungen\". Hierbei sind wechselnde Schwerpunktthemen vorgesehen."
+          },
+          {
+            "kind": "disciplinary",
+            "text": "Zusätzlich sind die Studierenden in der Lage das erlernte Wissen im Praxisteil der Veranstaltung in branchenüblicher, hoher Qualität bspw. für Kunden in der Wirtschaft umzusetzen."
+          }
+        ],
+        "content": [
+          "Die inhaltliche Ausgestaltung hängt von aktuellen, wechselnden Schwerpunktthemen ab. Beispielthemen sind u.a. \"Conversion Optimierung\", \"e-Commerce\", \"Sourcecodeverwaltung und -versionierung\", \"Continious Integration von Webanwendungen\", \"Remote Debugging und Compiling\", \"e-Learning\", \"Usability Labs/Untersuchungen\", usw.",
+          "Die Studierenden erlernen die grundlegenden Technologien, Tools und Ansätze des jeweiligen Themengebietes in seminaristischer Form. Der Inhaltliche Teil kann von externen Firmen oder Organisationen begleitet werden, um die Aktualität der Inhalte zu gewährleisten.",
+          "Im Praxisteil der Veranstaltung setzen die Studierenden das erlernte Wissen in branchenüblicher Qualität bspw. für Kunden in der Wirtschaft um."
+        ],
+        "literature": [
+          "Ernst, H. & Schmidt, J. (2016). Grundkurs Informatik, Grundlagen und Konzepte für die erfolgreiche ITPraxis. Vieweg.",
+          "Schwarzenberger, E. (1996). Struktogramme – Aufgaben und Lösungen zur Darstellung von Programmlogik. Franzis.",
+          "Schneider, U. & Werner, D. (2012). Taschenbuch der Informatik. Fachbuchverlag Leipzig.",
+          "Goll, J. & Heinisch, C. (2016). Java als erste Programmiersprache. Springer."
+        ]
+      },
+      {
+        "id": "MIB35",
+        "name": "Fotografie und Bildbearbeitung",
+        "img": "img/modules/photography-image-editing.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "test"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "project"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Ziel ist der sichere Umgang mit dem Werkzeug Kamera, die Erstellung eigener Aufnahmen und der anschließende Workflow der professionellen Bildbearbeitung."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden haben Grundlagenwissen zur analogen und digitalen Fotografie."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Die vermittelten Inhalte der Veranstaltung sind ausgerichtet auf das Faktenwissen und die praktischen Fähigkeiten / Fertigkeiten vor dem technischen und gestalterischen Hintergrund der Studierenden des Studiengangs Medieninformatik."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Das spätere Arbeitsumfeld in Software- und Medien-Häusern verlangt gerade bei der Zusammenarbeit mit Grafikerinnen und Grafikern, Fotografinnen und Fotografen sowie Kameraleuten ein präzises Fachvokabular mit entsprechendem technischem und praktischem Hintergrund."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "Teamfähigkeit und Kooperationswille "
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "Verantwortungsbewußtsein und Verlässlichkeit"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "kommunikative Kompetenz und Projektmanagementkompetenz"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "selbstgesteuertes Lernen und Selbstmanagementkompetenz"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": "Problembewusstsein für etische und datenschutzrechtliche Fragestellungen"
+          }
+        ],
+        "content": [
+          "Begriffe und Verständnis von z.B. Schärfe, Helligkeit, Kontrast, Farbe, Bildausschnitt, Bildwinkel, Workflow und Recht sind dabei grundlegend. Ziel ist es zudem, einen sicheren Umgang mit der Bildverarbeitung zu erlangen. Es werden Bildoptimierungen durchgeführt. Am Ende sollte ein profundes Wissen stehen, mit dem die Studierenden sämtliche Aufgaben, wie sie in der medialen Bilderwelt gefordert werden, gut bewältigen können.",
+          "Zum professionellen Arbeiten gehören Produktion und Nachbearbeitung von Fotografien. Die Kombination von beiden Inhalten stellt eine übliche, dem späteren Arbeitsumfeld angepasste Arbeitsweise dar und die Studierenden können durch die Veranstaltung den Aufwand und den Nutzen abschätzen, die Planung und Umsetzung sowie den Workflow an eigenen Projekten durchzuführen.",
+          "Fotografie Schwerpunkthemen: Kameratechnik, Objektive, Licht und Beleuchtung, Bildgestaltung, Recht / Arbeitsteilige Anwendung der Themenschwerpunkte in praktischen Übungen in kleinen Arbeitsgruppen von 2 Studierenden und kreative Ausgestaltung der individuellen Projektaufgaben.",
+          "Bildbearbeitung Schwerpunktthemen: Kennenlernen der Programmoberfläche, optimale Voreinstellungen, Speicherplatzzuweisung, (Cache etc.), Werkzeuge und ihre Unterfunktionen, optimale Bildeinstellungen, Ausschneiden und Maskieren, Kanalberechnungen, kreatives Arbeiten mit Filtern, Vorbereitung der Bilder zum Druck, Farbräume und Farbmodelle, Praktische Übungen"
+        ],
+        "literature": [
+          "Bloch, C. (2008). Das HDRI-Handbuch: High Dynamic Range Imaging für Fotografen und Computergrafiker (1. Auflage). Heidelberg: dpunkt-Verlag.",
+          "Eibelshäuser, E. (2005). Fotografische Grundlagen: vom Bild zum Wissen ; Lehrbuch für Gestaltung und Technik (1. Auflage). Heidelberg: dpunkt-Verlag.",
+          "Eibelshäuser, E. (2016). Licht: die große Fotoschule (1. Auflage). Bonn: Rheinwerk.",
+          "Gradias, M. (2017). Affinity Photo: Einstieg und Praxis. Burgthann: Markt + Technik Verlag.",
+          "Gulbins, J., & Steinmüller, U. (2011). Handbuch Digitale Dunkelkammer: Vom Kamera-File zum perfekten Print: Arbeitsschritte und Werkzeuge in der Digitalfotografie. (2., aktualisierte Auflage.). Heidelberg: dpunkt-Verlag.",
+          "Hedgecoe, J. (2007). Fotografieren: die neue große Fotoschule (Nachdruck). Starnberg: Dorling Kindersley.",
+          "Schack, H. (2017). Kunst und Recht: bildende Kunst, Architektur, Design und Fotografie im deutschen und internationalen Recht (3., neu bearbeitete Auflage). Tübingen: Mohr Siebeck.",
+          "Wäger, M. (2017). Adobe Photoshop CC Schritt für Schritt zum perfekten Bild (1. Auflage). Bonn: Rheinwerk Verlag.",
+          "Wolf, J. (2012). GIMP 2.8: das umfassende Handbuch ; [inkl. Scheme ; alle Werkzeuge, Funktionen und Techniken ; digitale Fotografie, Webdesign, Bildkorrektur und -gestaltung ; mit Praxis-Workshops und Profi-Tipps] (1. Auflage). Bonn: Galileo Press."
+        ]
+      },
+      {
+        "id": "MIB36",
+        "name": "Unternehmensgründung und -führung",
+        "img": "img/modules/business-formation-management.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "attendance"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "paper and presentation"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "seminar"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": [
+          {
+            "kind": "module",
+            "id": "MIB16"
+          },
+          {
+            "kind": "module",
+            "id": "MIB21"
+          }
+        ],
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden sind mit den Voraussetzungen für eine erfolgreiche Unternehmensgründung und - führung vertraut."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie haben dazu das fachspezifische Grundlagenwissen der Betriebswirtschafts- und Managementlehre."
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Sie kennen die notwendigen Schritte für eine Unternehmensgründung und können diese durchführen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden können ihre erworbenen Schlüsselkompetenzen zur erfolgreichen Führung eines Unternehmens anwenden"
+          }
+        ],
+        "content": [
+          "BWL-Kompendium (Theoretische Grundlagen zur Unternehmensgründung und -führung)",
+          "Team-/Projektarbeit mit verschiedenen (alternativen) Themenschwerpunkten: Innovationsmanagement, Gründungsplanung, Unternehmensentwicklung, Mitarbeiterführung"
+        ],
+        "literature": [
+          "gesonderte Liste pro Semester in Abhängigkeit vom Themenschwerpunkt",
+          "Link-Sammlung als Bestandteil der vom LB bereitgestellten Vorlesungsmaterialien",
+          "Wöhe (2016). Einführung in die allgemeine Betriebswirtschaftslehre. Vahlen."
+        ]
+      },
+      {
+        "id": "MIB37",
+        "name": "Beleuchtung",
+        "img": "img/modules/lighting.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "course record book"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 80,
+            "kind": "exam"
+          },
+          {
+            "percentage": 20,
+            "kind": "course record book"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden können:"
+          },
+          {
+            "kind": "disciplinary",
+            "text": " die lichttechnischen Grundbegriffe beschreiben und die Zusammenhänge erklären und berechnen,"
+          },
+          {
+            "kind": "disciplinary",
+            "text": "die einschlägigen Normen und gesetzlichen Vorgaben zur Beleuchtung von Versammlungsstätten und Räumen benennen und anwenden,"
+          },
+          {
+            "kind": "disciplinary",
+            "text": " die unterschiedlichen Lampenarten und Leuchtenformen hinsichtlich ihrer geeigneten Einsatzmöglichkeiten zur Raum- und Bühnenbeleuchtung beurteilen,"
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Kenntnisse der theater- und filmspezifischen Fachbegriffe,"
+          },
+          {
+            "kind": "disciplinary",
+            "text": " Grundlegende Planung von Standardbeleuchtungssituationen,"
+          },
+          {
+            "kind": "disciplinary",
+            "text": "• Elektrotechnische Spezialkenntnisse nach den einschlägigen Normen für Bühnen-, Film-, Messen- und Veranstaltungsbeleuchtung."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " soziale und personale Kompetenz "
+          }
+        ],
+        "content": [
+          "1. Physikalische Grundlagen der Lichttechnik und Beleuchtung:",
+          "Spektrum, Lichtstrom, Lichtstärke, Hellempfindung, Beleuchtungsstärke, Leuchtdichte",
+          "Projektion, Abbildung, Linsentypen, Brechung; Beugung, Streuung, …",
+          "Farbwiedergabe, Farbtemperatur, Lichtfarbe und Farbort",
+          "Theoretisches Leuchtdichtemodell nach Bartenbach",
+          "Arten der Lichterzeugung (Lampen) und deren Energieverbrauch",
+          "Arten von Leuchten und deren Einsatzmöglichkeiten",
+          "2. Kenntnisse über Sehen und Wahrnehmung:",
+          "Aufbau und Funktion des menschlichen Auges",
+          "Grundlagen, Mechanismen und Gesetzmäßigkeiten der visuellen Wahrnehmung",
+          "Bedeutung des Lichtes bei der nicht visuellen Wahrnehmung (biologische Wirkung): Blend-, Blaulicht- und Lasergefährdung",
+          "3. Beleuchtung von Räumen und Bühnen, gesetzliche und normative Vorgaben:",
+          "Arbeitsstättenverordnung und einschlägige Arbeitsstättenregeln",
+          "Einschlägige Normen zur Beleuchtung von Innenräumen und Versammlungsstätten",
+          "Mindestbeleuchtungsstärken",
+          "Beleuchtungseinrichtungen für Film und Theater",
+          "4. Spezifische Beleuchtungskunde der Veranstaltungstechnik:",
+          "Scheinwerfertypen in der Veranstaltungstechnik und deren Einsatzgebiete",
+          "Filter und Farbmischsysteme",
+          "Scheinwerfer- und Projektionstechnik",
+          "Mechanische Lichtführungen, Verdunkler und Dimmer",
+          "Besonderheiten der LED-Beleuchtungstechnik für Bühne und Studio",
+          "Steuerungstechnik für Bühnen und Eventbeleuchtung, Signalpatch und Hotpatch",
+          "Energieversorgung, Verkabelungssysteme und Lastmulticores",
+          "Standard Beleuchtungssituationen",
+          "5. Der Bezug zu den Grundlagen wissenschaftlichen Arbeitens wird hergestellt"
+        ],
+        "literature": [
+          "Literaturhinweise, die die Wissenschaftlichkeit und Aktualität des jeweiligen Lehrgebiets abbilden, werden ebenso wie Lehrmittel von der Dozentin / dem Dozenten rechtzeitig vor Semesterbeginn und in geeigneter Weise den Studierenden mitgeteilt und erläutert"
+        ]
+      },
+      {
+        "id": "MIB38",
+        "name": "CAD",
+        "img": "img/modules/cad.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "course record book"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 80,
+            "kind": "project"
+          },
+          {
+            "percentage": 20,
+            "kind": "course record book"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden können grundlegende Planungen und Konstruktionen für den Veranstaltungsbereich mit CAD durchführen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " soziale und personale Kompetenz"
+          }
+        ],
+        "content": [
+          "CAD-Grundkenntnisse",
+          "Einführung in CAD-System (derzeit Vectorworks, Spotlight, ESP-Vision)",
+          "Erstellen von Zeichnungen",
+          "Bemaßung, automatische Bemaßung",
+          "Grundlagen der rechnergestützten Gestaltung und formalen Prüfung von CAD-Plänen, Versendung, Änderung und Archivierung von Dokumenten im Netz",
+          "Pläne in der Veranstaltungstechnik",
+          "Darstellungen in 2D, 3D, 4D und Integrated Workflow",
+          "Beleuchtungssimulation, Packlistenerstellung, Präsentation, Preproduction",
+          "Der Bezug zu den Grundlagen wissenschaftlichen Arbeitens wird hergestellt."
+        ],
+        "literature": [
+          "Literaturhinweise, die die Wissenschaftlichkeit und Aktualität des jeweiligen Lehrgebiets abbilden, werden ebenso wie Lehrmittel von der Dozentin / dem Dozenten rechtzeitig vor Semesterbeginn und in geeigneter Weise den Studierenden mitgeteilt und erläutert."
+        ]
+      },
+      {
+        "id": "MIB39",
+        "name": "Szenographie",
+        "img": "img/modules/scenography.jpg",
+        "semester": 5,
+        "creditPoints": 6,
+        "isMandatory": false,
+        "isWebAndMobile": false,
+        "isMediaProduction": false,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "course record book"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 80,
+            "kind": "project"
+          },
+          {
+            "percentage": 20,
+            "kind": "course record book"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 2,
+            "kind": "lecture"
+          },
+          {
+            "weekHours": 2,
+            "kind": "practice"
+          }
+        ],
+        "requirements": null,
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": "Die Studierenden verfügen über grundlegende Kenntnisse im Bereich Bühnen- /Szenen- und Lichtgestaltung. Sie beherrschen die theoretischen Grundlagen und können diese auf bereitgestellte Themen/Stoffe anwenden"
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " soziale und personale Kompetenz "
+          }
+        ],
+        "content": [
+          "Bearbeitung eines Theaterstückes, Drehbuches oder von Literatur",
+          "Analyse von bereitgestellten Szenen/Stoffen",
+          "Theoretische Grundlagen der Bühnen-/Szenen- und Lichtgestaltung",
+          "Anwendung der genannten Grundlagen unter Zuhilfenahme von CAD und Simulationssoftware",
+          "Ausarbeitung eines Entwurfes anhand einer vorher analysierten Szene",
+          "Simulation, Planung oder Umsetzung von Bühnen- und/oder Beleuchtungskonzepten",
+          "Der Bezug zu den Grundlagen wissenschaftlichen Arbeitens wird hergestellt."
+        ],
+        "literature": [
+          "Literaturhinweise, die die Wissenschaftlichkeit und Aktualität des jeweiligen Lehrgebiets abbilden, werden ebenso wie Lehrmittel von der Dozentin / dem Dozenten rechtzeitig vor Semesterbeginn und in geeigneter Weise den Studierenden mitgeteilt und erläutert."
+        ]
+      },
+      {
+        "id": "MIB23a",
+        "name": "Praxisphase: Praxisprojekt",
+        "img": "img/modules/practical-experience-projekt.jpg",
+        "semester": 6,
+        "creditPoints": 12,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": null,
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "paper"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 0,
+            "kind": "practice"
+          }
+        ],
+        "requirements": [
+          {
+            "kind": "special",
+            "text": "Teilnahme an zwei Informationsveranstaltungen der Betreuungsstelle für Praxisphasen; Zulassung laut Prüfungsordnung Anlage 3"
+          }
+        ],
+        "recommendedRequirements": null,
+        "consecutiveModules": [
+          {
+            "kind": "module",
+            "id": "MIB24a"
+          }
+        ],
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Nach der Praxisphase haben die Studierenden Einblicke in die organisatorischen Strukturen und betriebswirtschaftlichen Abläufe der Ausbildungsstelle. Ergänzend dazu sind die Ziele der Praxisphase in der Ordnung für die Praxisphase des Bachelorstudiengangs \"Medieninformatik\" der Technischen Hochschule Mittelhessen (Anlage 3 zur Prüfungsordnung) beschrieben."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden haben die Sozial-, Selbst- und Methodenkompetenzen, selbstständig ein Thema nach wissenschaftlichen Gesichtspunkten in einem betrieblichen Umfeld zu bearbeiten. Die Studierenden können die Ergebnisse ihrer Praxisphase in einer klar strukturierten Weise in schriftlicher Form darstellen, sie können komplexe Sachverhalte visualisieren und erläutern und sind damit auf die Anforderungen der Bachelorarbeit vorbereitet."
+          }
+        ],
+        "content": [
+          "Während der Praxisphase soll ein Projekt in der beruflichen Praxis in Zusammenarbeit mit Partnern durchgeführt werden. Ausnahmsweise können auch ein Forschungs- oder Entwicklungs-Projekt am Fachbereich oder in einem Institut oder Zentrum durchgeführt werden. Das Praxisprojekt findet in enger Abstimmung mit der betreuenden Dozentin oder dem betreuenden Dozenten und der Betreuungsstelle für Praxisphasen statt und wird vom Praxisseminar begleitet.",
+          "Die Lerninhalte und Aufgabenstellungen werden individuell vor Beginn der Praxisphase definiert und festgelegt. In der Praxisphase sollen die Studierenden studiengangsadäquate berufsqualifizierende Tätigkeiten zur Vorbereitung auf das künftige Berufsfeld ausüben. Die oder der Studierende soll eine praktische Ausbildung an fest umrissenen, konkreten Projekten erhalten, die inhaltlich einer der Schwerpunkte des Bachelorstudiums Medieninformatik entsprechen."
+        ],
+        "literature": [
+          "Reulein et. al. (2009). Berufs- und Karriere-Planer, IT und e-business. Gabler Verlag.",
+          "Weitere Literatur wird jeweils bei Beginn der Praxisphase besprochen"
+        ]
+      },
+      {
+        "id": "MIB23b",
+        "name": "Praxisphase: Praxisseminar",
+        "img": "img/modules/practical-experience-seminar.jpg",
+        "semester": 6,
+        "creditPoints": 3,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": null,
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "presentation"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 1,
+            "kind": "seminar"
+          }
+        ],
+        "requirements": [
+          {
+            "kind": "special",
+            "text": "Praxisprojekt und das Praxisseminar werden in der Regel im gleichen Semester gemeinsam absolviert, wobei die Informationsveranstaltungen vor Beginn des Praxisprojektes und die Präsentation über das eigene Praxisprojekt nach deren Durchführung stattfinden sollen. Die Regelungen zum Praxisseminar sind in der Ordnung über die Praxisphase (Anlage 3 zur Prüfungsordnung) beschrieben."
+          }
+        ],
+        "recommendedRequirements": null,
+        "consecutiveModules": [
+          {
+            "kind": "module",
+            "id": "MIB24a"
+          }
+        ],
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Nach der Praxisphase haben die Studierenden Einblicke in die organisatorischen Strukturen und betriebswirtschaftlichen Abläufe der Ausbildungsstelle. Ergänzend dazu sind die Ziele der Praxisphase in der Ordnung für die Praxisphase des Bachelorstudiengangs \"Medieninformatik\" der Technischen Hochschule Mittelhessen (Anlage 3 zur Prüfungsordnung) beschrieben."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Studierenden haben individuelle Handlungskompetenz, um die Ergebnisse ihrer Praxisphase in einer klar strukturierten Weise in mündlicher Form darzustellen. Sie können komplexe Sachverhalte visualisieren und erläutern."
+          }
+        ],
+        "content": [
+          "Im Praxisseminar erfahren die Teilnehmerinnen und Teilnehmer über die organisatorischen Rahmenbedingungen, die Praktikumsstätten und die Tätigkeiten anderer Studierender. Dort präsentieren sie auch über ihr eigenes Praxisprojekt.",
+          "Der individuelle Inhalt des Praxisseminars ergibt sich aus den Inhalten des Praxisprojektes, darüber hinaus bezieht das Praxisseminar die praktischen Erfahrungen selbstreflexiv auf die Kenntnisse aus dem Studium zurück."
+        ],
+        "literature": [
+          "Reulein et. al. (2009). Berufs- und Karriere-Planer, IT und e-business. Gabler Verlag.",
+          "Weitere Literatur wird jeweils bei Beginn der Praxisphase besprochen"
+        ]
+      },
+      {
+        "id": "MIB24a",
+        "name": "Bachelorarbeit mit Kolloquium : Bachelorarbeit",
+        "img": "img/modules/bachelor-thesis.jpg",
+        "semester": 6,
+        "creditPoints": 12,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": null,
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "paper"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 0,
+            "kind": "bachelor thesis"
+          }
+        ],
+        "requirements": [
+          {
+            "kind": "special",
+            "text": "Praxisprojekt (MIB23a) abgeschlossen \nund Voraussetzungen laut Prüfungsordnung"
+          }
+        ],
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden wenden die im Studium erworbene Fachkompetenz in einer angewandten wissenschafltichen Aufgabe an und zeigen damit ihre Fähigkeit der Übertragung der Kenntnisse der Medieninformatik auf konkrete Fragestellungen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Ziele der Bachelorarbeit umfassen die Befähigung zu wissenschaftlicher Arbeit und Methodik unter Anwendung theoretisch-analytischer Fähigkeiten auf eine konkrete Fragestellung."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Darin enthalten ist der Nachweis intellektueller und sozialer Kompetenz in der Bewältigung der Aufgabenstellung."
+          }
+        ],
+        "content": [
+          "Die Studierenden wenden die im Studium erworbene Fachkompetenz in einer angewandten wissenschafltichen Aufgabe an."
+        ],
+        "literature": [
+          "hängt vom jeweiligen Thema ab"
+        ]
+      },
+      {
+        "id": "MIB24b",
+        "name": "Bachelorarbeit mit Kolloquium : Kolloquium",
+        "img": "img/modules/bachelor-oral-exam.jpg",
+        "semester": 6,
+        "creditPoints": 3,
+        "isMandatory": true,
+        "isWebAndMobile": true,
+        "isMediaProduction": true,
+        "language": "de",
+        "preTestKinds": [
+          {
+            "kind": "bachelor thesis"
+          }
+        ],
+        "testKinds": [
+          {
+            "percentage": 100,
+            "kind": "oral exam"
+          }
+        ],
+        "work": [
+          {
+            "weekHours": 0,
+            "kind": "colloquium"
+          }
+        ],
+        "requirements": [
+          {
+            "kind": "special",
+            "text": "Praxisseminar (MIB23b) abgeschlossen bis zum Zeitpunkt des Kolloquiums"
+          }
+        ],
+        "recommendedRequirements": null,
+        "consecutiveModules": null,
+        "extra": null,
+        "learnGoals": [
+          {
+            "kind": "disciplinary",
+            "text": " Die Studierenden wenden die im Studium erworbene Fachkompetenz in einer angewandten wissenschafltichen Aufgabe an und zeigen damit ihre Fähigkeit der Übertragung der Kenntnisse der Medieninformatik auf konkrete Fragestellungen."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Die Ziele der Bachelorarbeit umfassen die Befähigung zu wissenschaftlicher Arbeit und Methodik unter Anwendung theoretisch-analytischer Fähigkeiten auf eine konkrete Fragestellung."
+          },
+          {
+            "kind": "interdisciplinary",
+            "text": " Darin enthalten ist der Nachweis intellektueller und sozialer Kompetenz in der Bewältigung der Aufgabenstellung."
+          }
+        ],
+        "content": [
+          "Die Studierenden wenden die im Studium erworbene Fachkompetenz in einer angewandten wissenschafltichen Aufgabe an."
+        ],
+        "literature": [
+          "hängt vom jeweiligen Thema ab"
+        ]
+      }
+    ]

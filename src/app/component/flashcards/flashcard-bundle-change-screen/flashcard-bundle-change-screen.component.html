@@ -1,1 +1,15 @@
-<p>flashcard-bundle-change-screen works!</p>
+
+  <mat-form-field appearance="outline" class="titel-input">
+    <mat-icon matPrefix svgIcon="folder-text"></mat-icon>
+    <mat-label>Titel</mat-label>
+    <input type="text" matInput [formControl]="titleControl" placeholder="Bitte Titel eingeben">
+  </mat-form-field>
+
+  <div class="optional">Optional</div>
+  <app-module-picker [control]="moduleControl" ></app-module-picker>
+
+  <button class="lower-right-fab" mat-fab color="accent" [disabled]="!moduleControl.valid || titleControl.value.trim() == ''" (click)="save()">
+    <mat-icon svgIcon="check"></mat-icon>
+  </button>
+
+

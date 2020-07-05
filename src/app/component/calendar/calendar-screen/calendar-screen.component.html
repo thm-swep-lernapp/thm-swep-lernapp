@@ -1,1 +1,13 @@
-<p>calendar works!</p>
+<app-week-view
+  (highlightedDayChange)="onHighlightedDayChange($event)"
+  (currentDayChange)="onCurrentDayChange($event)"
+  [appointmentCountMap]="currentAppointmentCountMap"></app-week-view>
+<div class="divider"></div>
+<div id="currentDateContainer">
+  <span id="currentDate">{{ highlightedDay.format('D. MMMM YYYY') }}</span>
+</div>
+<app-appointment-list [appointments]="appointments" (appointmentDeleted)="onAppointmentDeleted()"></app-appointment-list>
+<app-empty-state [icon]="'calendar'" [text]="'An diesem Tag hast Du keine Termine. Tippe zum Hinzufügen auf den Button rechts unten.'" *ngIf="appointments.length === 0"></app-empty-state>
+<button class="lower-right-fab" mat-fab color="accent" [routerLink]="'/termine/neu'">
+  <mat-icon svgIcon="plus"></mat-icon>
+</button>

@@ -1,0 +1,29 @@
+.mat-card {
+  text-align: center;
+  margin: 10px 16px ;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-box {
+  width: 80%;
+  margin: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-progress {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  height: calc(100% - 202px);
+}
+
+p {
+  align-self: flex-end;
+  color: gray;
+}

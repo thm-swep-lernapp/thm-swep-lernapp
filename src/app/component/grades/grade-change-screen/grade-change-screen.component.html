@@ -1,1 +1,12 @@
-<p>new-grade works!</p>
+<app-module-picker [control]="moduleControl" [excludeIds]="getModuleIdsOfUsedGrades()"></app-module-picker>
+<ng-container *ngIf="isModuleReady()">
+  <span class="subheader no-bottom-margin">Creditpoints: {{ getChosenModule().creditPoints }}CP</span>
+  <span class="subheader">Prüfungsleistung: {{ getChosenModule().getReadableTestType() }}</span>
+</ng-container>
+<div class="divider"></div>
+<span class="subheader">Note</span>
+<mat-slider color="primary" thumbLabel [formControl]="gradeControl"></mat-slider>
+<button class="lower-right-fab" mat-fab color="accent" (click)="save()">
+  <mat-icon svgIcon="check"></mat-icon>
+</button>
+

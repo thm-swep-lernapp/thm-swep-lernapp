@@ -1,0 +1,64 @@
+.week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    min-width: 32px;
+    .weekday-indicator {
+      text-align: center;
+      color: rgba(0, 0, 0, .6);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .day-inner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.highlighted {
+        background: #f24835;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+
+        .day {
+          color: #fff;
+        }
+      }
+      .day {
+        text-align: center;
+        font-size: 16px;
+        line-height: 32px;
+
+        &.out-of-month {
+          opacity: .3;
+        }
+      }
+    }
+
+    .appointment-count-indicators {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4px;
+      min-height: 12px;
+      .indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        margin-right: 2px;
+        margin-left: 2px;
+      }
+      .more-indicator {
+        padding-top: 1px;
+        font-size: 8px;
+        line-height: 8px;
+        margin-left: 1px;
+      }
+    }
+  }
+}

@@ -1,1 +1,25 @@
-<p>learn-screen works!</p>
+<mat-card *ngIf="turnCard === 'front'">
+  <mat-card-title>{{ activeCard.front }}</mat-card-title>
+</mat-card>
+
+<mat-card *ngIf="turnCard === 'back'">
+  <mat-card-title>{{ activeCard.back }}</mat-card-title>
+</mat-card>
+
+<div class="button-box">
+  <button mat-mini-fab color="accent" aria-label="Example icon button with a check icon" (click)="nextCard()">
+    <mat-icon>check</mat-icon>
+  </button>
+
+  <button mat-mini-fab color="warn" aria-label="Example icon button with a close icon" (click)="nextCard()">
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <button mat-mini-fab color="black" aria-label="Example icon button with a restart icon" (click)="TurnButton()">
+    <mat-icon>synch</mat-icon>
+  </button>
+</div>
+
+<div class="show-progress">
+  <p> {{ progress }} </p>
+</div>

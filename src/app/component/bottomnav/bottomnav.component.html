@@ -1,14 +1,14 @@
 <mat-toolbar color="primary">
-  <div class="bottom-nav-item">
-    <mat-icon class="icon"></mat-icon>
+  <a class="bottom-nav-item" [class.active]="isCalendarActive()" [routerLink]="'/termine'">
+    <mat-icon class="icon" svgIcon="calendar"></mat-icon>
     <span class="text">Kalender</span>
-  </div>
-  <div class="bottom-nav-item">
-    <mat-icon class="icon"></mat-icon>
+  </a>
+  <a class="bottom-nav-item" [class.active]="isGradesActive()" [routerLink]="'/leistungen'">
+    <mat-icon class="icon" svgIcon="star"></mat-icon>
     <span class="text">Leistungen</span>
-  </div>
-  <div class="bottom-nav-item">
-    <mat-icon class="icon"></mat-icon>
-    <span class="text">Karten</span>
-  </div>
+  </a>
+  <a class="bottom-nav-item" [class.active]="isDecksActive()" [routerLink]="'/decks'">
+    <mat-icon class="icon" svgIcon="school"></mat-icon>
+    <span class="text">Lernen</span>
+  </a>
 </mat-toolbar>

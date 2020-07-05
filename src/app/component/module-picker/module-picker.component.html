@@ -1,0 +1,9 @@
+<mat-form-field appearance="outline" class="no-bottom-padding">
+  <mat-icon matPrefix svgIcon="folder-text"></mat-icon>
+  <mat-label>Modul</mat-label>
+  <input type="text" matInput [formControl]="control" [matAutocomplete]="auto" placeholder="Bitte Modul eingeben">
+</mat-form-field>
+
+<mat-autocomplete #auto="matAutocomplete" [displayWith]="getOptionText">
+  <mat-option *ngFor="let option of filteredModules | async" [value]="option">{{ option.name }}</mat-option>
+</mat-autocomplete>

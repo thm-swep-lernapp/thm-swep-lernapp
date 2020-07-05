@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ModuleService} from './service/module.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'swep';
-
-  showLog() {
-    console.log('joo');
+  constructor() {
+    moment.locale('de');
+    moment.fn.toJSON = function() { return this.unix(); };
   }
 }
