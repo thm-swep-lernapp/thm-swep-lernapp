@@ -112,5 +112,6 @@ export class CalendarScreenComponent implements OnInit {
 
   onAppointmentDeleted() {
     this.refreshAppointments();
+    this.buildCurrentAppointmentCountMap();
   }
 }
