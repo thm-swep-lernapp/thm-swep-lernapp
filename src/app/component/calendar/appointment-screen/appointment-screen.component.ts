@@ -14,6 +14,7 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import {min} from 'rxjs/operators';
 import {error} from 'selenium-webdriver';
 import {ModulePickerValidators} from '../../module-picker/module-picker-validators';
+import {Logger} from '../../../class/logger';
 
 @NgModule({
   imports: [NgxMaterialTimepickerModule]
@@ -61,6 +62,7 @@ export class AppointmentScreenComponent implements OnInit {
     private snackBar: MatSnackBar
 
   ) {
+    Logger.log('Initializing Appointment Screen...');
     route.paramMap.subscribe(params => {
       const id = params.get('appointmentId');
       if (id === 'neu') {

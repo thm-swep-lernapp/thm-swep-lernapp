@@ -9,6 +9,7 @@ import {FormControl, ValidationErrors, ValidatorFn, Validators} from '@angular/f
 import {NavigationItem} from '../../../class/navigation-item';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {ModulePickerValidators} from '../../module-picker/module-picker-validators';
+import {Logger} from '../../../class/logger';
 
 @Component({
   selector: 'app-new-grade',
@@ -31,6 +32,7 @@ export class GradeChangeScreenComponent implements OnInit {
     private modules: ModuleService,
     private grades: GradesService
   ) {
+    Logger.log('Initializing Grade Change Screen...');
     route.paramMap.subscribe(params => {
       const id = params.get('gradeId');
       if (id === 'neu') {
@@ -69,6 +71,7 @@ export class GradeChangeScreenComponent implements OnInit {
 
   save() {
     if (this.isCreation && !this.moduleControl.valid) {
+      Logger.warn('User hasn\'t supplied a Module during Grade Creation.');
       this.snackbar.open('Bitte ein Modul angeben.', null, { duration: 2000 });
       return;
     }
