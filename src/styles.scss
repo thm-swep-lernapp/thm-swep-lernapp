@@ -39,9 +39,9 @@ a.mat-menu-item > mat-icon {
 }
 
 .lower-right-fab {
-  position: absolute !important;
+  position: fixed !important;
   right: 8px;
-  bottom: 8px;
+  bottom: 72px;
 }
 
 mat-form-field {

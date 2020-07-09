@@ -4,6 +4,7 @@ import {FormControl, Validators} from '@angular/forms';
 import {FlashCard} from '../../../class/flash-card';
 import {FlashCardBundle} from '../../../class/flash-card-bundle';
 import {AppbarService} from '../../../service/appbar.service';
+import {Logger} from '../../../class/logger';
 
 
 @Component({
@@ -18,7 +19,9 @@ export class FlashcardBundleListScreenComponent implements OnInit {
   constructor(
     private flashcardService: FlashcardService,
     private appbar: AppbarService,
-  ) { }
+  ) {
+    Logger.log('Initializing Flashcard Bundle List Screen...');
+  }
 
   ngOnInit(): void {
     this.cardDecks = this.flashcardService.flashcardBundles;

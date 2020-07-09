@@ -4,6 +4,7 @@ import {Grade} from '../../../class/grade';
 import {GradeWrapper} from '../../../class/grade-wrapper';
 import {ModuleService} from '../../../service/module.service';
 import {GradesService} from '../../../service/grades.service';
+import {Logger} from '../../../class/logger';
 
 @Component({
   selector: 'app-grades',
@@ -18,7 +19,9 @@ export class GradesScreenComponent implements OnInit {
     private appbar: AppbarService,
     private gradesService: GradesService,
     private modules: ModuleService
-  ) { }
+  ) {
+    Logger.log('Initializing Grades Screen...');
+  }
 
   ngOnInit(): void {
     this.appbar.setTitle('Leistungen');

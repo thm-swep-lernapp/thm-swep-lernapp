@@ -9,6 +9,7 @@ import {Grade} from '../../../class/grade';
 import {FlashCardBundle} from '../../../class/flash-card-bundle';
 import {ModuleService} from '../../../service/module.service';
 import {ModulePickerValidators} from '../../module-picker/module-picker-validators';
+import {Logger} from '../../../class/logger';
 
 @Component({
   selector: 'app-flashcard-bundle-change-screen',
@@ -30,6 +31,7 @@ export class FlashcardBundleChangeScreenComponent implements OnInit {
     private appbar: AppbarService,
     private modules: ModuleService,
   ) {
+    Logger.log('Initializing Flashcard Bundle Change Screen...');
     route.paramMap.subscribe(params => {
       const id = params.get('flashcardBundleId');
       if (id === 'neu') {
