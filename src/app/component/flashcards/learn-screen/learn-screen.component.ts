@@ -5,6 +5,7 @@ import {FlashcardService} from '../../../service/flashcard.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {FlashCardBundle} from '../../../class/flash-card-bundle';
 import {FlashCard} from '../../../class/flash-card';
+import {Logger} from '../../../class/logger';
 
 @Component({
   selector: 'app-learn-screen',
@@ -25,6 +26,7 @@ export class LearnScreenComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
   ) {
+    Logger.log('Initializing Learn Screen...');
     route.paramMap.subscribe(params => {
       const id = params.get('flashcardBundleId');
       this.flashCardBundle = this.flashcardService.getFlashCardBundleById(id);

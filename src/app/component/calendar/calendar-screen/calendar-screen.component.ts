@@ -6,6 +6,7 @@ import {WeekViewComponent} from '../week-view/week-view.component';
 import * as moment from 'moment';
 import {Moment} from 'moment';
 import {Appointment, AppointmentType} from '../../../class/appointment';
+import {Logger} from '../../../class/logger';
 
 @Component({
   selector: 'app-calendar',
@@ -25,6 +26,7 @@ export class CalendarScreenComponent implements OnInit {
     private appbar: AppbarService,
     private appointmentService: AppointmentService,
   ) {
+    Logger.log('Initializing Calendar Screen...');
     this.onCurrentDayChange(moment.utc());
     this.onHighlightedDayChange(moment.utc());
   }
@@ -36,6 +38,7 @@ export class CalendarScreenComponent implements OnInit {
         'Vorheriger Monat',
         'chevron-double-left',
         () => {
+          Logger.log('Switching to previous Month');
           this.weekView.previousMonth();
         }
       ),
@@ -43,6 +46,7 @@ export class CalendarScreenComponent implements OnInit {
         'Vorherige Woche',
         'chevron-left',
         () => {
+          Logger.log('Switching to previous Week');
           this.weekView.previousWeek();
         }
       )
@@ -52,6 +56,7 @@ export class CalendarScreenComponent implements OnInit {
         'Nächste Woche',
         'chevron-right',
         () => {
+          Logger.log('Switching to next Week');
           this.weekView.nextWeek();
         }
       ),
@@ -59,13 +64,11 @@ export class CalendarScreenComponent implements OnInit {
         'Nächster Monat',
         'chevron-double-right',
         () => {
+          Logger.log('Switching to next Month');
           this.weekView.nextMonth();
         }
       )
     ]);
-
-    const appointmentsFromDb = this.appointmentService.getItems();
-
   }
 
   setAppbarTitleFromCurrentDay() {
@@ -80,7 +83,6 @@ export class CalendarScreenComponent implements OnInit {
     let currDay = startOfWeek.clone();
     while (!currDay.isSame(startOfNextWeek, 'day')) {
       const appointments = this.appointmentService.getItemsByDay(currDay);
-      console.log(appointments);
       appointmentCountMap[currDay.format('YYYYMMD')] = {
         [AppointmentType.TIMETABLE]: appointments.filter(appointment => appointment.type === AppointmentType.TIMETABLE).length,
         [AppointmentType.FREE_TIME]: appointments.filter(appointment => appointment.type === AppointmentType.FREE_TIME).length,
@@ -90,7 +92,8 @@ export class CalendarScreenComponent implements OnInit {
       };
       currDay = currDay.add(1, 'days').clone();
     }
-    console.log(appointmentCountMap);
+
+    Logger.log('Built Appointment Count Map for Week View: ' + JSON.stringify(appointmentCountMap));
 
     this.currentAppointmentCountMap = appointmentCountMap;
   }
