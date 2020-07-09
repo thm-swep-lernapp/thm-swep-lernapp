@@ -1,6 +1,10 @@
-# Swep
+# StudiumsPlaner im Rahmen des Moduls SWEP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Hierbei handelt es sich um ein Angular Projekt, erstellt mit Angular 9.
+
+## Inbetriebnahme
+
+Zum einfachen Ausführen reicht das Auschecken und anschließende ausführen von `npm install` zum Installieren aller Abhängigkeiten. Zum tatsächlichen Starten der Applikation muss `ng serve` ausgefhührt.
 
 ## Development server
 
